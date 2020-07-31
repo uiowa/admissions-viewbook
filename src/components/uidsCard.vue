@@ -97,5 +97,5 @@ export default {
 </script>
 
 <style scoped>
-
+  @import '../../node_modules/@uiowa/uids/src/components/card/card.scss';
 </style>
