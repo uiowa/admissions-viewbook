@@ -1,10 +1,10 @@
 <template>
-    <div class="card" :class= "card_classes">
-        <div v-if="card_image" class="card__media">
+    <div class="card">
+        <div v-if="image" class="card__media">
             <a v-if="link_element == 'image'" :href="card_link_url">
-                <img class="card__img" :src="card_image" alt="Alt Text">
+                <img class="card__img" :src="image" alt="Alt Text">
             </a>
-            <img v-else class="card__img" :src="card_image" alt="Alt Text">
+            <img v-else class="card__img" :src="image" alt="Alt Text">
         </div>
 
         <div class="card__body">
@@ -86,6 +86,7 @@ if (card_data.card_link_url !== '') {
 }
 
 export default {
+    props: ['image', 'title', 'link_url', 'link_title', 'aria', 'author', 'content'],
     components: {
         headline,
         uidsButton,
