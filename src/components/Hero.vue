@@ -9,7 +9,7 @@
                           heading_level="h2"
                           class="bold-headline--caps bold--headline bold-headline--highlight"
                           :heading="headline"
-                          :heading_url="link"
+                          :heading_url="link_url"
                 ></headline>
             </div>
         </div>
@@ -20,7 +20,7 @@
 import Headline from './headline.vue';
 
 export default {
-    props: ['headline', 'image', 'link'],
+    props: ['headline', 'image', 'link_url'],
     components: {
         Headline,
     }
