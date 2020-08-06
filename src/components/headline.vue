@@ -58,6 +58,11 @@ export default {
 }
 </script>
 
+<<<<<<< HEAD
 <style lang="scss">
 @import '../../node_modules/@uiowa/uids/src/components/headline/headline.scss';
+=======
+<style lang='scss'>
+    // @import '../../node_modules/@uiowa/uids/src/components/headline/headline.scss';
+>>>>>>> working on styles
 </style>
