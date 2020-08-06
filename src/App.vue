@@ -90,6 +90,11 @@
                 "heading_class" : 'bold-headline--caps bold-headline',
                 "heading" : 'We Work <span>Together</span>'
               } %}
+      <headline 
+          heading_level= "h2"
+          heading_class= 'bold-headline--caps bold-headline'
+          heading= "We Work <span>Together</span>"
+      />
       <p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>
   <p>How many universities have both a state-of-the-art children’s hospital and
   a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
@@ -517,13 +522,19 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import Hero from './components/Hero.vue';
 import IowaBar from './components/IowaBar.vue';
 import headline from './components/headline.vue';
+=======
+import uidsCard from './components/uidsCard.vue'
+import headline from './components/headline.vue'
+>>>>>>> added headline
 
 export default {
   name: 'App',
   components: {
+<<<<<<< HEAD
     Hero,
     IowaBar,
     headline
@@ -569,6 +580,10 @@ export default {
       }
       return classes;
     }
+=======
+    uidsCard,
+    headline
+>>>>>>> added headline
   }
 }
 </script>
