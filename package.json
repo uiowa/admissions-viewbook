@@ -6,7 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@uiowa/uids": "uiowa/uids#feature_admissions_viewbook",
+    "@uiowa/uids": "uiowa/uids#c962054",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
