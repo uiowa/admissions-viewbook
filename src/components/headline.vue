@@ -2,12 +2,12 @@
     <component :is="heading_level" :class="heading_class">
         <a v-if="heading_url" :href="heading_url" :aria-describedby="heading_aria ? heading_aria :''">
             <span v-if="heading_prefix" class="heading__prefix">{{heading_prefix}}</span>
-            <span class="heading__heading">{{heading}}</span>
+            <span v-html="heading" class="heading__heading"></span>
             <span v-if="heading_suffix" class="heading__suffix">{{heading_suffix}}</span>
         </a>
         <template v-else>
             <span v-if="heading_prefix" class="heading__prefix">{{heading_prefix}}</span>
-            <span class="heading__heading">{{heading}}</span>
+            <span v-html="heading" class="heading__heading"></span>
             <span v-if="heading_suffix" class="heading__suffix">{{heading_suffix}}</span>
         </template>
     </component>
