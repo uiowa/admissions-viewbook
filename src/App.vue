@@ -1,4 +1,5 @@
 <template>
+  <iowa-bar></iowa-bar>
   <div class="card__wrapper">
     <template v-for="(area, index) in areas_of_study">
       <hero :headline="area.headline"
@@ -12,12 +13,14 @@
 </template>
 
 <script>
-import Hero from "./components/Hero.vue";
+import Hero from './components/Hero.vue';
+import IowaBar from './components/IowaBar.vue';
 
 export default {
   name: 'App',
   components: {
     Hero,
+    IowaBar,
   },
   data() {
     return {
