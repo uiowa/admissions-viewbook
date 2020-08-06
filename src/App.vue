@@ -29,23 +29,19 @@
     <div class="v-dots-scroll-target" id="areas-of-study"></div>
   </div>
   <div class="asymmetrical-grid">
-  <div class="asymmetrical-grid__content-left grid__content">
-
-      {% include "@headline" with {
-                "heading_level" : 'h2',
-                "heading_class" : 'bold-headline--caps bold-headline',
-                "heading" : '200+ Areas<br /> of Study'
-              } %}
+    <div class="asymmetrical-grid__content-left grid__content">
+      <headline 
+        heading_level= "h2"
+        heading_class= "bold-headline--caps bold-headline"
+        heading= "200+ Areas<br /> of Study"
+      />
       <p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion</p>
-
-  <a href="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study" class="bttn bttn--secondary bttn--caps">
-
+      <a href="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study" class="bttn bttn--secondary bttn--caps">
         View Areas of Study
         <i class="fas fa-arrow-right"></i>
       </a>
     </div>
-
-  <div class="asymmetrical-grid__image-right">
+    <div class="asymmetrical-grid__image-right">
 
       <div class="card__wrapper">
   {% for item in hero_row.items | slice(0, 12) %}
@@ -77,35 +73,24 @@
   </div>
 
   <div class="asymmetrical-grid">
-
-  <div class="asymmetrical-grid__image-left">
-
+    <div class="asymmetrical-grid__image-left">
       <img class="card__img" src="src/assets/images/viewbook/sections/0315.jpg" alt="Alt Text">
     </div>
-
-  <div class="asymmetrical-grid__content-right grid__content">
-
-      {% include "@headline" with {
-                "heading_level" : 'h2',
-                "heading_class" : 'bold-headline--caps bold-headline',
-                "heading" : 'We Work <span>Together</span>'
-              } %}
+    <div class="asymmetrical-grid__content-right grid__content">
       <headline 
           heading_level= "h2"
-          heading_class= 'bold-headline--caps bold-headline'
+          heading_class= "bold-headline--caps bold-headline"
           heading= "We Work <span>Together</span>"
       />
       <p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>
-  <p>How many universities have both a state-of-the-art children’s hospital and
-  a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
+      <p>How many universities have both a state-of-the-art children’s hospital and
+      a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
 
-  <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
-
-      View Academic Opportunities
-      <i class="fas fa-arrow-right"></i>
-    </a>
-
-  </div>
+      <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
+        View Academic Opportunities
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
   </div>
 
 
@@ -138,12 +123,11 @@
   <div class="asymmetrical-grid">
 
   <div class="asymmetrical-grid__content-left grid__content">
-
-    {% include "@headline" with {
-                "heading_level" : 'h2',
-                "heading_class" : 'bold-headline--caps bold-headline',
-                "heading" : 'MAKE <span>30,000</span> NEW FRIENDS'
-              } %}
+    <headline 
+      heading_level= "h2"
+      heading_class= "bold-headline--caps bold-headline"
+      heading= "MAKE <span>30,000</span> NEW FRIENDS"
+    />
 
   <p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>
   <a href="https://admissions.uiowa.edu/student-life/student-life" class="bttn bttn--secondary bttn--caps">
@@ -191,12 +175,11 @@
   </div>
 
   <div class="asymmetrical-grid__content-right grid__content">
-
-    {% include "@headline" with {
-                "heading_level" : 'h2',
-                "heading_class" : 'bold-headline--caps bold-headline',
-                "heading" : 'Make an <span>Impact</span>'
-              } %}
+    <headline 
+      heading_level= "h2"
+      heading_class= "bold-headline--caps bold-headline"
+      heading= "Make an <span>Impact</span>"
+    />
   <p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>
 
   <a href="https://stories.uiowa.edu/student-outcomes" class="bttn bttn--secondary bttn--caps">
@@ -230,12 +213,11 @@
   </div>
   <div class="split-grid">
   <div class="split-grid__column grid__content">
-
-  {% include "@headline" with {
-                "heading_level" : 'h2',
-                "heading_class" : 'bold-headline--caps bold-headline',
-                "heading" : 'How to Apply'
-              } %}
+    <headline 
+      heading_level= "h2"
+      heading_class= "bold-headline--caps bold-headline"
+      heading= "How to Apply"
+    />
   <hr class="element--spacer-separator" />
 
   <ol class="element--circle-list">
@@ -479,14 +461,11 @@
 
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
-
-
-  {% include "@headline" with {
-                "heading_level" : 'h2',
-                "heading_class" : 'bold-headline--caps bold-headline',
-                "heading" : 'Its <span>Great</span> to<br /> be a Hawkeye'
-              } %}
-
+    <headline 
+      heading_level= "h2"
+      heading_class= "bold-headline--caps bold-headline"
+      heading= "Its <span>Great</span> to<br /> be a Hawkeye"
+    />
   </div>
 
 
