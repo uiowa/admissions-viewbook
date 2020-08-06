@@ -57,7 +57,6 @@ jobs:
           restore-keys: npm-packages-
 
       - run: yarn
-      - run: yarn build
       # Check to make sure that docs built into www.
 #      - run: ls -lah $GITHUB_WORKSPACE/www
 
@@ -76,6 +75,7 @@ jobs:
       - name: Main branch preparations
         if: github.ref == format('refs/heads/{0}', env.MAIN_BRANCH)
         run: |
+          yarn build --base=/
           cp -a $GITHUB_WORKSPACE/dist/* $GITHUB_WORKSPACE/gh-pages
 
       # If develop branch:
@@ -84,6 +84,7 @@ jobs:
       - name: Develop branch preparations
         if: github.ref == format('refs/heads/{0}', env.DEVELOP_BRANCH)
         run: |
+          yarn build --base=/latest/
           rm -rf $GITHUB_WORKSPACE/gh-pages/latest
           mv $GITHUB_WORKSPACE/dist $GITHUB_WORKSPACE/gh-pages/latest
 
