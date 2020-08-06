@@ -25,6 +25,6 @@ export default {
     }
 }
 </script>
-<style scoped>
-
+<style lang="scss">
+    @import '../../node_modules/@uiowa/uids/src/components/button/button.scss';
 </style>

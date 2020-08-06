@@ -1,20 +1,20 @@
 <template>
-    <div class="card" :class= "card_classes">
-        <div v-if="card_image" class="card__media">
+    <div class="card">
+        <div v-if="image" class="card__media">
             <a v-if="link_element == 'image'" :href="card_link_url">
-                <img class="card__img" :src="card_image" alt="Alt Text">
+                <img class="card__img" :src="image" alt="Alt Text">
             </a>
-            <img v-else class="card__img" :src="card_image" alt="Alt Text">
+            <img v-else class="card__img" :src="image" alt="Alt Text">
         </div>
 
         <div class="card__body">
-            <headline v-if="card_title !== ''" headline
-                heading_level= "h2"
-                heading_class= 'card__title'
-                :heading= "card_title"
-                :heading_url= "card_link_url"
-                :heading_aria= "card_aria"
-            />
+            <headline v-if="card_title !== ''"
+                heading_level="h2"
+                heading_class="card__title"
+                :heading="card_title"
+                :heading_url="card_link_url"
+                :heading_aria="card_aria"
+            ></headline>
 
             <div v-if="card_author!==''" class="card__author">{{ card_author }}</div>
 
@@ -27,7 +27,7 @@
                         button_type = "bttn--full bttn--outline bttn--tertiary bttn--sans-serif"
                         :button_text = "card_link_title"
                         :button_icon = "true"
-                    />
+                    ></uidsButton>
                 </template>
                 <template v-else>
                     <!-- This should eventually have JS attached o it to click the right thing. -->
@@ -48,9 +48,9 @@ import uidsButton from './uidsButton.vue';
 // Set the card data object.
 let card_data = {
     card_classes: 'card--enclosed', // Should start as empty string.
-    card_image: 'https://antarasdiary.com/wp-content/uploads/2011/04/cute-bunny-photographs.jpg', // Should start as empty string.
+    card_image: "https://antarasdiary.com/wp-content/uploads/2011/04/cute-bunny-photographs.jpg", // Should start as empty string.
     card_title: 'Hello World!',
-    card_link_url: 'https://google.com', // Should start as empty string.
+    card_link_url: "https://google.com", // Should start as empty string.
     card_link_title: 'This is the card link title', // Should start as empty string.
     link_element: false,
     show_button: false,
@@ -86,6 +86,7 @@ if (card_data.card_link_url !== '') {
 }
 
 export default {
+    props: ['image', 'title', 'link_url', 'link_title', 'aria', 'author', 'content'],
     components: {
         headline,
         uidsButton,
@@ -96,6 +97,6 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
+  @import '../../node_modules/@uiowa/uids/src/components/card/card.scss';
 </style>
