@@ -4,8 +4,7 @@ name: Publish docs to GitHub Pages
 on:
   push:
     branches:
-      - main
-      - develop
+      - *
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -75,7 +74,7 @@ jobs:
       - name: Main branch preparations
         if: github.ref == format('refs/heads/{0}', env.MAIN_BRANCH)
         run: |
-          yarn build --base=/
+          yarn build --base=/ --assetsDir=assets
           cp -a $GITHUB_WORKSPACE/dist/* $GITHUB_WORKSPACE/gh-pages
 
       # If develop branch:
@@ -84,7 +83,7 @@ jobs:
       - name: Develop branch preparations
         if: github.ref == format('refs/heads/{0}', env.DEVELOP_BRANCH)
         run: |
-          yarn build --base=/latest/
+          yarn build --base=/latest/ --assetsDir=assets
           rm -rf $GITHUB_WORKSPACE/gh-pages/latest
           mv $GITHUB_WORKSPACE/dist $GITHUB_WORKSPACE/gh-pages/latest
 
