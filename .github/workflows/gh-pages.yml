@@ -98,5 +98,5 @@ jobs:
           BRANCH: ${{ env.TARGET_BRANCH }} # The branch the action should deploy to.
           FOLDER: gh-pages # The folder the action should deploy.
           CLEAN: true
-          CLEAN_EXLUDE: ['latest', '.gitignore']
+          CLEAN_EXLUDE: '["latest", ".gitignore"]'
 
