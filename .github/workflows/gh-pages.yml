@@ -73,7 +73,7 @@ jobs:
       #   - Remove existing 'latest' directory, if it exists.
       #   - Move build into 'latest' directory.
       - name: Main branch preparations
-        if: github.ref == format('refs/heads/{0}', env.MAIN_BRANCH)
+#        if: github.ref == format('refs/heads/{0}', env.MAIN_BRANCH)
         run: |
           yarn build --base=/ --assetsDir=assets
           cp -a $GITHUB_WORKSPACE/dist/* $GITHUB_WORKSPACE/gh-pages
