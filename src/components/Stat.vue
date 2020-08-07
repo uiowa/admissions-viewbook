@@ -1,19 +1,19 @@
 <template>
-    <div class="stat__grid stat--horizontal">
-        <div>
-                <headline v-if="headline"
-                          heading_level="h2"
-                          class="stat__title"
-                          :heading="headline"
-                          :heading_prefix="heading_prefix"
-                          :heading_suffix="heading_suffix"
-                ></headline>
-                </div>
-
-        <p v-html="stat_description" class="stat__description"></p>
-        <p v-html="stat_content" class="stat__content"></p>
-
+  <div class="stat__grid stat--horizontal">
+    <div>
+      <headline v-if="headline"
+                heading_level="h2"
+                class="stat__title"
+                :heading="headline"
+                :heading_prefix="heading_prefix"
+                :heading_suffix="heading_suffix">
+      </headline>
     </div>
+
+    <p v-html="stat_description" class="stat__description"></p>
+    <p v-html="stat_content" class="stat__content"></p>
+
+  </div>
 </template>
 
 <script>
