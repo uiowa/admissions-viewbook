@@ -1,6 +1,6 @@
 <template>
   <iowa-bar></iowa-bar>
-  
+
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="hero-banner"></div>
   </div>
@@ -64,7 +64,7 @@
   </div>
   <div class="asymmetrical-grid">
   <div class="asymmetrical-grid__content-left grid__content">
-      <headline 
+      <headline
         heading_level= "h2"
         heading_class= "bold-headline--caps bold-headline"
         heading= "200+ Areas<br /> of Study"
@@ -106,12 +106,29 @@
     <div class="v-dots-scroll-target" id="academic-opportunities"></div>
   </div>
 
+
+      <grid-panel
+            link_url="https://admissions.uiowa.edu/academics/academics"
+            image="src/assets/images/viewbook/sections/0315.jpg"
+            headline= "We Work <span>Together</span>"
+            button_text="View Academic Opportunities"
+            button_link="https://admissions.uiowa.edu/academics/academics"
+            grid_panel_type="grid-panel grid-panel--asymmetrical"
+            grid_panel_first_column="grid-panel__column-image-left"
+            grid_panel_second_column="grid-panel__column-content-right grid-panel__content"
+            grid_content_position= "second"
+            grid_panel_content= "The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore."
+	          grid_panel_content_2= "How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa."
+      >
+      </grid-panel>
+
+
   <div class="asymmetrical-grid">
     <div class="asymmetrical-grid__image-left">
       <img class="card__img" src="src/assets/images/viewbook/sections/0315.jpg" alt="Alt Text">
     </div>
     <div class="asymmetrical-grid__content-right grid__content">
-      <headline 
+      <headline
           heading_level= "h2"
           heading_class= "bold-headline--caps bold-headline"
           heading= "We Work <span>Together</span>"
@@ -157,7 +174,7 @@
   <div class="asymmetrical-grid">
 
   <div class="asymmetrical-grid__content-left grid__content">
-    <headline 
+    <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
       heading= "MAKE <span>30,000</span> NEW FRIENDS"
@@ -208,7 +225,7 @@
   </div>
 
   <div class="asymmetrical-grid__content-right grid__content">
-    <headline 
+    <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
       heading= "Make an <span>Impact</span>"
@@ -246,7 +263,7 @@
   </div>
   <div class="split-grid">
   <div class="split-grid__column grid__content">
-    <headline 
+    <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
       heading= "How to Apply"
@@ -494,7 +511,7 @@
 
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
-    <headline 
+    <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
       heading= "Its <span>Great</span> to<br /> be a Hawkeye"
@@ -536,8 +553,13 @@
 <script>
 import Hero from './components/Hero.vue';
 import IowaBar from './components/IowaBar.vue';
+import GridPanel from './components/GridPanel.vue';
 import headline from './components/headline.vue';
+<<<<<<< HEAD
 import verticalDots from './components/verticalDots.vue';
+=======
+import uidsButton from './components/uidsButton.vue';
+>>>>>>> b4828c5e681c6de022b73880f5680ba7d30b5b04
 
 export default {
   name: 'App',
@@ -545,7 +567,12 @@ export default {
     Hero,
     IowaBar,
     headline,
+<<<<<<< HEAD
     verticalDots
+=======
+    GridPanel,
+    uidsButton,
+>>>>>>> b4828c5e681c6de022b73880f5680ba7d30b5b04
   },
   data() {
     return {
@@ -595,5 +622,5 @@ export default {
 <style lang="scss" scoped>
   $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
-  @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook';
+  @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
 </style>

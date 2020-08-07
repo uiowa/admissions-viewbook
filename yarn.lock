@@ -283,9 +283,9 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@uiowa/uids@uiowa/uids#feature_admissions_viewbook":
+"@uiowa/uids@uiowa/uids#8b2490f":
   version "3.0.2"
-  resolved "https://codeload.github.com/uiowa/uids/tar.gz/46de7c1ece97cee654e16c8de5307d44438c02a8"
+  resolved "https://codeload.github.com/uiowa/uids/tar.gz/8b2490fded5db5fc25e312bedaa49ab56703ec69"
   dependencies:
     autoprefixer "^9.8.0"
     cssnano "^4.1.10"
