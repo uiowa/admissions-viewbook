@@ -147,19 +147,15 @@
 
   <div class="stat__wrapper bg--black">
 
-      {% for item in stat_row_1.items | slice(0, 4) %}
-        {% include "@stat" with {
-          "stat_classes" : item.stat_classes,
-          "stat_image" : item.stat_image,
-          "stat_image_position" : item.stat_image_position,
-          "stat_pattern" : item.stat_pattern,
-          "stat_title" : item.stat_title,
-          "stat_prefix" : item.stat_prefix,
-          "stat_suffix" : item.stat_suffix,
-          "stat_summary" : item.stat_summary,
-          "stat_content" : item.stat_content
-        } %}
-      {% endfor %}
+    <template v-for="(stat, index) in stats_1">
+      <stat :headline="stat.headline"
+            :heading_prefix="stat.heading_prefix"
+            :heading_suffix="stat.heading_suffix"
+            :stat_description="stat.stat_description"
+            :stat_content="stat.stat_content"
+      >
+      </stat>
+    </template>
 
   </div>
 
@@ -195,22 +191,6 @@
   </div>
 
 
-  <div class="stat__wrapper  bg--black">
-
-      {% for item in stat_row_2.items | slice(0, 4) %}
-        {% include "@stat" with {
-          "stat_classes" : item.stat_classes,
-          "stat_image" : item.stat_image,
-          "stat_image_position" : item.stat_image_position,
-          "stat_pattern" : item.stat_pattern,
-          "stat_title" : item.stat_title,
-          "stat_prefix" : item.stat_prefix,
-          "stat_suffix" : item.stat_suffix,
-          "stat_summary" : item.stat_summary,
-          "stat_content" : item.stat_content
-        } %}
-      {% endfor %}
-  </div>
 
 
 
@@ -241,22 +221,20 @@
 
 
 
-  <div class="stat__wrapper  bg--black">
+  <div class="stat__wrapper bg--black">
 
-    {% for item in stat_row_3.items | slice(0, 4) %}
-      {% include "@stat" with {
-          "stat_classes" : item.stat_classes,
-          "stat_image" : item.stat_image,
-          "stat_image_position" : item.stat_image_position,
-          "stat_pattern" : item.stat_pattern,
-          "stat_title" : item.stat_title,
-          "stat_prefix" : item.stat_prefix,
-          "stat_suffix" : item.stat_suffix,
-          "stat_summary" : item.stat_summary,
-          "stat_content" : item.stat_content
-        } %}
-    {% endfor %}
+    <template v-for="(stat, index) in stats_1">
+      <stat :headline="stat.headline"
+            :heading_prefix="stat.heading_prefix"
+            :heading_suffix="stat.heading_suffix"
+            :stat_description="stat.stat_description"
+            :stat_content="stat.stat_content"
+      >
+      </stat>
+    </template>
+
   </div>
+
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="five-step"></div>
@@ -552,6 +530,7 @@
 
 <script>
 import Hero from './components/Hero.vue';
+import Stat from './components/Stat.vue';
 import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
 import headline from './components/headline.vue';
@@ -562,6 +541,7 @@ export default {
   name: 'App',
   components: {
     Hero,
+    Stat,
     IowaBar,
     headline,
     verticalDots,
@@ -595,6 +575,36 @@ export default {
           headline: '',
           image: '',
           link_url: 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study',
+        }
+      ],
+      stats_1: [
+        {
+          headline: '34',
+          heading_prefix: '#',
+          heading_suffix: '',
+          stat_description: 'BEST PUBLIC UNIVERSITY BY U.S. NEWS & WORLD REPORT',
+          stat_content: 'Among the top 2% of universities worldwide.',
+        },
+         {
+          headline: '15:1',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'STUDENT-TO-FACULTY RATIO',
+          stat_content: 'Get to know your professors.',
+        },
+         {
+          headline: '23',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020',
+          stat_content: 'That’s the same as some Ivy League schools.',
+        },
+        {
+          headline: '1 in 3',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'UNDERGRADS PARTICIPATE IN RESEARCH',
+          stat_content: 'Gain experience now.',
         }
       ],
     }
