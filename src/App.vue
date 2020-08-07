@@ -29,19 +29,19 @@
     <div class="v-dots-scroll-target" id="areas-of-study"></div>
   </div>
   <div class="asymmetrical-grid">
-    <div class="asymmetrical-grid__content-left grid__content">
+  <div class="asymmetrical-grid__content-left grid__content">
       <headline 
         heading_level= "h2"
         heading_class= "bold-headline--caps bold-headline"
         heading= "200+ Areas<br /> of Study"
       />
       <p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion</p>
-      <a href="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study" class="bttn bttn--secondary bttn--caps">
+  <a href="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study" class="bttn bttn--secondary bttn--caps">
         View Areas of Study
         <i class="fas fa-arrow-right"></i>
       </a>
     </div>
-    <div class="asymmetrical-grid__image-right">
+  <div class="asymmetrical-grid__image-right">
 
       <div class="card__wrapper">
   {% for item in hero_row.items | slice(0, 12) %}
@@ -73,24 +73,26 @@
   </div>
 
   <div class="asymmetrical-grid">
-    <div class="asymmetrical-grid__image-left">
+  <div class="asymmetrical-grid__image-left">
       <img class="card__img" src="src/assets/images/viewbook/sections/0315.jpg" alt="Alt Text">
     </div>
-    <div class="asymmetrical-grid__content-right grid__content">
+  <div class="asymmetrical-grid__content-right grid__content">
       <headline 
           heading_level= "h2"
           heading_class= "bold-headline--caps bold-headline"
           heading= "We Work <span>Together</span>"
       />
       <p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>
-      <p>How many universities have both a state-of-the-art children’s hospital and
-      a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
+  <p>How many universities have both a state-of-the-art children’s hospital and
+  a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
 
-      <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
-        View Academic Opportunities
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
+  <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
+
+      View Academic Opportunities
+      <i class="fas fa-arrow-right"></i>
+    </a>
+
+  </div>
   </div>
 
 
@@ -128,7 +130,6 @@
       heading_class= "bold-headline--caps bold-headline"
       heading= "MAKE <span>30,000</span> NEW FRIENDS"
     />
-
   <p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>
   <a href="https://admissions.uiowa.edu/student-life/student-life" class="bttn bttn--secondary bttn--caps">
 
@@ -501,19 +502,13 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import Hero from './components/Hero.vue';
 import IowaBar from './components/IowaBar.vue';
 import headline from './components/headline.vue';
-=======
-import uidsCard from './components/uidsCard.vue'
-import headline from './components/headline.vue'
->>>>>>> added headline
 
 export default {
   name: 'App',
   components: {
-<<<<<<< HEAD
     Hero,
     IowaBar,
     headline
@@ -559,10 +554,6 @@ export default {
       }
       return classes;
     }
-=======
-    uidsCard,
-    headline
->>>>>>> added headline
   }
 }
 </script>
