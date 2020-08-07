@@ -27,8 +27,4 @@ export default {
 
 <style lang="scss">
 @import '../../node_modules/@uiowa/uids/src/components/menus/vertical-dots/vertical-dots.scss';
-<<<<<<< HEAD
 </style>
-=======
-</style>
->>>>>>> 662895a812afdf1c8204726c7565c27f264a0a0f
