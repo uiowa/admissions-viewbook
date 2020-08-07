@@ -555,11 +555,8 @@ import Hero from './components/Hero.vue';
 import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
 import headline from './components/headline.vue';
-<<<<<<< HEAD
 import verticalDots from './components/verticalDots.vue';
-=======
 import uidsButton from './components/uidsButton.vue';
->>>>>>> b4828c5e681c6de022b73880f5680ba7d30b5b04
 
 export default {
   name: 'App',
@@ -567,12 +564,9 @@ export default {
     Hero,
     IowaBar,
     headline,
-<<<<<<< HEAD
-    verticalDots
-=======
+    verticalDots,
     GridPanel,
     uidsButton,
->>>>>>> b4828c5e681c6de022b73880f5680ba7d30b5b04
   },
   data() {
     return {
