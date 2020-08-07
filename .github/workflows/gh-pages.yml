@@ -4,7 +4,8 @@ name: Publish docs to GitHub Pages
 on:
   push:
     branches:
-      - '*'
+      - main
+      - develop
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -97,6 +98,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: ${{ env.TARGET_BRANCH }} # The branch the action should deploy to.
           FOLDER: gh-pages # The folder the action should deploy.
-          CLEAN: true
-          CLEAN_EXCLUDE: '["latest", ".gitignore"]'
-
