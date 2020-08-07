@@ -23,7 +23,41 @@
     </div>
   </div>
 
-  {% include "@vertical-dots" with vertical_dots %}
+  <verticalDots
+    :sections = "
+      [
+        {
+          section_title: 'Back to Top',
+          section_id: 'hero-banner'
+        },
+        {
+          section_title: 'Areas of Study',
+          section_id: 'areas-of-study'
+        },
+        {
+          section_title: 'Acdemic Opportunities',
+          section_id: 'academic-opportunities'
+        },
+        {
+          section_title: 'Iowa City Life',
+          section_id: 'iowa-city-life'
+        },
+        {
+          section_title: 'Student Life',
+          section_id: 'student-life'
+        },
+        {
+          section_title: 'Student Outcomes',
+          section_id: 'student-outcomes'
+        },
+        {
+          section_title: 'Apply',
+          section_id: 'five-step'
+        },
+      ]
+    "
+  >
+  </verticalDots>
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="areas-of-study"></div>
@@ -503,13 +537,15 @@
 import Hero from './components/Hero.vue';
 import IowaBar from './components/IowaBar.vue';
 import headline from './components/headline.vue';
+import verticalDots from './components/verticalDots.vue';
 
 export default {
   name: 'App',
   components: {
     Hero,
     IowaBar,
-    headline
+    headline,
+    verticalDots
   },
   data() {
     return {
