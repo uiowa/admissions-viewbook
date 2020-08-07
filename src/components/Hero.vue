@@ -7,7 +7,7 @@
             <div class="hero__content">
                 <headline v-if="headline"
                           heading_level="h2"
-                          class="bold-headline--caps bold--headline bold-headline--highlight"
+                          class="bold-headline--caps bold-headline bold-headline--highlight"
                           :heading="headline"
                           :heading_url="link_url"
                 ></headline>
