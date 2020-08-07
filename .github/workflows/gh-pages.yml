@@ -1,7 +1,6 @@
 name: Publish docs to GitHub Pages
 
-# Triggers on pushing to any branch.
-# @todo Switch this back to 'main' and 'develop'
+# Triggers on pushing to 'main' and 'develop'.
 on:
   push:
     branches:
@@ -73,9 +72,9 @@ jobs:
       #   - Remove existing 'latest' directory, if it exists.
       #   - Move build into 'latest' directory.
       - name: Main branch preparations
-#        if: github.ref == format('refs/heads/{0}', env.MAIN_BRANCH)
+        if: github.ref == format('refs/heads/{0}', env.MAIN_BRANCH)
         run: |
-          yarn build --base=/ --assetsDir=assets
+#          yarn build --base=/ --assetsDir=assets
           cp -a $GITHUB_WORKSPACE/dist/* $GITHUB_WORKSPACE/gh-pages
 
       # If develop branch:
@@ -98,4 +97,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: ${{ env.TARGET_BRANCH }} # The branch the action should deploy to.
           FOLDER: gh-pages # The folder the action should deploy.
+          CLEAN: true
+          CLEAN_EXLUDE: ['latest', '.gitignore']
 
