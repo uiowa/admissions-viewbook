@@ -73,26 +73,24 @@
   </div>
 
   <div class="asymmetrical-grid">
-  <div class="asymmetrical-grid__image-left">
+    <div class="asymmetrical-grid__image-left">
       <img class="card__img" src="src/assets/images/viewbook/sections/0315.jpg" alt="Alt Text">
     </div>
-  <div class="asymmetrical-grid__content-right grid__content">
+    <div class="asymmetrical-grid__content-right grid__content">
       <headline 
           heading_level= "h2"
           heading_class= "bold-headline--caps bold-headline"
           heading= "We Work <span>Together</span>"
       />
       <p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>
-  <p>How many universities have both a state-of-the-art children’s hospital and
-  a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
+      <p>How many universities have both a state-of-the-art children’s hospital and
+      a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
 
-  <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
-
-      View Academic Opportunities
-      <i class="fas fa-arrow-right"></i>
-    </a>
-
-  </div>
+      <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
+        View Academic Opportunities
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
   </div>
 
 
