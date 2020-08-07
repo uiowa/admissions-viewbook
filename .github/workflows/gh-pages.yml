@@ -1,10 +1,11 @@
 name: Publish docs to GitHub Pages
 
-# Triggers on pushes to branches and tags, as well a deleting a branch.
+# Triggers on pushing to any branch.
+# @todo Switch this back to 'main' and 'develop'
 on:
   push:
     branches:
-      - *
+      - '*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
