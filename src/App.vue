@@ -614,8 +614,6 @@ export default {
   },
   methods: {
     getHeroClasses(index) {
-      console.log('index', index);
-      console.log('count', this.areas_of_study.length);
       let classes = 'hero--solid-opacity hero--large hero--row hero--vertical-bottom hero--horizontal-left';
       if (index+1 >= this.areas_of_study.length) {
         classes += ' bg-pattern--brain-black';
