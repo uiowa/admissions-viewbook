@@ -21,6 +21,37 @@ export default {
     sections: {
       type: Array,
     },
+  },
+  data: function() {
+    return {
+      mainNavLinks: {},
+      firstScroll: true
+    }
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      let fromTop = window.scrollY;
+      if (this.firstScroll) {
+        this.mainNavLinks = document.querySelectorAll("nav ul li a.v-dot-link");
+        this.firstScroll = false;
+      }
+
+      this.mainNavLinks.forEach(link => {
+          let section = document.querySelector(link.hash).parentNode.nextElementSibling;
+
+          if (
+              section.offsetTop -50 <= fromTop &&
+              section.offsetTop -50 + section.offsetHeight > fromTop
+          ) {
+              link.classList.add("current");
+          } else {
+              link.classList.remove("current");
+          }
+      });
+    }
   }
 }
 </script>
