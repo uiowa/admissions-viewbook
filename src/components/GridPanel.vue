@@ -5,13 +5,13 @@
       <div v-if="grid_content_position=='first'">
         <headline v-if="headline"
                   heading_level="h2"
-                  class="bold-headline--caps bold-headline bold-headline--highlight"
+                  class="bold-headline--caps bold-headline"
                   :heading="headline"
                   :heading_url="link_url">
         </headline>
 
-        <p v-html="grid_panel_content"></p>
-        <p v-html="grid_panel_content_2"></p>
+        <div v-html="grid_panel_content"></div>
+        <div v-html="grid_panel_content_2"></div>
       </div>
       <div v-if="grid_content_position=='second'">
         <img :src="image" class="grid-panel__img" alt="">
