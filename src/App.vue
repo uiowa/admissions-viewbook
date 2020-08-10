@@ -6,7 +6,8 @@
   </div>
   <div class="card__wrapper">
     <template v-for="(area, index) in areas_of_study">
-      <hero :headline="area.headline"
+      <hero :key="index"
+            :headline="area.headline"
             :image="area.image"
             :url="area.link_url"
             :class="getHeroClasses(index)"
@@ -148,7 +149,8 @@
   <div class="stat__wrapper bg--black">
 
     <template v-for="(stat, index) in stats_1">
-      <stat :headline="stat.headline"
+      <stat :key="index"
+            :headline="stat.headline"
             :heading_prefix="stat.heading_prefix"
             :heading_suffix="stat.heading_suffix"
             :stat_description="stat.stat_description"
@@ -224,7 +226,8 @@
   <div class="stat__wrapper bg--black">
 
     <template v-for="(stat, index) in stats_1">
-      <stat :headline="stat.headline"
+      <stat :key="index"
+            :headline="stat.headline"
             :heading_prefix="stat.heading_prefix"
             :heading_suffix="stat.heading_suffix"
             :stat_description="stat.stat_description"
