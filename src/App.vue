@@ -65,16 +65,16 @@
   </div>
 
  <grid-panel
-            link_url="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study"
-            image=""
-            headline= "200+ Areas<br /> of Study"
-            button_text="View Academic Opportunities"
-            button_link="https://admissions.uiowa.edu/academics/academics"
-            grid_panel_type="grid-panel grid-panel--asymmetrical"
-            grid_panel_first_column="grid-panel__column-content-left grid-panel__content"
-            grid_panel_second_column="grid-panel__column-image-right"
-            grid_content_position= "first"
-            grid_panel_content='<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
+            link_url= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
+            image= ''
+            headline= '200+ Areas<br /> of Study'
+            button_text= 'View Academic Opportunities'
+            button_link= 'https://admissions.uiowa.edu/academics/academics'
+            grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+            grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
+            grid_panel_second_column= 'grid-panel__column-image-right'
+            grid_content_position= 'first'
+            grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
 	          grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
       >
       </grid-panel>
@@ -85,17 +85,17 @@
 
 
       <grid-panel
-            link_url="https://admissions.uiowa.edu/academics/academics"
-            image="src/assets/images/viewbook/sections/0315.jpg"
-            headline= "We Work <span>Together</span>"
-            button_text="View Academic Opportunities"
-            button_link="https://admissions.uiowa.edu/academics/academics"
-            grid_panel_type="grid-panel grid-panel--asymmetrical"
-            grid_panel_first_column="grid-panel__column-image-left"
-            grid_panel_second_column="grid-panel__column-content-right grid-panel__content"
-            grid_content_position= "second"
-            grid_panel_content= "The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore."
-	          grid_panel_content_2= "How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa."
+            link_url= 'https://admissions.uiowa.edu/academics/academics'
+            image= 'src/assets/images/viewbook/sections/0315.jpg'
+            headline= 'We Work <span>Together</span>'
+            button_text= 'View Academic Opportunities'
+            button_link= 'https://admissions.uiowa.edu/academics/academics'
+            grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+            grid_panel_first_column= 'grid-panel__column-image-left'
+            grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
+            grid_content_position= 'second'
+            grid_panel_content= '<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
+	          grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
       >
       </grid-panel>
 
