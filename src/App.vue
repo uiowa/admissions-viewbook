@@ -40,8 +40,8 @@
           section_id: 'academic-opportunities'
         },
         {
-          section_title: 'Iowa City Life',
-          section_id: 'iowa-city-life'
+          section_title: 'Iowa City',
+          section_id: 'iowa-city'
         },
         {
           section_title: 'Student Life',
@@ -52,8 +52,8 @@
           section_id: 'student-outcomes'
         },
         {
-          section_title: 'Apply',
-          section_id: 'five-step'
+          section_title: 'How to Apply',
+          section_id: 'apply'
         },
       ]
     "
@@ -63,45 +63,21 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="areas-of-study"></div>
   </div>
-  <div class="asymmetrical-grid">
-  <div class="asymmetrical-grid__content-left grid__content">
-      <headline
-        heading_level= "h2"
-        heading_class= "bold-headline--caps bold-headline"
-        heading= "200+ Areas<br /> of Study"
-      />
-      <p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion</p>
-  <a href="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study" class="bttn bttn--secondary bttn--caps">
-        View Areas of Study
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-  <div class="asymmetrical-grid__image-right">
 
-      <div class="card__wrapper">
-  {% for item in hero_row.items | slice(0, 12) %}
-    {% include '@hero' with {
-        'hero_title_classes': hero_title_classes,
-        'hero_vertical_alignment': hero_vertical_alignment,
-        'hero_horizontal_alignment': hero_horizontal_alignment,
-        'hero_title': item.hero_title,
-        'hero_text': item.hero_text,
-        'hero_image': item.hero_image,
-        'hero_type': hero_type,
-        'hero_size': hero_size,
-        'hero_overlay': hero_overlay,
-        'hero_classes': item.hero_classes,
-        'hero_link_url': item.hero_link_url,
-        'hero_link_title': item.hero_link_title,
-        'hero_link_classes': item.hero_link_classes,
-      } %}
-  {% endfor %}
-
-      </div>
-    </div>
-  </div>
-
-
+ <grid-panel
+            link_url="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study"
+            image=""
+            headline= "200+ Areas<br /> of Study"
+            button_text="View Academic Opportunities"
+            button_link="https://admissions.uiowa.edu/academics/academics"
+            grid_panel_type="grid-panel grid-panel--asymmetrical"
+            grid_panel_first_column="grid-panel__column-content-left grid-panel__content"
+            grid_panel_second_column="grid-panel__column-image-right"
+            grid_content_position= "first"
+            grid_panel_content='<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
+	          grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+      >
+      </grid-panel>
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="academic-opportunities"></div>
@@ -122,6 +98,30 @@
 	          grid_panel_content_2= "How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa."
       >
       </grid-panel>
+
+
+
+      <div class="card__wrapper">
+  {% for item in hero_row.items | slice(0, 12) %}
+    {% include '@hero' with {
+        'hero_title_classes': hero_title_classes,
+        'hero_vertical_alignment': hero_vertical_alignment,
+        'hero_horizontal_alignment': hero_horizontal_alignment,
+        'hero_title': item.hero_title,
+        'hero_text': item.hero_text,
+        'hero_image': item.hero_image,
+        'hero_type': hero_type,
+        'hero_size': hero_size,
+        'hero_overlay': hero_overlay,
+        'hero_classes': item.hero_classes,
+        'hero_link_url': item.hero_link_url,
+        'hero_link_title': item.hero_link_title,
+        'hero_link_classes': item.hero_link_classes,
+      } %}
+  {% endfor %}
+      </div>
+
+
 
 
   <div class="asymmetrical-grid">
@@ -162,7 +162,7 @@
   </div>
 
   <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="iowa-city-life"></div>
+    <div class="v-dots-scroll-target" id="iowa-city"></div>
   </div>
   {% render '@aerial' %}
 
@@ -240,7 +240,7 @@
 
 
   <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="five-step"></div>
+    <div class="v-dots-scroll-target" id="apply"></div>
   </div>
   <div class="split-grid">
   <div class="split-grid__column grid__content">
