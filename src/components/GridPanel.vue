@@ -24,8 +24,8 @@
                   class="bold-headline--caps bold-headline"
                   :heading="headline">
         </headline>
-        <p v-html="grid_panel_content"></p>
-        <p v-html="grid_panel_content_2"></p>
+        <div v-html="grid_panel_content"></div>
+        <div v-html="grid_panel_content_2"></div>
         <uids-button
             :button_link="button_link"
             button_type="bttn bttn--secondary bttn--caps"
