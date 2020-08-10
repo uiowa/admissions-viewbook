@@ -13,9 +13,22 @@
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
       </div>
-      <div v-if="grid_content_position=='second'">
+      <template v-if="grid_content_position=='second' && image!==''">
         <img :src="image" class="grid-panel__img" alt="">
-      </div>
+      </template>
+      <template v-else-if="grid_content_position=='second' && card_grid!==false">
+        <div class="card__wrapper">
+          <template v-for="(area, index) in areas_of_study">
+            <hero :key="index"
+                  :headline="area.headline"
+                  :image="area.image"
+                  :url="area.link_url"
+                  :class="getHeroClasses(index)"
+            >
+            </hero>
+          </template>
+        </div>
+      </template>
     </div>
     <div :class="grid_panel_second_column">
       <div v-if="grid_content_position=='second'">
@@ -33,9 +46,22 @@
             :button_icon="true">
         </uids-button>
       </div>
-      <div v-if="grid_content_position=='first'">
+      <template v-if="grid_content_position=='first' && image!==''">
         <img :src="image" class="grid-panel__img" alt="">
-      </div>
+      </template>
+      <template v-else-if="grid_content_position=='first' && card_grid!==false">
+        <div class="card__wrapper">
+          <template v-for="(area, index) in areas_of_study">
+            <hero :key="index"
+                  :headline="area.headline"
+                  :image="area.image"
+                  :url="area.link_url"
+                  :is_last="index+1 === areas_of_study.length"
+            >
+            </hero>
+          </template>
+        </div>
+      </template>
     </div>
   </div>
 </template>
@@ -43,11 +69,28 @@
 <script>
 import Headline from './headline.vue';
 import uidsButton from './uidsButton.vue';
+import Hero from './Hero.vue';
 export default {
-    props: ['grid_panel_type',  'button_text', 'button_link', 'grid_panel_first_column', 'grid_panel_second_column', 'grid_panel_content', 'grid_panel_content_2', 'grid_content_position', 'headline', 'image', 'link_url'],
+    props: [
+      'grid_panel_type',
+      'button_text',
+      'button_link',
+      'grid_panel_first_column',
+      'grid_panel_second_column',
+      'grid_panel_content',
+      'grid_panel_content_2',
+      'grid_content_position',
+      'headline',
+      'image',
+      'link_url',
+      'card_grid',
+      'areas_of_study'
+    ],
     components: {
         Headline,
         uidsButton,
+        Hero
+
     },
 }
 </script>

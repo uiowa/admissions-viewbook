@@ -4,17 +4,6 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="hero-banner"></div>
   </div>
-  <div class="card__wrapper">
-    <template v-for="(area, index) in areas_of_study">
-      <hero :key="index"
-            :headline="area.headline"
-            :image="area.image"
-            :url="area.link_url"
-            :class="getHeroClasses(index)"
-      >
-      </hero>
-    </template>
-  </div>
 
   <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
     <div class="cta-row__container">
@@ -76,6 +65,8 @@
             grid_content_position= "first"
             grid_panel_content='<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
 	          grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+            :card_grid = 'true'
+            :areas_of_study = 'areas_of_study'
       >
       </grid-panel>
 
@@ -613,13 +604,6 @@ export default {
     }
   },
   methods: {
-    getHeroClasses(index) {
-      let classes = 'hero--solid-opacity hero--large hero--row hero--vertical-bottom hero--horizontal-left';
-      if (index+1 >= this.areas_of_study.length) {
-        classes += ' bg-pattern--brain-black';
-      }
-      return classes;
-    }
   }
 }
 </script>

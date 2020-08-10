@@ -1,5 +1,5 @@
 <template>
-    <div class="hero">
+    <div :class="getHeroClasses(is_last)">
         <div class="hero__image">
             <img :src="image" alt="">
         </div>
@@ -20,9 +20,19 @@
 import Headline from './headline.vue';
 
 export default {
-    props: ['headline', 'image', 'link_url'],
+    props: ['headline', 'image', 'link_url', 'is_last'],
     components: {
         Headline,
+    },
+    methods: {
+        getHeroClasses(is_last) {
+            console.log(is_last);
+            let classes = 'hero hero--solid-opacity hero--large hero--row hero--vertical-bottom hero--horizontal-left';
+            if (is_last) {
+                classes += ' bg-pattern--brain-black';
+            }
+            return classes;
+        }
     }
 }
 </script>
