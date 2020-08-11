@@ -157,7 +157,7 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="iowa-city"></div>
   </div>
-  {% render '@aerial' %}
+  <Aerial></Aerial>
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="student-life"></div>
@@ -532,6 +532,7 @@ import GridPanel from './components/GridPanel.vue';
 import headline from './components/headline.vue';
 import verticalDots from './components/verticalDots.vue';
 import uidsButton from './components/uidsButton.vue';
+import Aerial from './components/Aerial.vue';
 
 export default {
   name: 'App',
@@ -543,6 +544,7 @@ export default {
     verticalDots,
     GridPanel,
     uidsButton,
+    Aerial
   },
   data() {
     return {
