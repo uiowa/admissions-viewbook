@@ -26,7 +26,6 @@ export default {
     },
     methods: {
         getHeroClasses(is_last) {
-            console.log(is_last);
             let classes = 'hero hero--solid-opacity hero--large hero--row hero--vertical-bottom hero--horizontal-left';
             if (is_last) {
                 classes += ' bg-pattern--brain-black';

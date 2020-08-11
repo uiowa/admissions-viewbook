@@ -1,5 +1,12 @@
 <template>
-  <iowa-bar></iowa-bar>
+  <iowa-bar
+    iowa_bar_classes="iowa-bar--narrow"
+    :parent_site = "
+      {
+        name: ''
+      }
+    "
+  ></iowa-bar>
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="hero-banner"></div>
