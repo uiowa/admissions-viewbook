@@ -1,11 +1,6 @@
 <template>
   <iowa-bar
     iowa_bar_classes="iowa-bar--narrow"
-    :parent_site = "
-      {
-        name: ''
-      }
-    "
   ></iowa-bar>
 
   <div class="v-dots-scroll-spacer">
@@ -610,7 +605,8 @@ export default {
       ],
     }
   },
-  methods: {
+  created() {
+    document.querySelector('body').classList.add('header-sticky');
   }
 }
 </script>
