@@ -9,9 +9,9 @@
 
   <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
     <div class="cta-row__container">
-      {% include "@menu" with {
-        items : link_bttn.items | slice(0, 4)
-      } %}
+      <menuGroup
+        :items="menu_items"
+      ></menuGroup>
     </div>
   </div>
 
@@ -461,6 +461,7 @@ import headline from './components/headline.vue';
 import verticalDots from './components/verticalDots.vue';
 import uidsButton from './components/uidsButton.vue';
 import Aerial from './components/Aerial.vue';
+import menuGroup from './components/menuGroup.vue';
 
 export default {
   name: 'App',
@@ -472,7 +473,8 @@ export default {
     verticalDots,
     GridPanel,
     uidsButton,
-    Aerial
+    Aerial,
+    menuGroup
   },
   data() {
     return {
@@ -532,6 +534,28 @@ export default {
           stat_description: 'UNDERGRADS PARTICIPATE IN RESEARCH',
           stat_content: 'Gain experience now.',
         }
+      ],
+      menu_items: [
+        {
+          text: 'Apply Now',
+          url: 'https://admissions.uiowa.edu/apply/first-year-student-application-process',
+          item_class: 'bttn bttn--outline bttn--tertiary bttn--transparent bttn--caps bttn--apply'
+        },
+        {
+          text:  'Schedule a Visit',
+          url: 'https://admissions.uiowa.edu/visit-campus',
+          item_class: 'bttn bttn--outline bttn--tertiary bttn--transparent bttn--caps bttn--visit'
+        },
+        {
+          text: 'Contact Us',
+          url: 'https://admissions.uiowa.edu/contact-us',
+          item_class: 'bttn bttn--outline bttn--tertiary bttn--transparent bttn--caps bttn--ask'
+        },
+        {
+          text: 'Request Information',
+          url: 'https://www.maui.uiowa.edu/maui/pub/admissions/webinquiry/undergraduate.page',
+          item_class: 'bttn bttn--outline bttn--tertiary bttn--transparent bttn--caps bttn--connect'
+        },
       ],
     }
   },
