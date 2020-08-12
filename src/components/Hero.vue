@@ -36,6 +36,6 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
     @import '../../node_modules/@uiowa/uids/src/components/hero/hero.scss';
 </style>

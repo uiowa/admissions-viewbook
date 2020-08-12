@@ -613,7 +613,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
