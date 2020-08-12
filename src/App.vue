@@ -56,102 +56,52 @@
   </div>
 
  <grid-panel
-            link_url= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
-            image= ''
-            headline= '200+ Areas<br /> of Study'
-            button_text= 'View Academic Opportunities'
-            button_link= 'https://admissions.uiowa.edu/academics/academics'
-            grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-            grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
-            grid_panel_second_column= 'grid-panel__column-image-right'
-            grid_content_position= 'first'
-            grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
-	          grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
-            :card_grid = 'true'
-            :areas_of_study = 'areas_of_study'
-      >
-      </grid-panel>
+    link_url= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
+    image= ''
+    headline= '200+ Areas<br /> of Study'
+    button_text= 'View Academic Opportunities'
+    button_link= 'https://admissions.uiowa.edu/academics/academics'
+    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+    grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
+    grid_panel_second_column= 'grid-panel__column-image-right'
+    grid_content_position= 'first'
+    grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
+    grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+    :card_grid = 'true'
+    :areas_of_study = 'areas_of_study'
+  >
+  </grid-panel>
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="academic-opportunities"></div>
   </div>
-
-
-      <grid-panel
-            link_url= 'https://admissions.uiowa.edu/academics/academics'
-            image= 'src/assets/images/viewbook/sections/0315.jpg'
-            headline= 'We Work <span>Together</span>'
-            button_text= 'View Academic Opportunities'
-            button_link= 'https://admissions.uiowa.edu/academics/academics'
-            grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-            grid_panel_first_column= 'grid-panel__column-image-left'
-            grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
-            grid_content_position= 'second'
-            grid_panel_content= '<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
-	          grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
-      >
-      </grid-panel>
-
-
-
-      <div class="card__wrapper">
-  {% for item in hero_row.items | slice(0, 12) %}
-    {% include '@hero' with {
-        'hero_title_classes': hero_title_classes,
-        'hero_vertical_alignment': hero_vertical_alignment,
-        'hero_horizontal_alignment': hero_horizontal_alignment,
-        'hero_title': item.hero_title,
-        'hero_text': item.hero_text,
-        'hero_image': item.hero_image,
-        'hero_type': hero_type,
-        'hero_size': hero_size,
-        'hero_overlay': hero_overlay,
-        'hero_classes': item.hero_classes,
-        'hero_link_url': item.hero_link_url,
-        'hero_link_title': item.hero_link_title,
-        'hero_link_classes': item.hero_link_classes,
-      } %}
-  {% endfor %}
-      </div>
-
-
-
-
-  <div class="asymmetrical-grid">
-    <div class="asymmetrical-grid__image-left">
-      <img class="card__img" src="src/assets/images/viewbook/sections/0315.jpg" alt="Alt Text">
-    </div>
-    <div class="asymmetrical-grid__content-right grid__content">
-      <headline
-          heading_level= "h2"
-          heading_class= "bold-headline--caps bold-headline"
-          heading= "We Work <span>Together</span>"
-      />
-      <p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>
-      <p>How many universities have both a state-of-the-art children’s hospital and
-      a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>
-
-      <a href="https://admissions.uiowa.edu/academics/academics" class="bttn bttn--secondary bttn--caps">
-        View Academic Opportunities
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-  </div>
-
+  <grid-panel
+    link_url= 'https://admissions.uiowa.edu/academics/academics'
+    image= 'src/assets/images/viewbook/sections/0315.jpg'
+    headline= 'We Work <span>Together</span>'
+    button_text= 'View Academic Opportunities'
+    button_link= 'https://admissions.uiowa.edu/academics/academics'
+    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+    grid_panel_first_column= 'grid-panel__column-image-left'
+    grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
+    grid_content_position= 'second'
+    grid_panel_content= '<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
+    grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+  >
+  </grid-panel>
 
   <div class="stat__wrapper bg--black">
-
     <template v-for="(stat, index) in stats_1">
-      <stat :key="index"
-            :headline="stat.headline"
-            :heading_prefix="stat.heading_prefix"
-            :heading_suffix="stat.heading_suffix"
-            :stat_description="stat.stat_description"
-            :stat_content="stat.stat_content"
+      <stat 
+        :key="index"
+        :headline="stat.headline"
+        :heading_prefix="stat.heading_prefix"
+        :heading_suffix="stat.heading_suffix"
+        :stat_description="stat.stat_description"
+        :stat_content="stat.stat_content"
       >
       </stat>
     </template>
-
   </div>
 
   <div class="v-dots-scroll-spacer">
@@ -162,73 +112,51 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="student-life"></div>
   </div>
-  <div class="asymmetrical-grid">
-
-  <div class="asymmetrical-grid__content-left grid__content">
-    <headline
-      heading_level= "h2"
-      heading_class= "bold-headline--caps bold-headline"
-      heading= "MAKE <span>30,000</span> NEW FRIENDS"
-    />
-  <p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>
-  <a href="https://admissions.uiowa.edu/student-life/student-life" class="bttn bttn--secondary bttn--caps">
-
-      View Student Life
-
-      <i class="fas fa-arrow-right"></i>
-    </a>
-
-  </div>
-
-  <div class="asymmetrical-grid__image-right">
-    <img class="card__img" src="src/assets/images/viewbook/sections/1304.jpg" alt="Alt Text">
-  </div>
-  </div>
-
-
-
-
+  <grid-panel
+    link_url= 'https://admissions.uiowa.edu/student-life/student-life'
+    image= 'src/assets/images/viewbook/sections/1304.jpg'
+    headline= 'MAKE <span>30,000</span> NEW FRIENDS'
+    button_text= 'View Student Life'
+    button_link= 'https://admissions.uiowa.edu/student-life/student-life'
+    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+    grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
+    grid_panel_second_column= 'grid-panel__column-image-right'
+    grid_content_position= 'first'
+    grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
+    grid_panel_content_2= ''
+  >
+  </grid-panel>
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="student-outcomes"></div>
   </div>
-  <div class="asymmetrical-grid">
-
-  <div class="asymmetrical-grid__image-left">
-
-    <img class="card__img" src="src/assets/images/viewbook/sections/1961.jpg" alt="Alt Text">
-  </div>
-
-  <div class="asymmetrical-grid__content-right grid__content">
-    <headline
-      heading_level= "h2"
-      heading_class= "bold-headline--caps bold-headline"
-      heading= "Make an <span>Impact</span>"
-    />
-  <p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>
-
-  <a href="https://stories.uiowa.edu/student-outcomes" class="bttn bttn--secondary bttn--caps">
-    View Student Outcomes
-    <i class="fas fa-arrow-right"></i>
-  </a>
-  </div>
-  </div>
-
-
+  <grid-panel
+    link_url= 'https://stories.uiowa.edu/student-outcomes'
+    image= 'src/assets/images/viewbook/sections/1961.jpg'
+    headline= 'Make an <span>Impact</span>'
+    button_text= 'View Student Outcomes'
+    button_link= 'https://stories.uiowa.edu/student-outcomes'
+    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+    grid_panel_first_column= 'grid-panel__column-image-left'
+    grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
+    grid_content_position= 'second'
+    grid_panel_content= '<p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>'
+    grid_panel_content_2= ''
+  >
+  </grid-panel>
 
   <div class="stat__wrapper bg--black">
-
     <template v-for="(stat, index) in stats_1">
-      <stat :key="index"
-            :headline="stat.headline"
-            :heading_prefix="stat.heading_prefix"
-            :heading_suffix="stat.heading_suffix"
-            :stat_description="stat.stat_description"
-            :stat_content="stat.stat_content"
+      <stat 
+        :key="index"
+        :headline="stat.headline"
+        :heading_prefix="stat.heading_prefix"
+        :heading_suffix="stat.heading_suffix"
+        :stat_description="stat.stat_description"
+        :stat_content="stat.stat_content"
       >
       </stat>
     </template>
-
   </div>
 
 
