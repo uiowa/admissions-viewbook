@@ -163,8 +163,8 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="apply"></div>
   </div>
-  <div class="split-grid">
-  <div class="split-grid__column grid__content">
+  <div class="grid-panel grid-panel--split">
+  <div class="grid-panel__column grid-panel__content">
     <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
@@ -288,7 +288,7 @@
 
   </div>
 
-  <div class="split-grid__column grid__content">
+  <div class="grid-panel__column grid-panel__content">
 
 
   <ol class="element--circle-list counter-increment">
@@ -569,4 +569,5 @@ export default {
   $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
+  @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
 </style>
