@@ -586,6 +586,9 @@ export default {
 
 <style lang="scss">
   $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
+  @import '../node_modules/@uiowa/uids/src/components/typography/lists/lists.scss';
+  @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
+  @import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
   @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
