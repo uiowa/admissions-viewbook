@@ -6,7 +6,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@uiowa/uids": "uiowa/uids#8b2490f",
+    "@uiowa/uids": "uiowa/uids#ddd9032",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
