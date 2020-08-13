@@ -35,38 +35,7 @@
   </div>
 
   <verticalDots
-    :sections = "
-      [
-        {
-          section_title: 'Back to Top',
-          section_id: 'hero-banner'
-        },
-        {
-          section_title: 'Areas of Study',
-          section_id: 'areas-of-study'
-        },
-        {
-          section_title: 'Acdemic Opportunities',
-          section_id: 'academic-opportunities'
-        },
-        {
-          section_title: 'Iowa City',
-          section_id: 'iowa-city'
-        },
-        {
-          section_title: 'Student Life',
-          section_id: 'student-life'
-        },
-        {
-          section_title: 'Student Outcomes',
-          section_id: 'student-outcomes'
-        },
-        {
-          section_title: 'How to Apply',
-          section_id: 'apply'
-        },
-      ]
-    "
+    :sections="v_dots_sections"
   >
   </verticalDots>
 
@@ -576,6 +545,36 @@ export default {
           item_class: 'bttn bttn--outline bttn--tertiary bttn--transparent bttn--caps bttn--connect'
         },
       ],
+      v_dots_sections: [
+        {
+          section_title: 'Back to Top',
+          section_id: 'hero-banner'
+        },
+        {
+          section_title: 'Areas of Study',
+          section_id: 'areas-of-study'
+        },
+        {
+          section_title: 'Acdemic Opportunities',
+          section_id: 'academic-opportunities'
+        },
+        {
+          section_title: 'Iowa City',
+          section_id: 'iowa-city'
+        },
+        {
+          section_title: 'Student Life',
+          section_id: 'student-life'
+        },
+        {
+          section_title: 'Student Outcomes',
+          section_id: 'student-outcomes'
+        },
+        {
+          section_title: 'How to Apply',
+          section_id: 'apply'
+        },
+      ]
     }
   },
   created() {
