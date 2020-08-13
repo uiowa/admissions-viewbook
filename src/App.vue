@@ -9,8 +9,8 @@
   <hero
     image="src/assets/images/widescreen__2592_x_1458/pano.jpg"
     hero_size="large"
-    hero_vertical_alignment="hero--vertical-center"
-    hero_horizontal_alignment="hero--horizontal-center"
+    hero_vertical_alignment="vertical-center"
+    hero_horizontal_alignment="horizontal-center"
     hero_classes="bg--black"
     hero_type="image"
     hero_overlay= "gradient-center"
