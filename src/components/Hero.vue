@@ -5,12 +5,14 @@
         </div>
         <div class="hero__container">
             <div class="hero__content">
-                <headline v-if="headline"
-                          heading_level="h2"
-                          class="bold-headline--caps bold-headline bold-headline--highlight"
-                          :heading="headline"
-                          :heading_url="link_url"
+                <headline 
+                    v-if="hero_title"
+                    heading_level="h2"
+                    :class="hero_title_classes"
+                    :heading="hero_title"
+                    :heading_url="link_url"
                 ></headline>
+                {{hero_text}}
             </div>
         </div>
     </div>
@@ -20,13 +22,25 @@
 import Headline from './headline.vue';
 
 export default {
-    props: ['headline', 'image', 'link_url', 'is_last'],
+    props: [
+        'image',
+        'link_url',
+        'is_last',
+        'hero_overlay',
+        'hero_size',
+        'hero_classes',
+        'hero_vertical_alignment',
+        'hero_horizontal_alignment',
+        'hero_text',
+        'hero_title',
+        'hero_title_classes'
+        ],
     components: {
         Headline,
     },
     methods: {
-        getHeroClasses(is_last) {
-            let classes = 'hero hero--solid-opacity hero--large hero--row hero--vertical-bottom hero--horizontal-left';
+        getHeroClasses(is_last=false) {
+            let classes = 'hero hero--'+this.$props.hero_overlay+' hero--'+this.$props.hero_size+' '+this.$props.hero_classes+' hero--'+this.$props.hero_vertical_alignment+' hero--'+this.$props.hero_horizontal_alignment;
             if (is_last) {
                 classes += ' bg-pattern--brain-black';
             }

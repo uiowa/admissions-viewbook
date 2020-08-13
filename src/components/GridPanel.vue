@@ -19,11 +19,18 @@
       <template v-else-if="grid_content_position=='second' && card_grid!==false">
         <div class="card__wrapper">
           <template v-for="(area, index) in areas_of_study">
-            <hero :key="index"
-                  :headline="area.headline"
-                  :image="area.image"
-                  :url="area.link_url"
-                  :class="getHeroClasses(index)"
+            <hero
+              :key="index"
+              :hero_title="area.headline"
+              :image="area.image"
+              :url="area.link_url"
+              :is_last="index+1 === areas_of_study.length"
+              hero_overlay = "solid-opacity"
+              hero_size="large"
+              hero_classes="hero--row"
+              hero_vertical_alignment="vertical-bottom"
+              hero_horizontal_alignment="horizontal-left"
+              hero_title_classes="bold-headline--caps bold-headline bold-headline--highlight"
             >
             </hero>
           </template>
@@ -32,11 +39,12 @@
     </div>
     <div :class="grid_panel_second_column">
       <div v-if="grid_content_position=='second'">
-        <headline v-if="headline"
-                  heading_level="h2"
-                  class="bold-headline--caps bold-headline"
-                  :heading="headline">
-        </headline>
+        <headline 
+          v-if="headline"
+          heading_level="h2"
+          class="bold-headline--caps bold-headline"
+          :heading="headline"
+        ></headline>
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
         <uids-button
@@ -52,11 +60,18 @@
       <template v-else-if="grid_content_position=='first' && card_grid!==false">
         <div class="card__wrapper">
           <template v-for="(area, index) in areas_of_study">
-            <hero :key="index"
-                  :headline="area.headline"
-                  :image="area.image"
-                  :url="area.link_url"
-                  :is_last="index+1 === areas_of_study.length"
+            <hero
+              :key="index"
+              :hero_title="area.headline"
+              :image="area.image"
+              :url="area.link_url"
+              :is_last="index+1 === areas_of_study.length"
+              hero_overlay = "solid-opacity"
+              hero_size="large"
+              hero_classes="hero--row"
+              hero_vertical_alignment="vertical-bottom"
+              hero_horizontal_alignment="horizontal-left"
+              hero_title_classes="bold-headline--caps bold-headline bold-headline--highlight"
             >
             </hero>
           </template>
@@ -90,7 +105,6 @@ export default {
         Headline,
         uidsButton,
         Hero
-
     },
 }
 </script>

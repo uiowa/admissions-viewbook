@@ -6,6 +6,25 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="hero-banner"></div>
   </div>
+  <hero
+    image="src/assets/images/widescreen__2592_x_1458/pano.jpg"
+    hero_size="large"
+    hero_vertical_alignment="hero--vertical-center"
+    hero_horizontal_alignment="hero--horizontal-center"
+    hero_classes="bg--black"
+    hero_type="image"
+    hero_overlay= "gradient-center"
+    hero_text=''
+    hero_title='<span>Welcome</span> to Iowa'
+    hero_title_classes='bold-headline--caps bold-headline bold-headline--negative'
+
+  >
+  </hero>
+  <!-- {% include "@hero--default" with {
+    "hero_title": '<span>Welcome</span> to Iowa',
+    "hero_text": '',
+    "hero_title_classes": 'bold-headline--caps bold-headline bold-headline--negative',
+  } %} -->
 
   <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
     <div class="cta-row__container">
