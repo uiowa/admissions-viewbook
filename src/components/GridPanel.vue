@@ -7,11 +7,16 @@
                   heading_level="h2"
                   class="bold-headline--caps bold-headline"
                   :heading="headline"
-                  :heading_url="link_url">
-        </headline>
+        ></headline>
 
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
+         <uids-button
+            :button_link="button_link"
+            button_type="bttn bttn--secondary bttn--caps"
+            :button_text="button_text"
+            :button_icon="true">
+        </uids-button>
       </div>
       <template v-if="grid_content_position=='second' && image!==''">
         <img :src="image" class="grid-panel__img" alt="">
