@@ -169,219 +169,227 @@
     />
   <hr class="element--spacer-separator" />
 
-  <ol class="element--circle-list">
-    <li>
-      <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-        <span class="heading__heading">Complete the required high school courses.</span>
-      </h3>
+
+<ol class="element--circle-list">
+	<li>
+		<h3 class="bold-headline bold-headline--serif bold-headline--underline">
+			<span class="heading__heading">Complete the required high school courses.</span>
+		</h3>
 
 
-      <p>
-  <a href="https://admissions.uiowa.edu/academics-undergraduate-programs-undergraduate/minimum-high-school-course-requirements" class="bttn bttn--secondary bttn--caps">
+		<p>
+			<a href="https://admissions.uiowa.edu/academics-undergraduate-programs-undergraduate/minimum-high-school-course-requirements" class="bttn bttn--secondary bttn--caps">
 
-          View High School Course Requirements
-          <i class="fas fa-arrow-right"></i>
-        </a>
-      </p>
+				View High School Course Requirements
+				<i class="fas fa-arrow-right"></i>
+			</a>
+		</p>
 
-    </li>
-    <li>
+	</li>
+	<li>
 
-      <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-  <span class="heading__heading">Score 245 or higher on the Regent Admission Index.</span>
+		<h3 class="bold-headline bold-headline--serif bold-headline--underline">
+			<span class="heading__heading">Score 245 or higher on the Regent Admission Index.</span>
 
-      </h3>
+		</h3>
 
-      <p>Score 245 or higher on the Regent Admission Index.
-  The Regent Admission Index (RAI) is a formula used by all Iowa public universities to make admission a simpler,
-  more streamlined process. To calculate your RAI score, use the applicable formula below.
-  .</p>
+		<p>Score 245 or higher on the Regent Admission Index.
+			The Regent Admission Index (RAI) is a formula used by all Iowa public universities to make admission a simpler,
+			more streamlined process. To calculate your RAI score, use the applicable formula below.
+			.</p>
 
-  <p><strong>RAI FORMULA:</strong></p>
-    <ul>
-      <li>3 x ACT composite score or SAT equivalent</li>
-      <li>+ 30 x cumulative GPA</li>
-      <li>+ 5 x years of high school core courses complete</li>
-    </ul>
+		<p>
+			<strong>RAI FORMULA:</strong>
+		</p>
+		<ul>
+			<li>3 x ACT composite score or SAT equivalent</li>
+			<li>+ 30 x cumulative GPA</li>
+			<li>+ 5 x years of high school core courses complete</li>
+		</ul>
 
-    <p>
-  <a href="https://admissions.uiowa.edu/rai" class="bttn bttn--secondary bttn--caps">
+		<p>
+			<a href="https://admissions.uiowa.edu/rai" class="bttn bttn--secondary bttn--caps">
 
-        Calculate your RAI score
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </p>
+				Calculate your RAI score
+				<i class="fas fa-arrow-right"></i>
+			</a>
+		</p>
 
-  <p>
-    <strong>ACT and SAT Test Scores:</strong></p>
-    <p>We understand that COVID-19 has caused limited access to ACT and SAT tests this year. Any academic disruptions you experience will not keep you from becoming a Hawkeye. We encourage you to apply for admission even if you do not have a test score yet. An individual review process may be used to issue provisional admission decisions for students who do not have a test score. Per Iowa Board of Regents policy, a test score will be required at a later time to confirm the admission decision for those students.</p>
+		<p>
+			<strong>ACT and SAT Test Scores:</strong>
+		</p>
+		<p>We understand that COVID-19 has caused limited access to ACT and SAT tests this year. Any academic disruptions you experience will not keep you from becoming a Hawkeye. We encourage you to apply for admission even if you do not have a test score yet. An individual review process may be used to issue provisional admission decisions for students who do not have a test score. Per Iowa Board of Regents policy, a test score will be required at a later time to confirm the admission decision for those students.</p>
 
-  <p>
-    <a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
+		<p>
+			<a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
 
-      View Testing
-      <i class="fas fa-arrow-right"></i>
-    </a>
-  </p>
+				View Testing
+				<i class="fas fa-arrow-right"></i>
+			</a>
+		</p>
 
-  </li>
+	</li>
 
-  <li>
+	<li>
 
-    <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-      <span class="heading__heading">Meet the admission requirements for your college of choice.</span>
+		<h3 class="bold-headline bold-headline--serif bold-headline--underline">
+			<span class="heading__heading">Meet the admission requirements for your college of choice.</span>
 
-    </h3>
+		</h3>
 
-    <p>Admission requirements vary for each college that accepts first-year students.</p>
+		<p>Admission requirements vary for each college that accepts first-year students.</p>
 
-    <ul>
-      <li>College of Liberal Arts and Sciences</li>
-  <li>Tippie College of Business
-    <em>(direct admission)</em>
-  </li>
-  <li>College of Education
-    <em>(direct admission to the Elementary Teacher Education Program)</em>
-  </li>
+		<ul>
+			<li>College of Liberal Arts and Sciences</li>
+			<li>Tippie College of Business
+				<em>(direct admission)</em>
+			</li>
+			<li>College of Education
+				<em>(direct admission to the Elementary Teacher Education Program)</em>
+			</li>
 
-      <li>College of Engineering
-        <em>(direct admission)</em>
-      </li>
+			<li>College of Engineering
+				<em>(direct admission)</em>
+			</li>
 
-      <li>College of Nursing
-        <em>(direct admission)</em>
-      </li>
-  <li>College of Pharmacy
-    <em>(assured admission)</em>
-  </li>
+			<li>College of Nursing
+				<em>(direct admission)</em>
+			</li>
+			<li>College of Pharmacy
+				<em>(assured admission)</em>
+			</li>
 
-      <li>College of Public Health
-        <em>(direct admission)</em>
-      </li>
-    </ul>
+			<li>College of Public Health
+				<em>(direct admission)</em>
+			</li>
+		</ul>
 
-    <p>
-      <small>
-        <em>Students who do not meet all direct admission requirements for their specific college will be carefully considered on a case-by-case basis. Those who are not directly admitted to their desired college begin school as a CLAS student, applying to
-          their college of choice after completing prerequisite courses and earning a minimum GPA.</em>
-      </small>
-    </p>
-    <p>
-      <small>
-        <em>Colleges that do not accept first-year students directly include: Dentistry, Law, Pharmacy, Medicine, and the Graduate College.</em>
-      </small>
-    </p>
+		<p>
+			<small>
+				<em>Students who do not meet all direct admission requirements for their specific college will be carefully considered on a case-by-case basis. Those who are not directly admitted to their desired college begin school as a CLAS student, applying to
+					        their college of choice after completing prerequisite courses and earning a minimum GPA.</em>
+			</small>
+		</p>
+		<p>
+			<small>
+				<em>Colleges that do not accept first-year students directly include: Dentistry, Law, Pharmacy, Medicine, and the Graduate College.</em>
+			</small>
+		</p>
 
-    <p>
-      <a href="https://admissions.uiowa.edu/academics/first-year-admission" class="bttn bttn--secondary bttn--caps">
-        View Requirements
-        <i class="fas fa-arrow-right"></i>
-      </a>
-    </p>
+		<p>
+			<a href="https://admissions.uiowa.edu/academics/first-year-admission" class="bttn bttn--secondary bttn--caps">
+				View Requirements
+				<i class="fas fa-arrow-right"></i>
+			</a>
+		</p>
 
-  </li>
+	</li>
 
-  </ol>
+</ol>
 
   </div>
 
   <div class="grid-panel__column grid-panel__content">
 
 
-  <ol class="element--circle-list counter-increment">
-  <li>
-    <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-      <span class="heading__heading">Submit your FAFSA and explore financial aid.</span>
-    </h3>
-  <hr class="element--spacer-separator"/>
-    <table class="table is-striped">
-      <caption class="element-invisible">Finances</caption>
-      <thead>
-        <tr>
-          <th>Finances</th>
-          <th>Cost</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Iowa residents</strong></td>
-          <td>
-            <strong>$9,830*</strong>
-          </td>
-      </tr>
+<ol class="element--circle-list counter-increment">
+<li>
+  <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+    <span class="heading__heading">Submit your FAFSA and explore financial aid.</span>
+  </h3>
+<hr class="element--spacer-separator"/>
+  <table class="table is-striped">
+    <caption class="element-invisible">Finances</caption>
+    <thead>
       <tr>
-        <td><strong>Nonresidents</strong></td>
+        <th>Finances</th>
+        <th>Cost</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Iowa residents</strong></td>
         <td>
-          <strong>$31,793*</strong>
+          <strong>$9,830*</strong>
         </td>
-    </tr>
-    <tr>
-      <td><strong>Standard housing and meal plans</strong></td>
-      <td>
-        <strong>$11,590 **</strong>
       </td>
     </tr>
-  </tbody>
-  </table>
+    <tr>
+      <td><strong>Nonresidents</strong></td>
+      <td>
+        <strong>$31,793*</strong>
+      </td>
+    </td>
+  </tr>
+  <tr>
+    <td><strong>Standard housing and meal plans</strong></td>
+    <td>
+      <strong>$11,590 **</strong>
+    </td>
+  </tr>
+</tbody>
+</table>
 
-  <p>
-  <small>* Tuition and fees vary by academic program. Tuition and fees listed include a one-time University Records and Documents Fee of $225 for new students.<br/>** Based on a weighted room average and unlimited (Gold) meal plan</small>
+<p>
+<small>* Tuition and fees vary by academic program. Tuition and fees listed include a one-time University Records and Documents Fee of $225 for new students.<br/>** Based on a weighted room average and unlimited (Gold) meal plan</small>
 
 
-  </p>
+</p>
 
-  <p>
-  <a href="http://financialaid.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+<p>
+<a href="http://financialaid.uiowa.edu" class="bttn bttn--secondary bttn--caps">
 
-    Financial Aid
-    <i class="fas fa-arrow-right"></i>
-  </a>
-  </p>
-  <p>Submit the
-  <strong>Free Application for Federal Student Aid (FAFSA)</strong>
-  early to maximize your available assistance.</p>
+  Financial Aid
+  <i class="fas fa-arrow-right"></i>
+</a>
+</p>
+<p>Submit the
+<strong>Free Application for Federal Student Aid (FAFSA)</strong>
+early to maximize your available assistance.</p>
 
-  <p>
-  <a href="https://admissions.uiowa.edu/finances/scholarships" class="bttn bttn--secondary bttn--caps">
+<p>
+<a href="https://admissions.uiowa.edu/finances/scholarships" class="bttn bttn--secondary bttn--caps">
 
-    Scholarships
-    <i class="fas fa-arrow-right"></i>
-  </a>
-  </p>
-  <p>We offer a wide variety of scholarships and grants.</p>
+  Scholarships
+  <i class="fas fa-arrow-right"></i>
+</a>
+</p>
+<p>We offer a wide variety of scholarships and grants.</p>
 
-  </li>
+</li>
 
-  <li>
+<li>
 
-  <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-  <span class="heading__heading">Apply for housing and dining.</span>
-  </h3>
+<h3 class="bold-headline bold-headline--serif bold-headline--underline">
+<span class="heading__heading">Apply for housing and dining.</span>
+</h3>
 
-  <p>Access the housing application through your admissions profile on
-  <a data-cke-saved-href="https://myui.uiowa.edu" href="https://myui.uiowa.edu">myui.uiowa.edu</a>
-  and pay the nonrefundable $75 housing application fee.
-  <br></p>
-  <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 3, 2021 for the opportunity to request a roommate and select your room.</p>
+<p>Access the housing application through your admissions profile on
+<a data-cke-saved-href="https://myui.uiowa.edu" href="https://myui.uiowa.edu">myui.uiowa.edu</a>
+and pay the nonrefundable $75 housing application fee.
+<br></p>
+<p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 3, 2021 for the opportunity to request a roommate and select your room.</p>
 
-  <p>
-  <a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+</p>
 
-    Housing Information
-    <i class="fas fa-arrow-right"></i>
-  </a>
-  </p>
+<p>
+<a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
 
-  <p>
-  <a href="http://dining.uiowa.edu" class="bttn bttn--secondary bttn--caps">
-    Dining Information
-    <i class="fas fa-arrow-right"></i>
-  </a>
-  </p>
+  Housing Information
+  <i class="fas fa-arrow-right"></i>
+</a>
+</p>
 
-  </li>
+<p>
+<a href="http://dining.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+  Dining Information
+  <i class="fas fa-arrow-right"></i>
+</a>
+</p>
 
-  </ol>
+</li>
+
+</ol>
 
   </div>
   </div>
@@ -538,14 +546,14 @@ export default {
           stat_description: 'BEST PUBLIC UNIVERSITY BY U.S. NEWS & WORLD REPORT',
           stat_content: 'Among the top 2% of universities worldwide.',
         },
-         {
+        {
           headline: '15:1',
           heading_prefix: '',
           heading_suffix: '',
           stat_description: 'STUDENT-TO-FACULTY RATIO',
           stat_content: 'Get to know your professors.',
         },
-         {
+        {
           headline: '23',
           heading_prefix: '',
           heading_suffix: '',
