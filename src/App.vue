@@ -20,19 +20,14 @@
 
   >
   </hero>
-  <!-- {% include "@hero--default" with {
-    "hero_title": '<span>Welcome</span> to Iowa',
-    "hero_text": '',
-    "hero_title_classes": 'bold-headline--caps bold-headline bold-headline--negative',
-  } %} -->
 
-  <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
+  <!-- <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
     <div class="cta-row__container">
       <menuGroup
-        :items="menu_items"
+        :items="cta_menu_items"
       ></menuGroup>
     </div>
-  </div>
+  </div> -->
 
   <verticalDots
     :sections="v_dots_sections"
@@ -423,20 +418,10 @@
 
   </div>
 
-
-
-
-
-
-  {% embed '@footer' %}
-
-
-  {% endembed %}
-
-
-
-
-
+  <footerSection
+    :contact_info="contact_info"
+    :social_media_links="social_media_links"
+  ></footerSection>
 
 </template>
 
@@ -450,6 +435,7 @@ import verticalDots from './components/verticalDots.vue';
 import uidsButton from './components/uidsButton.vue';
 import Aerial from './components/Aerial.vue';
 import menuGroup from './components/menuGroup.vue';
+import footerSection from './components/footerSection.vue';
 
 export default {
   name: 'App',
@@ -462,7 +448,8 @@ export default {
     GridPanel,
     uidsButton,
     Aerial,
-    menuGroup
+    menuGroup,
+    footerSection
   },
   data() {
     return {
@@ -523,7 +510,7 @@ export default {
           stat_content: 'Gain experience now.',
         }
       ],
-      menu_items: [
+      cta_menu_items: [
         {
           text: 'Apply Now',
           url: 'https://admissions.uiowa.edu/apply/first-year-student-application-process',
@@ -574,6 +561,29 @@ export default {
           section_title: 'How to Apply',
           section_id: 'apply'
         },
+      ],
+      contact_info: '<p>Iowa City, Iowa 52242<br><a href="tel:319-335-3847"><i class="fas fa-phone"></i> 319-335-3847</a><br /></p>',
+      social_media_links: [
+        {
+          text: 'Facebook',
+          url: 'http://www.facebook.com/admissions.office',
+          icon_class: 'fab fa-facebook-square'
+        },
+        {
+          text: 'Instagram',
+          url: 'http://instagram.com/iowaadmissions',
+          icon_class: 'fab fa-instagram'
+        },
+        {
+          text:  'Twitter',
+          url: 'https://twitter.com/iowaadmissions',
+          icon_class: 'fab fa-twitter-square'
+        },
+        {
+          text: 'Youtube',
+          url: 'http://www.youtube.com/uiowaadmissions',
+          icon_class: 'fab fa-youtube'
+        }
       ]
     }
   },
