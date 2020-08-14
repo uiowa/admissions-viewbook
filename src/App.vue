@@ -17,17 +17,16 @@
     hero_text=''
     hero_title='<span>Welcome</span> to Iowa'
     hero_title_classes='bold-headline--caps bold-headline bold-headline--negative'
-
   >
   </hero>
 
-  <!-- <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
+  <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
     <div class="cta-row__container">
       <menuGroup
         :items="cta_menu_items"
       ></menuGroup>
     </div>
-  </div> -->
+  </div>
 
   <verticalDots
     :sections="v_dots_sections"
@@ -312,14 +311,12 @@
         <td>
           <strong>$9,830*</strong>
         </td>
-      </td>
     </tr>
     <tr>
       <td><strong>Nonresidents</strong></td>
       <td>
         <strong>$31,793*</strong>
       </td>
-    </td>
   </tr>
   <tr>
     <td><strong>Standard housing and meal plans</strong></td>
@@ -369,8 +366,6 @@ early to maximize your available assistance.</p>
 and pay the nonrefundable $75 housing application fee.
 <br></p>
 <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 3, 2021 for the opportunity to request a roommate and select your room.</p>
-
-</p>
 
 <p>
 <a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
@@ -717,6 +712,7 @@ export default {
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
-  @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
   @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
+  @import '../node_modules/@uiowa/uids/src/components/card/card.scss';
+  @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
 </style>
