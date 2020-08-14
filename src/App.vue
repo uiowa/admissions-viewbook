@@ -80,7 +80,7 @@
 
   <div class="stat__wrapper bg--black">
     <template v-for="(stat, index) in stats_1">
-      <stat 
+      <stat
         :key="index"
         :headline="stat.headline"
         :heading_prefix="stat.heading_prefix"
@@ -117,7 +117,7 @@
 
    <div class="stat__wrapper bg--black">
     <template v-for="(stat, index) in stats_2">
-      <stat 
+      <stat
         :key="index"
         :headline="stat.headline"
         :heading_prefix="stat.heading_prefix"
@@ -149,7 +149,7 @@
 
   <div class="stat__wrapper bg--black">
     <template v-for="(stat, index) in stats_3">
-      <stat 
+      <stat
         :key="index"
         :headline="stat.headline"
         :heading_prefix="stat.heading_prefix"
@@ -446,7 +446,6 @@
 
 
   {% endembed %}
-
 
 
 
