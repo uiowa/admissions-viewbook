@@ -5,14 +5,21 @@
         </div>
         <div class="hero__container">
             <div class="hero__content">
-                <headline 
+                <headline
                     v-if="hero_title"
                     heading_level="h2"
                     :class="hero_title_classes"
                     :heading="hero_title"
                     :heading_url="link_url"
                 ></headline>
-                {{hero_text}}
+                 <div v-html="hero_text"></div>
+                 <uids-button
+                    v-if="button_text"
+                    :button_link="button_link"
+                    button_type="bttn bttn--secondary bttn--caps"
+                    :button_text="button_text"
+                    :button_icon="true">
+                </uids-button>
             </div>
         </div>
     </div>
@@ -20,6 +27,7 @@
 
 <script>
 import Headline from './headline.vue';
+import uidsButton from './uidsButton.vue';
 
 export default {
     props: [
@@ -33,10 +41,13 @@ export default {
         'hero_horizontal_alignment',
         'hero_text',
         'hero_title',
-        'hero_title_classes'
+        'hero_title_classes',
+        'button_link',
+        'button_text'
         ],
     components: {
         Headline,
+        uidsButton
     },
     methods: {
         getHeroClasses(is_last=false) {

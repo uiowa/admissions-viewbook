@@ -538,7 +538,8 @@ export default {
         {
           headline: '',
           image: '',
-          link_url: 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study',
+          button_text: 'Browse by Major',
+          button_link: 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study',
         }
       ],
       stats_1: [
