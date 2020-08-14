@@ -42,14 +42,14 @@
     link_url= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
     image= ''
     headline= '200+ Areas<br /> of Study'
-    button_text= 'View Academic Opportunities'
-    button_link= 'https://admissions.uiowa.edu/academics/academics'
+    button_text= 'View Areas of Study'
+    button_link= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
     grid_panel_type= 'grid-panel grid-panel--asymmetrical'
     grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
     grid_panel_second_column= 'grid-panel__column-image-right'
     grid_content_position= 'first'
     grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
-    grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+    grid_panel_content_2= ''
     :card_grid = 'true'
     :areas_of_study = 'areas_of_study'
   >
@@ -75,7 +75,7 @@
 
   <div class="stat__wrapper bg--black">
     <template v-for="(stat, index) in stats_1">
-      <stat 
+      <stat
         :key="index"
         :headline="stat.headline"
         :heading_prefix="stat.heading_prefix"
@@ -110,6 +110,20 @@
   >
   </grid-panel>
 
+   <div class="stat__wrapper bg--black">
+    <template v-for="(stat, index) in stats_2">
+      <stat
+        :key="index"
+        :headline="stat.headline"
+        :heading_prefix="stat.heading_prefix"
+        :heading_suffix="stat.heading_suffix"
+        :stat_description="stat.stat_description"
+        :stat_content="stat.stat_content"
+      >
+      </stat>
+    </template>
+  </div>
+
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="student-outcomes"></div>
   </div>
@@ -129,8 +143,8 @@
   </grid-panel>
 
   <div class="stat__wrapper bg--black">
-    <template v-for="(stat, index) in stats_1">
-      <stat 
+    <template v-for="(stat, index) in stats_3">
+      <stat
         :key="index"
         :headline="stat.headline"
         :heading_prefix="stat.heading_prefix"
@@ -456,28 +470,64 @@ export default {
       areas_of_study: [
         {
           headline: 'Business, Economics, and Management',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/1.jpg',
+          image: 'src/assets/images/viewbook/areas/1.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/biz-econ-mgmt',
         },
         {
           headline: 'Education',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/2.jpg',
+          image: 'src/assets/images/viewbook/areas/2.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/edu',
         },
         {
           headline: 'Engineering and Computing',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/3.jpg',
+          image: 'src/assets/images/viewbook/areas/3.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/engr-comp',
         },
         {
           headline: 'Health Sciences',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/4.jpg',
+          image: 'src/assets/images/viewbook/areas/4.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/health-sci',
+        },
+        {
+          headline: 'Languages, culture, and society',
+          image: 'src/assets/images/viewbook/areas/5.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/lang-cult-soc',
+        },
+        {
+          headline: 'Life and natural sciences',
+          image: 'src/assets/images/viewbook/areas/6.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/life-nat-sci',
+        },
+        {
+          headline: 'Math and quantitative sciences',
+          image: 'src/assets/images/viewbook/areas/7.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/math-quant-sci',
+        },
+        {
+          headline: 'Preprofessional programs',
+          image: 'src/assets/images/viewbook/areas/8.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/preprofessional',
+        },
+        {
+          headline: 'Social sciences and policy',
+          image: 'src/assets/images/viewbook/areas/9.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/soc-sci-pol',
+        },
+        {
+          headline: 'Visual and performing arts',
+          image: 'src/assets/images/viewbook/areas/10.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/vis-perf-arts',
+        },
+        {
+          headline: 'Writing, communications, literature, and media',
+          image: 'src/assets/images/viewbook/areas/11.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/write-comm-media',
         },
         {
           headline: '',
           image: '',
-          link_url: 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study',
+          button_text: 'Browse by Major',
+          button_link: 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study',
         }
       ],
       stats_1: [
@@ -508,6 +558,66 @@ export default {
           heading_suffix: '',
           stat_description: 'UNDERGRADS PARTICIPATE IN RESEARCH',
           stat_content: 'Gain experience now.',
+        }
+      ],
+      stats_2: [
+        {
+          headline: '500',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'STUDENT<br />  ORGANIZATIONS',
+          stat_content: 'Or, start your own.',
+        },
+         {
+          headline: '100',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'RESTAURANTS AND<br />  CAFÉS',
+          stat_content: 'From vegan brunch to pie shakes.',
+        },
+         {
+          headline: '400',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'ARTS PERFORMANCES Available EACH YEAR',
+          stat_content: 'For $5 or less.',
+        },
+        {
+          headline: '24',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'NCAA DIVISION I<br />  TEAMS',
+          stat_content: 'There’s nothing like a Hawkeye game.',
+        }
+      ],
+      stats_3: [
+        {
+          headline: '95',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'OVERALL JOB/GRADUATE SCHOOL PLACEMENT RATE',
+          stat_content: 'Business <strong>97%</strong><br />Education <strong>91%</strong><br />Engineering  <strong>96%</strong><br /> Liberal Arts and Sciences <strong>94%</strong><br /> Nursing <strong>99%</strong><br />Pharmacy <strong>97%</strong>',
+        },
+         {
+          headline: '4,000',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'STUDENT<br />  INTERNSHIPS',
+          stat_content: 'Everywhere from NASA to the Minnesota Vikings.',
+        },
+         {
+          headline: '4,100',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'Employers have hired Iowa Graduates the past three years',
+          stat_content: 'Gain real-world skills that make résumés stand out.',
+        },
+        {
+          headline: '1,316',
+          heading_prefix: '',
+          heading_suffix: '',
+          stat_description: 'STUDENTS STUDIED ABROAD LAST YEAR',
+          stat_content: 'Spanning the globe in 69 countries.',
         }
       ],
       cta_menu_items: [

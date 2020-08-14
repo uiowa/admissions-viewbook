@@ -7,11 +7,16 @@
                   heading_level="h2"
                   class="bold-headline--caps bold-headline"
                   :heading="headline"
-                  :heading_url="link_url">
-        </headline>
+        ></headline>
 
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
+         <uids-button
+            :button_link="button_link"
+            button_type="bttn bttn--secondary bttn--caps"
+            :button_text="button_text"
+            :button_icon="true">
+        </uids-button>
       </div>
       <template v-if="grid_content_position=='second' && image!==''">
         <img :src="image" class="grid-panel__img" alt="">
@@ -39,7 +44,7 @@
     </div>
     <div :class="grid_panel_second_column">
       <div v-if="grid_content_position=='second'">
-        <headline 
+        <headline
           v-if="headline"
           heading_level="h2"
           class="bold-headline--caps bold-headline"
@@ -65,6 +70,9 @@
               :hero_title="area.headline"
               :image="area.image"
               :url="area.link_url"
+              :hero_text="area.text"
+              :button_text="area.button_text"
+              :button_link="area.button_link"
               :is_last="index+1 === areas_of_study.length"
               hero_overlay = "solid-opacity"
               hero_size="large"

@@ -2,8 +2,6 @@
 <nav role="navigation">
   <ul class="menu">
     <template v-for="(item, index) in items">
-
-      {{clog(item)}}
       <menuItem
         :key="index"
         :text="item.text"
@@ -23,11 +21,6 @@ export default {
     props: ['items'],
     components: {
       menuItem
-    },
-    methods: {
-      clog(a) {
-        console.log(a);
-      }
     }
 }
 </script>
