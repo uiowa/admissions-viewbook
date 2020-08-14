@@ -482,23 +482,58 @@ export default {
       areas_of_study: [
         {
           headline: 'Business, Economics, and Management',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/1.jpg',
+          image: 'src/assets/images/viewbook/areas/1.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/biz-econ-mgmt',
         },
         {
           headline: 'Education',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/2.jpg',
+          image: 'src/assets/images/viewbook/areas/2.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/edu',
         },
         {
           headline: 'Engineering and Computing',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/3.jpg',
+          image: 'src/assets/images/viewbook/areas/3.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/engr-comp',
         },
         {
           headline: 'Health Sciences',
-          image: 'https://uids.brand.uiowa.edu/branches/feature_admissions_viewbook/assets/images/viewbook/areas/4.jpg',
+          image: 'src/assets/images/viewbook/areas/4.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/health-sci',
+        },
+        {
+          headline: 'Languages, culture, and society',
+          image: 'src/assets/images/viewbook/areas/5.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/lang-cult-soc',
+        },
+        {
+          headline: 'Life and natural sciences',
+          image: 'src/assets/images/viewbook/areas/6.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/life-nat-sci',
+        },
+        {
+          headline: 'Math and quantitative sciences',
+          image: 'src/assets/images/viewbook/areas/7.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/math-quant-sci',
+        },
+        {
+          headline: 'Preprofessional programs',
+          image: 'src/assets/images/viewbook/areas/8.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/preprofessional',
+        },
+        {
+          headline: 'Social sciences and policy',
+          image: 'src/assets/images/viewbook/areas/9.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/soc-sci-pol',
+        },
+        {
+          headline: 'Visual and performing arts',
+          image: 'src/assets/images/viewbook/areas/10.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/vis-perf-arts',
+        },
+        {
+          headline: 'Writing, communications, literature, and media',
+          image: 'src/assets/images/viewbook/areas/11.jpg',
+          link_url: 'https://admissions.uiowa.edu/academics/write-comm-media',
         },
         {
           headline: '',
