@@ -18,7 +18,7 @@
 
       <Highlight
         :highlight_title="grid_title_3"
-        :highlight_sub="grid_sub_4"
+        :highlight_sub="grid_sub_3"
       ></Highlight>
 
       <headline v-if="typeof aerial_title !== 'undefined'"
