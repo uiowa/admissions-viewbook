@@ -672,6 +672,7 @@ export default {
     }
   },
   created() {
+    // Add the 'header-sticky' class so the iowa bar sticks to the top of the page. 
     document.querySelector('body').classList.add('header-sticky');
   }
 }

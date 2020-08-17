@@ -51,8 +51,8 @@ export default {
     },
     methods: {
         /* 
-            This function takes a boolean is_last (defaulted to false)
-            It composes a string out of the classes passed to the component, and then if is_last is true it will add some for that case.
+            This method takes a boolean 'is_last' (defaulted to false).
+            It composes a string out of the classes passed to the component, and then if 'is_last' is true it will add some for that case.
         */
         getHeroClasses(is_last=false) {
             let classes = 'hero hero--'+this.$props.hero_overlay+' hero--'+this.$props.hero_size+' '+this.$props.hero_classes+' hero--'+this.$props.hero_vertical_alignment+' hero--'+this.$props.hero_horizontal_alignment;

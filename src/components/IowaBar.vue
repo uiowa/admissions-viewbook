@@ -22,6 +22,7 @@ export default {
       Logo
     },
     methods: {
+      // This method will default the iowa bar to narrow if there is a parent site set.
       IowaBarClasses() {
         if (typeof this.$props.parent_site !== "undefined" ) {
           return (this.$props.iowa_bar_classes + ' ' + 'iowa-bar--narrow');
