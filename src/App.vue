@@ -409,7 +409,7 @@ import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
 import headline from './components/headline.vue';
 import verticalDots from './components/verticalDots.vue';
-import ulinkButton from './components/linkButton.vue';
+import linkButton from './components/linkButton.vue';
 import Aerial from './components/Aerial.vue';
 import menuGroup from './components/menuGroup.vue';
 import footerSection from './components/footerSection.vue';
