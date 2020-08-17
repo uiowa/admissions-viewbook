@@ -119,7 +119,35 @@ export default {
 
     data() {
         return card_data
-    }
+    },
+
+    // This will attack a click listener on this card if it has one of the classes listed in 'link_elements'.
+    created() {
+        this.$nextTick(() => {
+            const element = this.$el;
+            const link_elements = ['.card__title a', '.card__media a', 'a.bttn'];
+            let up, down, link, i;
+            // Check if it has one of the classes defined in 'link_elements'.
+            for (i = 0; i < link_elements.length; i++) {
+                if (link = element.querySelector(link_elements[i])) {
+                    break;
+                }
+            }
+
+            // If we have a match, attach behaviors.
+            if (link) {
+                element.style.cursor = 'pointer';
+                element.onmousedown = () => down = +new Date();
+                element.onmouseup = () => {
+                    up = +new Date();
+                    // Trigger click event if the click duration is short enough.
+                    if ((up - down) < 200) {
+                        link.click();
+                    }
+                }
+            }
+        });
+    },
 }
 </script>
 

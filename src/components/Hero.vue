@@ -79,6 +79,34 @@ export default {
         linkButton
     },
 
+    // This will attack a click listener on this hero if it has one of the classes listed in 'link_elements'.
+    created() {
+        this.$nextTick(() => {
+            const element = this.$el;
+            const link_elements = ['.bold-headline a', 'a.bttn'];
+            let up, down, link, i;
+            // Check if it has one of the classes defined in 'link_elements'.
+            for (i = 0; i < link_elements.length; i++) {
+                if (link = element.querySelector(link_elements[i])) {
+                    break;
+                }
+            }
+
+            // If we have a match, attach behaviors.
+            if (link) {
+                element.style.cursor = 'pointer';
+                element.onmousedown = () => down = +new Date();
+                element.onmouseup = () => {
+                    up = +new Date();
+                    // Trigger click event if the click duration is short enough.
+                    if ((up - down) < 200) {
+                        link.click();
+                    }
+                }
+            }
+        });
+    },
+
     methods: {
         /* 
             This method takes a boolean 'is_last' (defaulted to false).
