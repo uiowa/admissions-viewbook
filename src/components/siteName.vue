@@ -7,6 +7,7 @@
 
 <script>
 export default {
+    name: 'siteName',
     props: ['site_name', 'site_name_tag', 'site_name_link'],
 }
 </script>

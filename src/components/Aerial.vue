@@ -1,6 +1,5 @@
 <template>
 <div class="aerial aerial__grid">
-
 	<div class="aerial__image">
     <img class="aerial__img" :src="aerial_image" alt="Alt Text">
 	</div>
@@ -31,10 +30,8 @@
         :highlight_title="grid_title_4"
         :highlight_sub="grid_sub_4"
       />
-  </div>
-
+    </div>
 	</div>
-
 </div>
 </template>
 

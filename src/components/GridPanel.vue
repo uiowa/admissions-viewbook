@@ -93,6 +93,7 @@ import Headline from './headline.vue';
 import linkButton from './linkButton.vue';
 import Hero from './Hero.vue';
 export default {
+    name: 'GridPanel',
     props: [
       'grid_panel_type',
       'button_text',

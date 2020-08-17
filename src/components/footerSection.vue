@@ -51,6 +51,7 @@ import siteName from './siteName.vue';
 import menuGroup from './menuGroup.vue';
 
 export default {
+    name: 'footerSection',
     methods: {
 	},
 	props: ['contact_info', 'social_media_links'],

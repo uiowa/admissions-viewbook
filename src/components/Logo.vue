@@ -17,6 +17,7 @@
 
 <script>
 export default {
+    name: 'Logo',
     props: ['logo_classes', 'logo_id'],
     methods: {
       // This method takes a String 'logo_id'.

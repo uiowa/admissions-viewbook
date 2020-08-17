@@ -17,6 +17,7 @@
 <script>
 import menuItem from './menuItem.vue';
 export default {
+    name: 'menuGroup',
     props: ['items'],
     components: {
       menuItem

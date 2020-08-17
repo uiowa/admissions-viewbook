@@ -30,6 +30,7 @@ import Headline from './headline.vue';
 import linkButton from './linkButton.vue';
 
 export default {
+    name: 'Hero',
     props: [
         'image',
         'link_url',

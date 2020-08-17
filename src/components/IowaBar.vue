@@ -17,6 +17,7 @@
 import Logo from './Logo.vue';
 
 export default {
+    name: 'IowaBar',
     props: ['iowa_bar_classes', 'parent_site'],
     components: {
       Logo
