@@ -5,21 +5,21 @@
         </div>
         <div class="hero__container">
             <div class="hero__content">
-                <headline
+                <Headline
                     v-if="hero_title"
                     heading_level="h2"
                     :class="hero_title_classes"
                     :heading="hero_title"
                     :heading_url="link_url"
-                ></headline>
+                />
                  <div v-html="hero_text"></div>
-                 <uids-button
+                 <linkButton
                     v-if="button_text"
                     :button_link="button_link"
                     button_type="bttn bttn--secondary bttn--caps"
                     :button_text="button_text"
-                    :button_icon="true">
-                </uids-button>
+                    :button_icon="true"
+                />
             </div>
         </div>
     </div>
@@ -27,7 +27,7 @@
 
 <script>
 import Headline from './headline.vue';
-import uidsButton from './uidsButton.vue';
+import linkButton from './linkButton.vue';
 
 export default {
     props: [
@@ -47,9 +47,13 @@ export default {
         ],
     components: {
         Headline,
-        uidsButton
+        linkButton
     },
     methods: {
+        /* 
+            This function takes a boolean is_last (defaulted to false)
+            It composes a string out of the classes passed to the component, and then if is_last is true it will add some for that case.
+        */
         getHeroClasses(is_last=false) {
             let classes = 'hero hero--'+this.$props.hero_overlay+' hero--'+this.$props.hero_size+' '+this.$props.hero_classes+' hero--'+this.$props.hero_vertical_alignment+' hero--'+this.$props.hero_horizontal_alignment;
             if (is_last) {

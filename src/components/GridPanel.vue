@@ -3,20 +3,21 @@
     <div :class="grid_panel_first_column">
 
       <div v-if="grid_content_position=='first'">
-        <headline v-if="headline"
-                  heading_level="h2"
-                  class="bold-headline--caps bold-headline"
-                  :heading="headline"
-        ></headline>
+        <Headline 
+          v-if="headline"
+          heading_level="h2"
+          class="bold-headline--caps bold-headline"
+          :heading="headline"
+        />
 
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
-         <uids-button
+         <linkButton
             :button_link="button_link"
             button_type="bttn bttn--secondary bttn--caps"
             :button_text="button_text"
-            :button_icon="true">
-        </uids-button>
+            :button_icon="true"
+          />
       </div>
       <template v-if="grid_content_position=='second' && image!==''">
         <img :src="image" class="grid-panel__img" alt="">
@@ -36,28 +37,27 @@
               hero_vertical_alignment="vertical-bottom"
               hero_horizontal_alignment="horizontal-left"
               hero_title_classes="bold-headline--caps bold-headline bold-headline--highlight"
-            >
-            </hero>
+            />
           </template>
         </div>
       </template>
     </div>
     <div :class="grid_panel_second_column">
       <div v-if="grid_content_position=='second'">
-        <headline
+        <Headline
           v-if="headline"
           heading_level="h2"
           class="bold-headline--caps bold-headline"
           :heading="headline"
-        ></headline>
+        />
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
-        <uids-button
-            :button_link="button_link"
-            button_type="bttn bttn--secondary bttn--caps"
-            :button_text="button_text"
-            :button_icon="true">
-        </uids-button>
+        <linkButton
+          :button_link="button_link"
+          button_type="bttn bttn--secondary bttn--caps"
+          :button_text="button_text"
+          :button_icon="true"
+        />
       </div>
       <template v-if="grid_content_position=='first' && image!==''">
         <img :src="image" class="grid-panel__img" alt="">
@@ -80,8 +80,7 @@
               hero_vertical_alignment="vertical-bottom"
               hero_horizontal_alignment="horizontal-left"
               hero_title_classes="bold-headline--caps bold-headline bold-headline--highlight"
-            >
-            </hero>
+            />
           </template>
         </div>
       </template>
@@ -91,7 +90,7 @@
 
 <script>
 import Headline from './headline.vue';
-import uidsButton from './uidsButton.vue';
+import linkButton from './linkButton.vue';
 import Hero from './Hero.vue';
 export default {
     props: [
@@ -111,7 +110,7 @@ export default {
     ],
     components: {
         Headline,
-        uidsButton,
+        linkButton,
         Hero
     },
 }

@@ -1,6 +1,6 @@
 <template>
 <div class="highlight__wrapper">
-  <headline v-if="typeof highlight_title !== 'undefined'"
+  <Headline v-if="typeof highlight_title !== 'undefined'"
     heading_level= "h3"
     heading_class= "highlight__title"
     :heading="highlight_title"
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import headline from './headline.vue';
+import Headline from './Headline.vue';
 
 export default {
   name: 'Highlight',
   components: {
-    headline
+    Headline
   },
   props: ['headline_level', 'highlight_title', 'highlight_sub']
 }

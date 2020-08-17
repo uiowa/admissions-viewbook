@@ -1,416 +1,391 @@
 <template>
-  <iowa-bar
-    iowa_bar_classes="iowa-bar--narrow"
-  ></iowa-bar>
+<iowa-bar
+  iowa_bar_classes="iowa-bar--narrow"
+></iowa-bar>
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="hero-banner"></div>
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="hero-banner"></div>
+</div>
+<hero
+  image="src/assets/images/widescreen__2592_x_1458/pano.jpg"
+  hero_size="large"
+  hero_vertical_alignment="vertical-center"
+  hero_horizontal_alignment="horizontal-center"
+  hero_classes="bg--black"
+  hero_type="image"
+  hero_overlay= "gradient-center"
+  hero_text=''
+  hero_title='<span>Welcome</span> to Iowa'
+  hero_title_classes='bold-headline--caps bold-headline bold-headline--negative'
+>
+</hero>
+
+<div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
+  <div class="cta-row__container">
+    <menuGroup
+      :items="cta_menu_items"
+    ></menuGroup>
   </div>
-  <hero
-    image="src/assets/images/widescreen__2592_x_1458/pano.jpg"
-    hero_size="large"
-    hero_vertical_alignment="vertical-center"
-    hero_horizontal_alignment="horizontal-center"
-    hero_classes="bg--black"
-    hero_type="image"
-    hero_overlay= "gradient-center"
-    hero_text=''
-    hero_title='<span>Welcome</span> to Iowa'
-    hero_title_classes='bold-headline--caps bold-headline bold-headline--negative'
-  >
-  </hero>
+</div>
 
-  <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
-    <div class="cta-row__container">
-      <menuGroup
-        :items="cta_menu_items"
-      ></menuGroup>
-    </div>
-  </div>
+<verticalDots
+  :sections="v_dots_sections"
+>
+</verticalDots>
 
-  <verticalDots
-    :sections="v_dots_sections"
-  >
-  </verticalDots>
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="areas-of-study"></div>
+</div>
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="areas-of-study"></div>
-  </div>
+<grid-panel
+  link_url= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
+  image= ''
+  headline= '200+ Areas<br /> of Study'
+  button_text= 'View Areas of Study'
+  button_link= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
+  grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+  grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
+  grid_panel_second_column= 'grid-panel__column-image-right'
+  grid_content_position= 'first'
+  grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
+  grid_panel_content_2= ''
+  :card_grid = 'true'
+  :areas_of_study = 'areas_of_study'
+>
+</grid-panel>
 
- <grid-panel
-    link_url= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
-    image= ''
-    headline= '200+ Areas<br /> of Study'
-    button_text= 'View Areas of Study'
-    button_link= 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study'
-    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-    grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
-    grid_panel_second_column= 'grid-panel__column-image-right'
-    grid_content_position= 'first'
-    grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
-    grid_panel_content_2= ''
-    :card_grid = 'true'
-    :areas_of_study = 'areas_of_study'
-  >
-  </grid-panel>
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="academic-opportunities"></div>
+</div>
+<grid-panel
+  link_url= 'https://admissions.uiowa.edu/academics/academics'
+  image= 'src/assets/images/viewbook/sections/0315.jpg'
+  headline= 'We Work <span>Together</span>'
+  button_text= 'View Academic Opportunities'
+  button_link= 'https://admissions.uiowa.edu/academics/academics'
+  grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+  grid_panel_first_column= 'grid-panel__column-image-left'
+  grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
+  grid_content_position= 'second'
+  grid_panel_content= '<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
+  grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+>
+</grid-panel>
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="academic-opportunities"></div>
-  </div>
-  <grid-panel
-    link_url= 'https://admissions.uiowa.edu/academics/academics'
-    image= 'src/assets/images/viewbook/sections/0315.jpg'
-    headline= 'We Work <span>Together</span>'
-    button_text= 'View Academic Opportunities'
-    button_link= 'https://admissions.uiowa.edu/academics/academics'
-    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-    grid_panel_first_column= 'grid-panel__column-image-left'
-    grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
-    grid_content_position= 'second'
-    grid_panel_content= '<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
-    grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
-  >
-  </grid-panel>
+<div class="stat__wrapper bg--black">
+  <template v-for="(stat, index) in stats_1">
+    <stat
+      :key="index"
+      :headline="stat.headline"
+      :heading_prefix="stat.heading_prefix"
+      :heading_suffix="stat.heading_suffix"
+      :stat_description="stat.stat_description"
+      :stat_content="stat.stat_content"
+    >
+    </stat>
+  </template>
+</div>
+
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="iowa-city"></div>
+</div>
+<Aerial></Aerial>
+
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="student-life"></div>
+</div>
+<grid-panel
+  link_url= 'https://admissions.uiowa.edu/student-life/student-life'
+  image= 'src/assets/images/viewbook/sections/1304.jpg'
+  headline= 'MAKE <span>30,000</span> NEW FRIENDS'
+  button_text= 'View Student Life'
+  button_link= 'https://admissions.uiowa.edu/student-life/student-life'
+  grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+  grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
+  grid_panel_second_column= 'grid-panel__column-image-right'
+  grid_content_position= 'first'
+  grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
+  grid_panel_content_2= ''
+>
+</grid-panel>
 
   <div class="stat__wrapper bg--black">
-    <template v-for="(stat, index) in stats_1">
-      <stat
-        :key="index"
-        :headline="stat.headline"
-        :heading_prefix="stat.heading_prefix"
-        :heading_suffix="stat.heading_suffix"
-        :stat_description="stat.stat_description"
-        :stat_content="stat.stat_content"
-      >
-      </stat>
-    </template>
-  </div>
+  <template v-for="(stat, index) in stats_2">
+    <stat
+      :key="index"
+      :headline="stat.headline"
+      :heading_prefix="stat.heading_prefix"
+      :heading_suffix="stat.heading_suffix"
+      :stat_description="stat.stat_description"
+      :stat_content="stat.stat_content"
+    >
+    </stat>
+  </template>
+</div>
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="iowa-city"></div>
-  </div>
-  <Aerial></Aerial>
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="student-outcomes"></div>
+</div>
+<grid-panel
+  link_url= 'https://stories.uiowa.edu/student-outcomes'
+  image= 'src/assets/images/viewbook/sections/1961.jpg'
+  headline= 'Make an <span>Impact</span>'
+  button_text= 'View Student Outcomes'
+  button_link= 'https://stories.uiowa.edu/student-outcomes'
+  grid_panel_type= 'grid-panel grid-panel--asymmetrical'
+  grid_panel_first_column= 'grid-panel__column-image-left'
+  grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
+  grid_content_position= 'second'
+  grid_panel_content= '<p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>'
+  grid_panel_content_2= ''
+>
+</grid-panel>
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="student-life"></div>
-  </div>
-  <grid-panel
-    link_url= 'https://admissions.uiowa.edu/student-life/student-life'
-    image= 'src/assets/images/viewbook/sections/1304.jpg'
-    headline= 'MAKE <span>30,000</span> NEW FRIENDS'
-    button_text= 'View Student Life'
-    button_link= 'https://admissions.uiowa.edu/student-life/student-life'
-    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-    grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
-    grid_panel_second_column= 'grid-panel__column-image-right'
-    grid_content_position= 'first'
-    grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
-    grid_panel_content_2= ''
-  >
-  </grid-panel>
-
-   <div class="stat__wrapper bg--black">
-    <template v-for="(stat, index) in stats_2">
-      <stat
-        :key="index"
-        :headline="stat.headline"
-        :heading_prefix="stat.heading_prefix"
-        :heading_suffix="stat.heading_suffix"
-        :stat_description="stat.stat_description"
-        :stat_content="stat.stat_content"
-      >
-      </stat>
-    </template>
-  </div>
-
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="student-outcomes"></div>
-  </div>
-  <grid-panel
-    link_url= 'https://stories.uiowa.edu/student-outcomes'
-    image= 'src/assets/images/viewbook/sections/1961.jpg'
-    headline= 'Make an <span>Impact</span>'
-    button_text= 'View Student Outcomes'
-    button_link= 'https://stories.uiowa.edu/student-outcomes'
-    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-    grid_panel_first_column= 'grid-panel__column-image-left'
-    grid_panel_second_column= 'grid-panel__column-content-right grid-panel__content'
-    grid_content_position= 'second'
-    grid_panel_content= '<p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>'
-    grid_panel_content_2= ''
-  >
-  </grid-panel>
-
-  <div class="stat__wrapper bg--black">
-    <template v-for="(stat, index) in stats_3">
-      <stat
-        :key="index"
-        :headline="stat.headline"
-        :heading_prefix="stat.heading_prefix"
-        :heading_suffix="stat.heading_suffix"
-        :stat_description="stat.stat_description"
-        :stat_content="stat.stat_content"
-      >
-      </stat>
-    </template>
-  </div>
+<div class="stat__wrapper bg--black">
+  <template v-for="(stat, index) in stats_3">
+    <stat
+      :key="index"
+      :headline="stat.headline"
+      :heading_prefix="stat.heading_prefix"
+      :heading_suffix="stat.heading_suffix"
+      :stat_description="stat.stat_description"
+      :stat_content="stat.stat_content"
+    >
+    </stat>
+  </template>
+</div>
 
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="apply"></div>
-  </div>
-  <div class="grid-panel grid-panel--split">
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="apply"></div>
+</div>
+<div class="grid-panel grid-panel--split">
   <div class="grid-panel__column grid-panel__content">
     <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
       heading= "How to Apply"
     />
-  <hr class="element--spacer-separator" />
+    <hr class="element--spacer-separator" />
 
 
-<ol class="element--circle-list">
-	<li>
-		<h3 class="bold-headline bold-headline--serif bold-headline--underline">
-			<span class="heading__heading">Complete the required high school courses.</span>
-		</h3>
+    <ol class="element--circle-list">
+      <li>
+        <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <span class="heading__heading">Complete the required high school courses.</span>
+        </h3>
 
+        <p>
+          <a href="https://admissions.uiowa.edu/academics-undergraduate-programs-undergraduate/minimum-high-school-course-requirements" class="bttn bttn--secondary bttn--caps">
 
-		<p>
-			<a href="https://admissions.uiowa.edu/academics-undergraduate-programs-undergraduate/minimum-high-school-course-requirements" class="bttn bttn--secondary bttn--caps">
+            View High School Course Requirements
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
 
-				View High School Course Requirements
-				<i class="fas fa-arrow-right"></i>
-			</a>
-		</p>
+      </li>
+      <li>
 
-	</li>
-	<li>
+        <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <span class="heading__heading">Score 245 or higher on the Regent Admission Index.</span>
+        </h3>
 
-		<h3 class="bold-headline bold-headline--serif bold-headline--underline">
-			<span class="heading__heading">Score 245 or higher on the Regent Admission Index.</span>
+        <p>Score 245 or higher on the Regent Admission Index.
+          The Regent Admission Index (RAI) is a formula used by all Iowa public universities to make admission a simpler,
+          more streamlined process. To calculate your RAI score, use the applicable formula below.
+        </p>
 
-		</h3>
+        <p>
+          <strong>RAI FORMULA:</strong>
+        </p>
+        <ul>
+          <li>3 x ACT composite score or SAT equivalent</li>
+          <li>+ 30 x cumulative GPA</li>
+          <li>+ 5 x years of high school core courses complete</li>
+        </ul>
 
-		<p>Score 245 or higher on the Regent Admission Index.
-			The Regent Admission Index (RAI) is a formula used by all Iowa public universities to make admission a simpler,
-			more streamlined process. To calculate your RAI score, use the applicable formula below.
-			.</p>
+        <p>
+          <a href="https://admissions.uiowa.edu/rai" class="bttn bttn--secondary bttn--caps">
 
-		<p>
-			<strong>RAI FORMULA:</strong>
-		</p>
-		<ul>
-			<li>3 x ACT composite score or SAT equivalent</li>
-			<li>+ 30 x cumulative GPA</li>
-			<li>+ 5 x years of high school core courses complete</li>
-		</ul>
+            Calculate your RAI score
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
 
-		<p>
-			<a href="https://admissions.uiowa.edu/rai" class="bttn bttn--secondary bttn--caps">
+        <p>
+          <strong>ACT and SAT Test Scores:</strong>
+        </p>
+        <p>We understand that COVID-19 has caused limited access to ACT and SAT tests this year. Any academic disruptions you experience will not keep you from becoming a Hawkeye. We encourage you to apply for admission even if you do not have a test score yet. An individual review process may be used to issue provisional admission decisions for students who do not have a test score. Per Iowa Board of Regents policy, a test score will be required at a later time to confirm the admission decision for those students.</p>
 
-				Calculate your RAI score
-				<i class="fas fa-arrow-right"></i>
-			</a>
-		</p>
+        <p>
+          <a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
+            View Testing
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
 
-		<p>
-			<strong>ACT and SAT Test Scores:</strong>
-		</p>
-		<p>We understand that COVID-19 has caused limited access to ACT and SAT tests this year. Any academic disruptions you experience will not keep you from becoming a Hawkeye. We encourage you to apply for admission even if you do not have a test score yet. An individual review process may be used to issue provisional admission decisions for students who do not have a test score. Per Iowa Board of Regents policy, a test score will be required at a later time to confirm the admission decision for those students.</p>
+      </li>
 
-		<p>
-			<a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
+      <li>
+        <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <span class="heading__heading">Meet the admission requirements for your college of choice.</span>
+        </h3>
 
-				View Testing
-				<i class="fas fa-arrow-right"></i>
-			</a>
-		</p>
+        <p>Admission requirements vary for each college that accepts first-year students.</p>
 
-	</li>
+        <ul>
+          <li>College of Liberal Arts and Sciences</li>
+          <li>Tippie College of Business
+            <em>(direct admission)</em>
+          </li>
+          <li>College of Education
+            <em>(direct admission to the Elementary Teacher Education Program)</em>
+          </li>
 
-	<li>
+          <li>College of Engineering
+            <em>(direct admission)</em>
+          </li>
 
-		<h3 class="bold-headline bold-headline--serif bold-headline--underline">
-			<span class="heading__heading">Meet the admission requirements for your college of choice.</span>
+          <li>College of Nursing
+            <em>(direct admission)</em>
+          </li>
+          <li>College of Pharmacy
+            <em>(assured admission)</em>
+          </li>
 
-		</h3>
+          <li>College of Public Health
+            <em>(direct admission)</em>
+          </li>
+        </ul>
 
-		<p>Admission requirements vary for each college that accepts first-year students.</p>
+        <p>
+          <small>
+            <em>Students who do not meet all direct admission requirements for their specific college will be carefully considered on a case-by-case basis. Those who are not directly admitted to their desired college begin school as a CLAS student, applying to
+                      their college of choice after completing prerequisite courses and earning a minimum GPA.</em>
+          </small>
+        </p>
+        <p>
+          <small>
+            <em>Colleges that do not accept first-year students directly include: Dentistry, Law, Pharmacy, Medicine, and the Graduate College.</em>
+          </small>
+        </p>
 
-		<ul>
-			<li>College of Liberal Arts and Sciences</li>
-			<li>Tippie College of Business
-				<em>(direct admission)</em>
-			</li>
-			<li>College of Education
-				<em>(direct admission to the Elementary Teacher Education Program)</em>
-			</li>
-
-			<li>College of Engineering
-				<em>(direct admission)</em>
-			</li>
-
-			<li>College of Nursing
-				<em>(direct admission)</em>
-			</li>
-			<li>College of Pharmacy
-				<em>(assured admission)</em>
-			</li>
-
-			<li>College of Public Health
-				<em>(direct admission)</em>
-			</li>
-		</ul>
-
-		<p>
-			<small>
-				<em>Students who do not meet all direct admission requirements for their specific college will be carefully considered on a case-by-case basis. Those who are not directly admitted to their desired college begin school as a CLAS student, applying to
-					        their college of choice after completing prerequisite courses and earning a minimum GPA.</em>
-			</small>
-		</p>
-		<p>
-			<small>
-				<em>Colleges that do not accept first-year students directly include: Dentistry, Law, Pharmacy, Medicine, and the Graduate College.</em>
-			</small>
-		</p>
-
-		<p>
-			<a href="https://admissions.uiowa.edu/academics/first-year-admission" class="bttn bttn--secondary bttn--caps">
-				View Requirements
-				<i class="fas fa-arrow-right"></i>
-			</a>
-		</p>
-
-	</li>
-
-</ol>
-
+        <p>
+          <a href="https://admissions.uiowa.edu/academics/first-year-admission" class="bttn bttn--secondary bttn--caps">
+            View Requirements
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
+      </li>
+    </ol>
   </div>
-
   <div class="grid-panel__column grid-panel__content">
+    <ol class="element--circle-list counter-increment">
+      <li>
+        <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <span class="heading__heading">Submit your FAFSA and explore financial aid.</span>
+        </h3>
+        <hr class="element--spacer-separator"/>
+        <table class="table is-striped">
+          <caption class="element-invisible">Finances</caption>
+          <thead>
+            <tr>
+              <th>Finances</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Iowa residents</strong></td>
+              <td>
+                <strong>$9,830*</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Nonresidents</strong></td>
+              <td>
+                <strong>$31,793*</strong>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Standard housing and meal plans</strong></td>
+              <td>
+                <strong>$11,590 **</strong>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
+        <p>
+          <small>* Tuition and fees vary by academic program. Tuition and fees listed include a one-time University Records and Documents Fee of $225 for new students.<br/>** Based on a weighted room average and unlimited (Gold) meal plan</small>
+        </p>
 
-<ol class="element--circle-list counter-increment">
-<li>
-  <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-    <span class="heading__heading">Submit your FAFSA and explore financial aid.</span>
-  </h3>
-<hr class="element--spacer-separator"/>
-  <table class="table is-striped">
-    <caption class="element-invisible">Finances</caption>
-    <thead>
-      <tr>
-        <th>Finances</th>
-        <th>Cost</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Iowa residents</strong></td>
-        <td>
-          <strong>$9,830*</strong>
-        </td>
-    </tr>
-    <tr>
-      <td><strong>Nonresidents</strong></td>
-      <td>
-        <strong>$31,793*</strong>
-      </td>
-  </tr>
-  <tr>
-    <td><strong>Standard housing and meal plans</strong></td>
-    <td>
-      <strong>$11,590 **</strong>
-    </td>
-  </tr>
-</tbody>
-</table>
+        <p>
+          <a href="http://financialaid.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+            Financial Aid
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
+        <p>
+          Submit the<strong>Free Application for Federal Student Aid (FAFSA)</strong>early to maximize your available assistance.
+        </p>
+        <p>
+          <a href="https://admissions.uiowa.edu/finances/scholarships" class="bttn bttn--secondary bttn--caps">
+            Scholarships
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
+        <p>We offer a wide variety of scholarships and grants.</p>
+      </li>
 
-<p>
-<small>* Tuition and fees vary by academic program. Tuition and fees listed include a one-time University Records and Documents Fee of $225 for new students.<br/>** Based on a weighted room average and unlimited (Gold) meal plan</small>
+      <li>
 
+        <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <span class="heading__heading">Apply for housing and dining.</span>
+        </h3>
 
-</p>
+        <p>Access the housing application through your admissions profile on
+          <a data-cke-saved-href="https://myui.uiowa.edu" href="https://myui.uiowa.edu">myui.uiowa.edu</a>
+          and pay the nonrefundable $75 housing application fee.
+          <br>
+        </p>
+        <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 3, 2021 for the opportunity to request a roommate and select your room.</p>
 
-<p>
-<a href="http://financialaid.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+        <p>
+          <a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+            Housing Information
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
 
-  Financial Aid
-  <i class="fas fa-arrow-right"></i>
-</a>
-</p>
-<p>Submit the
-<strong>Free Application for Federal Student Aid (FAFSA)</strong>
-early to maximize your available assistance.</p>
-
-<p>
-<a href="https://admissions.uiowa.edu/finances/scholarships" class="bttn bttn--secondary bttn--caps">
-
-  Scholarships
-  <i class="fas fa-arrow-right"></i>
-</a>
-</p>
-<p>We offer a wide variety of scholarships and grants.</p>
-
-</li>
-
-<li>
-
-<h3 class="bold-headline bold-headline--serif bold-headline--underline">
-<span class="heading__heading">Apply for housing and dining.</span>
-</h3>
-
-<p>Access the housing application through your admissions profile on
-<a data-cke-saved-href="https://myui.uiowa.edu" href="https://myui.uiowa.edu">myui.uiowa.edu</a>
-and pay the nonrefundable $75 housing application fee.
-<br></p>
-<p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 3, 2021 for the opportunity to request a roommate and select your room.</p>
-
-<p>
-<a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
-
-  Housing Information
-  <i class="fas fa-arrow-right"></i>
-</a>
-</p>
-
-<p>
-<a href="http://dining.uiowa.edu" class="bttn bttn--secondary bttn--caps">
-  Dining Information
-  <i class="fas fa-arrow-right"></i>
-</a>
-</p>
-
-</li>
-
-</ol>
-
+        <p>
+          <a href="http://dining.uiowa.edu" class="bttn bttn--secondary bttn--caps">
+            Dining Information
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </p>
+      </li>
+    </ol>
   </div>
-  </div>
+</div>
 
-  <main></main>
+<main></main>
 
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="to-be-a-hawkeye"></div>
-  </div>
-  <div class="image-grid">
+<div class="v-dots-scroll-spacer">
+  <div class="v-dots-scroll-target" id="to-be-a-hawkeye"></div>
+</div>
+<div class="image-grid">
   <div class="image-grid__section">
-
-  <img class="card__img" src="src/assets/images/viewbook/sections/0849.jpg" alt="Alt Text">
+    <img class="card__img" src="src/assets/images/viewbook/sections/0849.jpg" alt="Alt Text">
   </div>
 
   <div class="image-grid__section">
-
-  <img class="card__img" src="src/assets/images/viewbook/sections/dorm.jpg" alt="Alt Text">
+    <img class="card__img" src="src/assets/images/viewbook/sections/dorm.jpg" alt="Alt Text">
   </div>
-
 
   <div class="image-grid__section">
-
-  <img class="card__img" src="src/assets/images/viewbook/sections/0297-Pano5.jpg" alt="Alt Text">
+    <img class="card__img" src="src/assets/images/viewbook/sections/0297-Pano5.jpg" alt="Alt Text">
   </div>
-
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
     <headline
@@ -420,25 +395,21 @@ and pay the nonrefundable $75 housing application fee.
     />
   </div>
 
-
   <div class="image-grid__section">
-
     <img class="card__img" src="src/assets/images/viewbook/sections/1152.jpg" alt="Alt Text">
-    </div>
-
+  </div>
 
   <div class="image-grid__section">
-
-  <img class="card__img" src="src/assets/images/viewbook/sections/0027.jpg" alt="Alt Text">
+    <img class="card__img" src="src/assets/images/viewbook/sections/0027.jpg" alt="Alt Text">
   </div>
 
 
-  </div>
+</div>
 
-  <footerSection
-    :contact_info="contact_info"
-    :social_media_links="social_media_links"
-  ></footerSection>
+<footerSection
+  :contact_info="contact_info"
+  :social_media_links="social_media_links"
+></footerSection>
 
 </template>
 

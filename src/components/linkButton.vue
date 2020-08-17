@@ -8,7 +8,7 @@
 <script>
 
 export default {
-    name: 'uidsButton',
+    name: 'linkButton',
     props: {
         button_link: {
             type: String,

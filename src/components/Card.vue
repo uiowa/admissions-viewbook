@@ -8,13 +8,13 @@
         </div>
 
         <div class="card__body">
-            <headline v-if="card_title !== ''"
+            <Headline v-if="card_title !== ''"
                 heading_level="h2"
                 heading_class="card__title"
                 :heading="card_title"
                 :heading_url="card_link_url"
                 :heading_aria="card_aria"
-            ></headline>
+            />
 
             <div v-if="card_author!==''" class="card__author">{{ card_author }}</div>
 
@@ -22,12 +22,12 @@
 
             <template v-if="card_link_url !== '' && show_button">
                 <template v-if="link_element == 'button'">
-                    <uidsButton
+                    <linkButton
                         :button_link = "card_link_url"
                         button_type = "bttn--full bttn--outline bttn--tertiary bttn--sans-serif"
                         :button_text = "card_link_title"
                         :button_icon = "true"
-                    ></uidsButton>
+                    />
                 </template>
                 <template v-else>
                     <!-- This should eventually have JS attached o it to click the right thing. -->
@@ -42,8 +42,8 @@
 </template>
 
 <script>
-import headline from './headline.vue';
-import uidsButton from './uidsButton.vue';
+import Headline from './Headline.vue';
+import linkButton from './linkButton.vue';
 
 // Set the card data object.
 let card_data = {
@@ -88,8 +88,8 @@ if (card_data.card_link_url !== '') {
 export default {
     props: ['image', 'title', 'link_url', 'link_title', 'aria', 'author', 'content'],
     components: {
-        headline,
-        uidsButton,
+        Headline,
+        linkButton,
     },
     data() {
         return card_data

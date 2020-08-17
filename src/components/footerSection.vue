@@ -7,7 +7,9 @@
 				logo_classes="logo--footer"
 			></logo>
 
-			<siteName site_name_tag="h2"></siteName>
+			<siteName
+				site_name_tag="h2"
+			/>
 
 			<!-- This would be a site slogan -->
 
@@ -16,7 +18,7 @@
 			<div class="footer__links footer__links--icon">
 				<menuGroup
 					:items="social_media_links"
-				></menuGroup>
+				/>
 			</div>
 
 			<div class="socket">

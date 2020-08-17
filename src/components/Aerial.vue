@@ -9,19 +9,19 @@
       <Highlight
         :highlight_title="grid_title_1"
         :highlight_sub="grid_sub_1"
-      ></Highlight>
+      />
 
       <Highlight
         :highlight_title="grid_title_2"
         :highlight_sub="grid_sub_2"
-      ></Highlight>
+      />
 
       <Highlight
         :highlight_title="grid_title_3"
         :highlight_sub="grid_sub_3"
-      ></Highlight>
+      />
 
-      <headline v-if="typeof aerial_title !== 'undefined'"
+      <Headline v-if="typeof aerial_title !== 'undefined'"
         heading_level="h2"
         heading_class="bold-headline--caps bold-headline"
         :heading="aerial_title"
@@ -30,7 +30,7 @@
       <Highlight
         :highlight_title="grid_title_4"
         :highlight_sub="grid_sub_4"
-      ></Highlight>
+      />
   </div>
 
 	</div>
@@ -40,13 +40,13 @@
 
 <script>
 import Highlight from './Highlight.vue';
-import headline from './headline.vue';
+import Headline from './Headline.vue';
 
 export default {
   name: 'Aerial',
   components: {
     Highlight,
-    headline
+    Headline
   },
   data() {
     return {

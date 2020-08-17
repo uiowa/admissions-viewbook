@@ -8,8 +8,7 @@
         :url="item.url"
         :item_class="item.item_class"
         :icon_class="item.icon_class"
-      >
-      </menuItem>
+      />
     </template>
   </ul>
 </nav>
