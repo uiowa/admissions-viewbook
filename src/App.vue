@@ -1,7 +1,7 @@
 <template>
 <iowa-bar
   iowa_bar_classes="iowa-bar--narrow"
-></iowa-bar>
+/>
 
 <div class="v-dots-scroll-spacer">
   <div class="v-dots-scroll-target" id="hero-banner"></div>
@@ -17,21 +17,19 @@
   hero_text=''
   hero_title='<span>Welcome</span> to Iowa'
   hero_title_classes='bold-headline--caps bold-headline bold-headline--negative'
->
-</hero>
+/>
 
 <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
   <div class="cta-row__container">
     <menuGroup
       :items="cta_menu_items"
-    ></menuGroup>
+    />
   </div>
 </div>
 
 <verticalDots
   :sections="v_dots_sections"
->
-</verticalDots>
+/>
 
 <div class="v-dots-scroll-spacer">
   <div class="v-dots-scroll-target" id="areas-of-study"></div>
@@ -51,8 +49,7 @@
   grid_panel_content_2= ''
   :card_grid = 'true'
   :areas_of_study = 'areas_of_study'
->
-</grid-panel>
+/>
 
 <div class="v-dots-scroll-spacer">
   <div class="v-dots-scroll-target" id="academic-opportunities"></div>
@@ -69,8 +66,7 @@
   grid_content_position= 'second'
   grid_panel_content= '<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
   grid_panel_content_2= '<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
->
-</grid-panel>
+/>
 
 <div class="stat__wrapper bg--black">
   <template v-for="(stat, index) in stats_1">
@@ -81,15 +77,14 @@
       :heading_suffix="stat.heading_suffix"
       :stat_description="stat.stat_description"
       :stat_content="stat.stat_content"
-    >
-    </stat>
+    />
   </template>
 </div>
 
 <div class="v-dots-scroll-spacer">
   <div class="v-dots-scroll-target" id="iowa-city"></div>
 </div>
-<Aerial></Aerial>
+<Aerial/>
 
 <div class="v-dots-scroll-spacer">
   <div class="v-dots-scroll-target" id="student-life"></div>
@@ -106,8 +101,7 @@
   grid_content_position= 'first'
   grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
   grid_panel_content_2= ''
->
-</grid-panel>
+/>
 
   <div class="stat__wrapper bg--black">
   <template v-for="(stat, index) in stats_2">
@@ -118,8 +112,7 @@
       :heading_suffix="stat.heading_suffix"
       :stat_description="stat.stat_description"
       :stat_content="stat.stat_content"
-    >
-    </stat>
+    />
   </template>
 </div>
 
@@ -138,8 +131,7 @@
   grid_content_position= 'second'
   grid_panel_content= '<p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>'
   grid_panel_content_2= ''
->
-</grid-panel>
+/>
 
 <div class="stat__wrapper bg--black">
   <template v-for="(stat, index) in stats_3">
@@ -150,8 +142,7 @@
       :heading_suffix="stat.heading_suffix"
       :stat_description="stat.stat_description"
       :stat_content="stat.stat_content"
-    >
-    </stat>
+    />
   </template>
 </div>
 
@@ -167,8 +158,6 @@
       heading= "How to Apply"
     />
     <hr class="element--spacer-separator" />
-
-
     <ol class="element--circle-list">
       <li>
         <h3 class="bold-headline bold-headline--serif bold-headline--underline">
@@ -409,7 +398,7 @@
 <footerSection
   :contact_info="contact_info"
   :social_media_links="social_media_links"
-></footerSection>
+/>
 
 </template>
 
