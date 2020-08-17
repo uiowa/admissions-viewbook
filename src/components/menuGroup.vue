@@ -19,8 +19,21 @@ import menuItem from './menuItem.vue';
 export default {
     name: 'menuGroup',
 
-    props: ['items'],
-    
+    props: {
+      items: {
+        /*
+          Array of items with the following structure:
+          {
+            text : String,
+            url : String,
+            item_class : String (Optional),
+            icon_class : String (Optional)
+          }
+        */
+        type: Array
+      }
+    },
+
     components: {
       menuItem
     }

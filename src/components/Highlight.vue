@@ -20,8 +20,18 @@ export default {
   components: {
     Headline
   },
-  
-  props: ['headline_level', 'highlight_title', 'highlight_sub']
+
+  props: {
+    headline_level: {
+      type: String
+    },
+    highlight_title: {
+      type: String
+    },
+    highlight_sub: {
+      type: String
+    }
+  }
 }
 </script>
 

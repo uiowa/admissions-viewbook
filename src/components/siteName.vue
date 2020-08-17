@@ -8,8 +8,18 @@
 <script>
 export default {
     name: 'siteName',
-    
-    props: ['site_name', 'site_name_tag', 'site_name_link'],
+
+    props: {
+      site_name: {
+        type: String
+      },
+      site_name_tag: {
+        type: String
+      },
+      site_name_link: {
+        type: String
+      }
+    },
 }
 </script>
 

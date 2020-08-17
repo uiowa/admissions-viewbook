@@ -53,8 +53,24 @@ import menuGroup from './menuGroup.vue';
 export default {
 	name: 'footerSection',
 	
-	props: ['contact_info', 'social_media_links'],
-	
+	props: {
+		contact_info: {
+			type: String
+		},
+		/*
+			Array of items with the following structure:
+			{
+				text : String,
+				url : String,
+				item_class : String (Optional),
+				icon_class : String (Optional)
+			}
+		*/
+		social_media_links: {
+			type: Array
+		}
+	},
+
     components: {
 	  Logo,
 	  siteName,

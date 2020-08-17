@@ -21,8 +21,30 @@ import Headline from './headline.vue';
 export default {
     name: 'Stat',
 
-    props: ['headline', 'heading_prefix', 'heading_suffix', 'image', 'link_url', 'stat_description', 'stat_content'],
-    
+    props: {
+      headline: {
+        type: String
+      },
+      heading_prefix: {
+        type: String
+      },
+      heading_suffix: {
+        type: String
+      },
+      image: {
+        type: String
+      },
+      link_url: {
+        type: String
+      },
+      stat_description: {
+        type: String
+      },
+      stat_content: {
+        type: String
+      }
+    },
+
     components: {
         Headline,
     }

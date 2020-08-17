@@ -20,6 +20,13 @@ export default {
 
   props: {
     sections: {
+      /*
+        Array of items with the following structure:
+        {
+          section_title: String,
+          section_id: 'String
+        }
+      */
       type: Array,
     },
   },
@@ -35,7 +42,7 @@ export default {
     // Call 'handleScroll()' on every 'scroll' event.
     window.addEventListener("scroll", this.handleScroll);
   },
-  
+
   methods: {
     // This method will be called on every scroll event on the document.
     handleScroll() {

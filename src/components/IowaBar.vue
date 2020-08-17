@@ -19,12 +19,19 @@ import Logo from './Logo.vue';
 export default {
     name: 'IowaBar',
 
-    props: ['iowa_bar_classes', 'parent_site'],
+    props: {
+      iowa_bar_classes: {
+        type: String
+      },
+      parent_site: {
+        type: String
+      }
+    },
 
     components: {
       Logo
     },
-    
+
     methods: {
       // This method will default the iowa bar to narrow if there is a parent site set.
       IowaBarClasses() {

@@ -19,7 +19,14 @@
 export default {
     name: 'Logo',
 
-    props: ['logo_classes', 'logo_id'],
+    props: {
+      logo_classes: {
+        type: String
+      },
+      logo_id: {
+        type: String
+      }
+    },
 
     methods: {
       /* 

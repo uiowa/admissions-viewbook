@@ -15,8 +15,21 @@
 <script>
 export default {
     name: 'menuItem',
-    
-    props: ['text', 'url', 'item_class', 'icon_class'],
+
+    props: {
+      text: {
+        type: String
+      },
+      url: {
+        type: String
+      },
+      item_class: {
+        type: String
+      },
+      icon_class: {
+        type: String
+      }
+    },
 }
 </script>
 

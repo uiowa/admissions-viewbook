@@ -32,27 +32,53 @@ import linkButton from './linkButton.vue';
 export default {
     name: 'Hero',
 
-    props: [
-        'image',
-        'link_url',
-        'is_last',
-        'hero_overlay',
-        'hero_size',
-        'hero_classes',
-        'hero_vertical_alignment',
-        'hero_horizontal_alignment',
-        'hero_text',
-        'hero_title',
-        'hero_title_classes',
-        'button_link',
-        'button_text'
-    ],
+    props: {
+        image: {
+            type: String
+        },
+        link_url: {
+            type: String
+        },
+        is_last: {
+            type: Boolean
+        },
+        hero_overlay: {
+            type: String
+        },
+        hero_size: {
+            type: String
+        },
+        hero_classes: {
+            type: String
+        },
+        hero_vertical_alignment: {
+            type: String
+        },
+        hero_horizontal_alignment: {
+            type: String
+        },
+        hero_text: {
+            type: String
+        },
+        hero_title: {
+            type: String
+        },
+        hero_title_classes: {
+            type: String
+        },
+        button_link: {
+            type: String
+        },
+        button_text: {
+            type: String
+        }
+    },
 
     components: {
         Headline,
         linkButton
     },
-    
+
     methods: {
         /* 
             This method takes a boolean 'is_last' (defaulted to false).
