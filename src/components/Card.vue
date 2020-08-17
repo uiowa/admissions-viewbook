@@ -87,11 +87,14 @@ if (card_data.card_link_url !== '') {
 
 export default {
     name: 'Card',
+
     props: ['image', 'title', 'link_url', 'link_title', 'aria', 'author', 'content'],
+
     components: {
         Headline,
         linkButton,
     },
+    
     data() {
         return card_data
     }

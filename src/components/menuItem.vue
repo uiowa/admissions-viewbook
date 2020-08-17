@@ -15,6 +15,7 @@
 <script>
 export default {
     name: 'menuItem',
+    
     props: ['text', 'url', 'item_class', 'icon_class'],
 }
 </script>

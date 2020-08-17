@@ -51,10 +51,10 @@ import siteName from './siteName.vue';
 import menuGroup from './menuGroup.vue';
 
 export default {
-    name: 'footerSection',
-    methods: {
-	},
+	name: 'footerSection',
+	
 	props: ['contact_info', 'social_media_links'],
+	
     components: {
 	  Logo,
 	  siteName,

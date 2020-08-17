@@ -413,6 +413,7 @@ import footerSection from './components/footerSection.vue';
 
 export default {
   name: 'App',
+
   components: {
     Hero,
     Stat,
@@ -425,6 +426,7 @@ export default {
     menuGroup,
     footerSection
   },
+
   data() {
     return {
       areas_of_study: [
@@ -657,6 +659,7 @@ export default {
       ]
     }
   },
+  
   created() {
     // Add the 'header-sticky' class so the iowa bar sticks to the top of the page. 
     document.querySelector('body').classList.add('header-sticky');

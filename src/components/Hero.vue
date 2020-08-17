@@ -31,6 +31,7 @@ import linkButton from './linkButton.vue';
 
 export default {
     name: 'Hero',
+
     props: [
         'image',
         'link_url',
@@ -45,11 +46,13 @@ export default {
         'hero_title_classes',
         'button_link',
         'button_text'
-        ],
+    ],
+
     components: {
         Headline,
         linkButton
     },
+    
     methods: {
         /* 
             This method takes a boolean 'is_last' (defaulted to false).

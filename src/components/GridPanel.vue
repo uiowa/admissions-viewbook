@@ -94,6 +94,7 @@ import linkButton from './linkButton.vue';
 import Hero from './Hero.vue';
 export default {
     name: 'GridPanel',
+
     props: [
       'grid_panel_type',
       'button_text',
@@ -109,6 +110,7 @@ export default {
       'card_grid',
       'areas_of_study'
     ],
+    
     components: {
         Headline,
         linkButton,

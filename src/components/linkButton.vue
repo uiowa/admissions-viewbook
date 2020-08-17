@@ -9,6 +9,7 @@
 
 export default {
     name: 'linkButton',
+    
     props: {
         button_link: {
             type: String,

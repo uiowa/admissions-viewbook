@@ -41,10 +41,12 @@ import Headline from './Headline.vue';
 
 export default {
   name: 'Aerial',
+
   components: {
     Highlight,
     Headline
   },
+  
   data() {
     return {
       aerial_title: 'Welcome Home',

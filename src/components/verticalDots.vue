@@ -17,21 +17,25 @@
 
 export default {
   name: 'verticalDots',
+
   props: {
     sections: {
       type: Array,
     },
   },
+
   data: function() {
     return {
       mainNavLinks: {},
       firstScroll: true
     }
   },
+
   created() {
     // Call 'handleScroll()' on every 'scroll' event.
     window.addEventListener("scroll", this.handleScroll);
   },
+  
   methods: {
     // This method will be called on every scroll event on the document.
     handleScroll() {
@@ -48,8 +52,10 @@ export default {
       this.mainNavLinks.forEach(link => {
         // Get the v-dots-scroll-spacer defined by the href on the vertical dot and thenselect the section directly after it.
         let section = document.querySelector(link.hash).parentNode.nextElementSibling;
-        // The spacer tries to accomodate for the Iowa bar height, so it is absolutely pushed up 50px.
-        // Here, we accomodate for that by checking the offset minus 50.
+        /*
+          The spacer tries to accomodate for the Iowa bar height, so it is absolutely pushed up 50px.
+          Here, we accomodate for that by checking the offset minus 50.
+        */
         if (
           section.offsetTop -50 <= fromTop &&
           section.offsetTop -50 + section.offsetHeight > fromTop

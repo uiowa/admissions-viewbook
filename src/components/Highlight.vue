@@ -16,9 +16,11 @@ import Headline from './Headline.vue';
 
 export default {
   name: 'Highlight',
+
   components: {
     Headline
   },
+  
   props: ['headline_level', 'highlight_title', 'highlight_sub']
 }
 </script>

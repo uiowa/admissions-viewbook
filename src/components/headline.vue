@@ -17,6 +17,7 @@
 
 export default {
   name: 'Headline',
+  
   props: {
     heading_level: {
       type: String,

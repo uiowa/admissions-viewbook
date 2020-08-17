@@ -18,10 +18,14 @@
 <script>
 export default {
     name: 'Logo',
+
     props: ['logo_classes', 'logo_id'],
+
     methods: {
-      // This method takes a String 'logo_id'.
-      // It will return a String with either "logo-'logo_id' if 'logo_id' is set, and 'logo' if it is not.
+      /* 
+        This method takes a String 'logo_id'.
+        It will return a String with either "logo-'logo_id' if 'logo_id' is set, and 'logo' if it is not.
+      */
       IowaBarId(logo_id) {
         return (logo_id.length > 0) ? 'logo-' + logo_id : 'logo';
       }
