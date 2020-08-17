@@ -166,7 +166,6 @@
 
         <p>
           <a href="https://admissions.uiowa.edu/academics-undergraduate-programs-undergraduate/minimum-high-school-course-requirements" class="bttn bttn--secondary bttn--caps">
-
             View High School Course Requirements
             <i class="fas fa-arrow-right"></i>
           </a>
@@ -391,8 +390,6 @@
   <div class="image-grid__section">
     <img class="card__img" src="src/assets/images/viewbook/sections/0027.jpg" alt="Alt Text">
   </div>
-
-
 </div>
 
 <footerSection
