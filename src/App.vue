@@ -364,15 +364,15 @@
 </div>
 <div class="image-grid">
   <div class="image-grid__section">
-    <img class="card__img" src="src/assets/images/viewbook/sections/0849.jpg" alt="Alt Text">
+    <img class="card__img" :src="'src/assets/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" src="src/assets/images/viewbook/sections/dorm.jpg" alt="Alt Text">
+    <img class="card__img" :src="'src/assets/images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" src="src/assets/images/viewbook/sections/0297-Pano5.jpg" alt="Alt Text">
+    <img class="card__img" :src="'src/assets/images/viewbook/sections/0297-Pano5.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
@@ -384,11 +384,11 @@
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" src="src/assets/images/viewbook/sections/1152.jpg" alt="Alt Text">
+    <img class="card__img" :src="'src/assets/images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" src="src/assets/images/viewbook/sections/0027.jpg" alt="Alt Text">
+    <img class="card__img" :src="'src/assets/images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
   </div>
 </div>
 
@@ -404,7 +404,7 @@ import Hero from './components/Hero.vue';
 import Stat from './components/Stat.vue';
 import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
-import headline from './components/headline.vue';
+import Headline from './components/Headline.vue';
 import verticalDots from './components/verticalDots.vue';
 import linkButton from './components/linkButton.vue';
 import Aerial from './components/Aerial.vue';

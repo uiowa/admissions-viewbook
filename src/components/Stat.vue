@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import Headline from './headline.vue';
+import Headline from './Headline.vue';
 
 export default {
     name: 'Stat',

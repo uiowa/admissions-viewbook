@@ -1,7 +1,7 @@
 <template>
     <div :class="getHeroClasses(is_last)">
         <div class="hero__image">
-            <img :src="image" alt="">
+            <img :src="image" alt="" loading=lazy>
         </div>
         <div class="hero__container">
             <div class="hero__content">
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Headline from './headline.vue';
+import Headline from './Headline.vue';
 import linkButton from './linkButton.vue';
 
 export default {

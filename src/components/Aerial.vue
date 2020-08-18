@@ -1,7 +1,7 @@
 <template>
 <div class="aerial aerial__grid">
 	<div class="aerial__image">
-    <img class="aerial__img" :src="aerial_image" alt="Alt Text">
+    <img class="aerial__img" :src="aerial_image" alt="Alt Text" loading=lazy>
 	</div>
   <div class="aerial__container">
     <div class="aerial__content aerial__content-grid">
