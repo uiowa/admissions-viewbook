@@ -20,7 +20,7 @@
           />
       </div>
       <template v-if="grid_content_position=='second' && image!==''">
-        <img :src="image" class="grid-panel__img" alt="" loading=lazy>
+        <img :src="image" class="grid-panel__img" alt="" loading="lazy">
       </template>
       <template v-else-if="grid_content_position=='second' && card_grid!==false">
         <div class="card__wrapper">
@@ -60,7 +60,7 @@
         />
       </div>
       <template v-if="grid_content_position=='first' && image!==''">
-        <img :src="image" class="grid-panel__img" alt="" loading=lazy>
+        <img :src="image" class="grid-panel__img" alt="" loading="lazy">
       </template>
       <template v-else-if="grid_content_position=='first' && card_grid!==false">
         <div class="card__wrapper">

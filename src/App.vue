@@ -7,7 +7,7 @@
   <div class="v-dots-scroll-target" id="hero-banner"></div>
 </div>
 <hero
-  image="src/assets/images/widescreen__2592_x_1458/pano.jpg"
+  image="/images/widescreen__2592_x_1458/pano.jpg"
   hero_size="large"
   hero_vertical_alignment="vertical-center"
   hero_horizontal_alignment="horizontal-center"
@@ -56,7 +56,7 @@
 </div>
 <grid-panel
   link_url= 'https://admissions.uiowa.edu/academics/academics'
-  image= 'src/assets/images/viewbook/sections/0315.jpg'
+  image= '/images/viewbook/sections/0315.jpg'
   headline= 'We Work <span>Together</span>'
   button_text= 'View Academic Opportunities'
   button_link= 'https://admissions.uiowa.edu/academics/academics'
@@ -91,7 +91,7 @@
 </div>
 <grid-panel
   link_url= 'https://admissions.uiowa.edu/student-life/student-life'
-  image= 'src/assets/images/viewbook/sections/1304.jpg'
+  image= '/images/viewbook/sections/1304.jpg'
   headline= 'MAKE <span>30,000</span> NEW FRIENDS'
   button_text= 'View Student Life'
   button_link= 'https://admissions.uiowa.edu/student-life/student-life'
@@ -121,7 +121,7 @@
 </div>
 <grid-panel
   link_url= 'https://stories.uiowa.edu/student-outcomes'
-  image= 'src/assets/images/viewbook/sections/1961.jpg'
+  image= '/images/viewbook/sections/1961.jpg'
   headline= 'Make an <span>Impact</span>'
   button_text= 'View Student Outcomes'
   button_link= 'https://stories.uiowa.edu/student-outcomes'
@@ -315,7 +315,7 @@
           </a>
         </p>
         <p>
-          Submit the<strong>Free Application for Federal Student Aid (FAFSA)</strong>early to maximize your available assistance.
+          Submit the <strong>Free Application for Federal Student Aid (FAFSA)</strong> early to maximize your available assistance.
         </p>
         <p>
           <a href="https://admissions.uiowa.edu/finances/scholarships" class="bttn bttn--secondary bttn--caps">
@@ -364,15 +364,15 @@
 </div>
 <div class="image-grid">
   <div class="image-grid__section">
-    <img class="card__img" :src="'src/assets/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'src/assets/images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'src/assets/images/viewbook/sections/0297-Pano5.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/0297-Pano5.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
@@ -384,11 +384,11 @@
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'src/assets/images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
+    <img class="card__img" :src="'/images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'src/assets/images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
   </div>
 </div>
 
@@ -418,7 +418,7 @@ export default {
     Hero,
     Stat,
     IowaBar,
-    headline,
+    Headline,
     verticalDots,
     GridPanel,
     linkButton,
@@ -432,57 +432,57 @@ export default {
       areas_of_study: [
         {
           headline: 'Business, Economics, and Management',
-          image: 'src/assets/images/viewbook/areas/1.jpg',
+          image: '/images/viewbook/areas/1.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/biz-econ-mgmt',
         },
         {
           headline: 'Education',
-          image: 'src/assets/images/viewbook/areas/2.jpg',
+          image: '/images/viewbook/areas/2.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/edu',
         },
         {
           headline: 'Engineering and Computing',
-          image: 'src/assets/images/viewbook/areas/3.jpg',
+          image: '/images/viewbook/areas/3.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/engr-comp',
         },
         {
           headline: 'Health Sciences',
-          image: 'src/assets/images/viewbook/areas/4.jpg',
+          image: '/images/viewbook/areas/4.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/health-sci',
         },
         {
           headline: 'Languages, culture, and society',
-          image: 'src/assets/images/viewbook/areas/5.jpg',
+          image: '/images/viewbook/areas/5.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/lang-cult-soc',
         },
         {
           headline: 'Life and natural sciences',
-          image: 'src/assets/images/viewbook/areas/6.jpg',
+          image: '/images/viewbook/areas/6.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/life-nat-sci',
         },
         {
           headline: 'Math and quantitative sciences',
-          image: 'src/assets/images/viewbook/areas/7.jpg',
+          image: '/images/viewbook/areas/7.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/math-quant-sci',
         },
         {
           headline: 'Preprofessional programs',
-          image: 'src/assets/images/viewbook/areas/8.jpg',
+          image: '/images/viewbook/areas/8.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/preprofessional',
         },
         {
           headline: 'Social sciences and policy',
-          image: 'src/assets/images/viewbook/areas/9.jpg',
+          image: '/images/viewbook/areas/9.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/soc-sci-pol',
         },
         {
           headline: 'Visual and performing arts',
-          image: 'src/assets/images/viewbook/areas/10.jpg',
+          image: '/images/viewbook/areas/10.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/vis-perf-arts',
         },
         {
           headline: 'Writing, communications, literature, and media',
-          image: 'src/assets/images/viewbook/areas/11.jpg',
+          image: '/images/viewbook/areas/11.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/write-comm-media',
         },
         {
@@ -659,9 +659,9 @@ export default {
       ]
     }
   },
-  
+
   created() {
-    // Add the 'header-sticky' class so the iowa bar sticks to the top of the page. 
+    // Add the 'header-sticky' class so the iowa bar sticks to the top of the page.
     document.querySelector('body').classList.add('header-sticky');
   }
 }
@@ -669,6 +669,7 @@ export default {
 
 <style lang="scss">
   $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
+  @import '../node_modules/@uiowa/uids/src/assets/scss/reset.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/lists/lists.scss';
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
@@ -676,4 +677,15 @@ export default {
   @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
   @import '../node_modules/@uiowa/uids/src/components/card/card.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
+
+  .image-grid__section {
+    line-height: 0;
+  }
+
+  .element--circle-list ul {
+    margin-top: 1.05rem;
+    margin-bottom: 1.05rem;
+    margin-left: 1.875rem;
+  }
+
 </style>
