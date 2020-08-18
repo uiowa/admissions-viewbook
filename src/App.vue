@@ -364,7 +364,7 @@
 </div>
 <div class="image-grid">
   <div class="image-grid__section">
-    <img class="card__img" :src="'src/assets/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'@/src/assets/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
