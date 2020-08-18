@@ -315,7 +315,7 @@
           </a>
         </p>
         <p>
-          Submit the<strong>Free Application for Federal Student Aid (FAFSA)</strong>early to maximize your available assistance.
+          Submit the <strong>Free Application for Federal Student Aid (FAFSA)</strong> early to maximize your available assistance.
         </p>
         <p>
           <a href="https://admissions.uiowa.edu/finances/scholarships" class="bttn bttn--secondary bttn--caps">
@@ -659,9 +659,9 @@ export default {
       ]
     }
   },
-  
+
   created() {
-    // Add the 'header-sticky' class so the iowa bar sticks to the top of the page. 
+    // Add the 'header-sticky' class so the iowa bar sticks to the top of the page.
     document.querySelector('body').classList.add('header-sticky');
   }
 }
