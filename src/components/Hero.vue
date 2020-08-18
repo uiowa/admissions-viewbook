@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import Headline from './headline.vue';
+import Headline from './Headline.vue';
 import linkButton from './linkButton.vue';
 
 export default {
