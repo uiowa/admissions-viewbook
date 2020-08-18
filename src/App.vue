@@ -432,7 +432,7 @@ export default {
       areas_of_study: [
         {
           headline: 'Business, Economics, and Management',
-          image: 'src/assets/images/viewbook/areas/1.jpg',
+          image: '/images/viewbook/areas/1.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/biz-econ-mgmt',
         },
         {
