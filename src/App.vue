@@ -404,7 +404,7 @@ import Hero from './components/Hero.vue';
 import Stat from './components/Stat.vue';
 import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
-import headline from './components/headline.vue';
+import Headline from './components/Headline.vue';
 import verticalDots from './components/verticalDots.vue';
 import linkButton from './components/linkButton.vue';
 import Aerial from './components/Aerial.vue';
