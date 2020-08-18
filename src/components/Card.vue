@@ -2,9 +2,9 @@
     <div class="card">
         <div v-if="image" class="card__media">
             <a v-if="link_element == 'image'" :href="card_link_url">
-                <img class="card__img" :src="image" alt="Alt Text">
+                <img class="card__img" :src="image" alt="Alt Text" loading=lazy>
             </a>
-            <img v-else class="card__img" :src="image" alt="Alt Text">
+            <img v-else class="card__img" :src="image" alt="Alt Text" loading=lazy>
         </div>
 
         <div class="card__body">
