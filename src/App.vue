@@ -418,7 +418,7 @@ export default {
     Hero,
     Stat,
     IowaBar,
-    headline,
+    Headline,
     verticalDots,
     GridPanel,
     linkButton,

@@ -1,7 +1,7 @@
 <template>
     <div :class="getHeroClasses(is_last)">
         <div class="hero__image">
-            <img :src="image" alt="" loading=lazy>
+            <img :src="image" alt="" loading="lazy">
         </div>
         <div class="hero__container">
             <div class="hero__content">
