@@ -669,6 +669,7 @@ export default {
 
 <style lang="scss">
   $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
+  @import '../node_modules/@uiowa/uids/src/assets/scss/reset.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/lists/lists.scss';
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
@@ -676,4 +677,15 @@ export default {
   @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
   @import '../node_modules/@uiowa/uids/src/components/card/card.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
+
+  .image-grid__section {
+    line-height: 0;
+  }
+
+  .element--circle-list ul {
+    margin-top: 1.05rem;
+    margin-bottom: 1.05rem;
+    margin-left: 1.875rem;
+  }
+
 </style>
