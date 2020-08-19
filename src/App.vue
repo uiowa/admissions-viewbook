@@ -614,7 +614,7 @@ export default {
           section_id: 'areas-of-study'
         },
         {
-          section_title: 'Acdemic Opportunities',
+          section_title: 'Academic Opportunities',
           section_id: 'academic-opportunities'
         },
         {
