@@ -6,11 +6,11 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@babel/core": "^7.11.1",
     "@uiowa/uids": "uiowa/uids#be5d361",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.11.1",
     "@rollup/plugin-babel": "^5.2.0",
     "@vue/compiler-sfc": "^3.0.0-rc.5",
     "sass": "^1.26.10",
