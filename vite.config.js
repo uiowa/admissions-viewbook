@@ -1,12 +1,13 @@
-import babel from '@rollup/plugin-babel';
+// import babel from '@rollup/plugin-babel';
 
 const config = {
-    input: 'src/index.js',
-    output: {
-        dir: 'output',
-        format: 'esm'
-    },
-    plugins: [babel({ babelHelpers: 'bundled' })]
-};
+  esbuildTarget: 'es2015',
+  // plugins: [
+  //   babel({
+  //     babelHelpers: 'bundled',
+  //     presets: ['@babel/preset-env'],
+  //   })
+  // ],
+}
 
-export default config;
+module.exports = config
