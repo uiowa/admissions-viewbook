@@ -2,15 +2,14 @@
   "name": "admissions-viewbook",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build"
+    "dev": "vite --assetsDir=assets --minify=esbuild",
+    "build": "vite build --assetsDir=assets --minify=esbuild"
   },
   "dependencies": {
     "@uiowa/uids": "uiowa/uids#41b3d33",
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.0-rc.5",
     "sass": "^1.26.10",
     "vite": "^1.0.0-rc.4"
   }
