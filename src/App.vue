@@ -378,7 +378,7 @@
     <headline
       heading_level= "h2"
       heading_class= "bold-headline--caps bold-headline"
-      heading= "Its <span>Great</span> to<br /> be a Hawkeye"
+      heading= "It's <span>Great</span> to<br /> be a Hawkeye"
     />
   </div>
 
