@@ -1,6 +1,6 @@
 <template>
 <div class="logo" :class="logo_classes">
-  <a href="uiowa.edu">
+  <a href="https://uiowa.edu">
     <div class="element-invisible">The University of Iowa</div>
     <svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" :aria-labelledby="IowaBarId(logo_id)" role="img" viewBox="0 0 311.6 90.2">
       <path class="st0" d="M40 18.8h-7.3v52.4H40v19H0v-19h7.3V18.8H0V0h40V18.8z"/>
@@ -29,7 +29,7 @@ export default {
     },
 
     methods: {
-      /* 
+      /*
         This method takes a String 'logo_id'.
         It will return a String with either "logo-'logo_id' if 'logo_id' is set, and 'logo' if it is not.
       */
