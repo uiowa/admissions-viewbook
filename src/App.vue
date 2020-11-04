@@ -687,4 +687,24 @@ export default {
     margin-left: 1.875rem;
   }
 
+
+  // Override and condense for smaller devices.
+  .cta-row__wrapper {
+    transition: padding 0.5s ease;
+    padding: 0.5rem 0;
+    .cta-row__container .menu a {
+      transition: margin 0.5s ease;
+      margin: 0px .5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  @media (min-height: 800px) {
+    .cta-row__wrapper {
+      padding: 1.875rem 0;
+      .cta-row__container .menu a {
+        margin: 0px 1.05rem;
+      }
+    }
+  }
+
 </style>
