@@ -700,7 +700,7 @@ export default {
       border: none;
     }
   }
-  @media (min-height: 800px) {
+  @media (min-height: 1000px) {
     .cta-row__wrapper {
       padding: 1.875rem 0;
       .cta-row__container .menu a {
