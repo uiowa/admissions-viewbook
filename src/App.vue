@@ -69,9 +69,8 @@
 />
 
 <div class="stat__wrapper bg--black">
-  <template v-for="(stat, index) in stats_1">
+  <template v-for="(stat, index) in stats_1" :key="index">
     <stat
-      :key="index"
       :headline="stat.headline"
       :heading_prefix="stat.heading_prefix"
       :heading_suffix="stat.heading_suffix"
@@ -104,9 +103,8 @@
 />
 
   <div class="stat__wrapper bg--black">
-  <template v-for="(stat, index) in stats_2">
+  <template v-for="(stat, index) in stats_2" :key="index">
     <stat
-      :key="index"
       :headline="stat.headline"
       :heading_prefix="stat.heading_prefix"
       :heading_suffix="stat.heading_suffix"
@@ -134,9 +132,8 @@
 />
 
 <div class="stat__wrapper bg--black">
-  <template v-for="(stat, index) in stats_3">
+  <template v-for="(stat, index) in stats_3" :key="index">
     <stat
-      :key="index"
       :headline="stat.headline"
       :heading_prefix="stat.heading_prefix"
       :heading_suffix="stat.heading_suffix"
@@ -371,7 +368,14 @@
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/0297-Pano5.jpg'" alt="Alt Text" loading=lazy>
+    <Modal>
+      <template v-slot:modal-trigger>
+        <img class="card__img" :src="'/images/viewbook/sections/0297-Pano5.jpg'" alt="Alt Text" loading=lazy>
+      </template>
+      <template v-slot:modal-content>
+        <img :src="'/images/viewbook/sections/drone-image.jpg'" alt="Alt Text" loading=lazy>
+      </template>
+    </Modal>
   </div>
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
@@ -409,6 +413,7 @@ import linkButton from './components/linkButton.vue';
 import Aerial from './components/Aerial.vue';
 import menuGroup from './components/menuGroup.vue';
 import footerSection from './components/footerSection.vue';
+import Modal from './components/Modal.vue';
 
 export default {
   name: 'App',
@@ -423,6 +428,7 @@ export default {
     linkButton,
     Aerial,
     menuGroup,
+    Modal,
     footerSection
   },
 
