@@ -1,9 +1,8 @@
 <template>
 <nav role="navigation">
   <ul class="menu">
-    <template v-for="(item, index) in items">
+    <template v-for="(item, index) in items" :key="index">
       <menuItem
-        :key="index"
         :text="item.text"
         :url="item.url"
         :item_class="item.item_class"
