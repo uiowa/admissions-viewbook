@@ -57,6 +57,10 @@ export default {
         height: 100%;
         background: #fff;
         position: relative;
+
+        >img {
+            max-height: 100%;
+        }
     }
 
     &__close {
