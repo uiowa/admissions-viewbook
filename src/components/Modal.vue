@@ -5,13 +5,11 @@
 
     <teleport to="body">
         <div v-if="modalOpen" class="modal">
-            <div class="modal__content--wrapper">
-                <div class="modal__content">
-                    <slot name="modal-content"></slot>
-                    <button class="modal__close" @click="modalOpen=false">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
+            <div class="modal__content">
+                <slot name="modal-content"></slot>
+                <button class="modal__close" @click="modalOpen=false">
+                    <i class="fas fa-times"></i>
+                </button>
             </div>
         </div>
     </teleport>
@@ -41,7 +39,7 @@ export default {
     align-items: center;
     justify-content: center;
 
-    &__content--wrapper {
+    &__content {
         display: flex;
         position: relative;
         flex-direction: column;
@@ -51,12 +49,6 @@ export default {
         max-height: calc(100% - 5rem);
         width: auto;
         height: auto;
-    }
-
-    &__content {
-        height: 100%;
-        background: #fff;
-        position: relative;
 
         >img {
             max-height: 100%;
