@@ -24,9 +24,8 @@
       </template>
       <template v-else-if="grid_content_position=='second' && card_grid!==false">
         <div class="card__wrapper">
-          <template v-for="(area, index) in areas_of_study">
+          <template v-for="(area, index) in areas_of_study" :key="index">
             <hero
-              :key="index"
               :hero_title="area.headline"
               :image="area.image"
               :link_url="area.link_url"
@@ -64,9 +63,8 @@
       </template>
       <template v-else-if="grid_content_position=='first' && card_grid!==false">
         <div class="card__wrapper">
-          <template v-for="(area, index) in areas_of_study">
+          <template v-for="(area, index) in areas_of_study" :key="index">
             <hero
-              :key="index"
               :hero_title="area.headline"
               :image="area.image"
               :link_url="area.link_url"

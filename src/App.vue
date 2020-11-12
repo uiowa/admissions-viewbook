@@ -370,10 +370,10 @@
   <div class="image-grid__section">
     <Modal>
       <template v-slot:modal-trigger>
-        <img class="card__img" :src="'/images/viewbook/sections/0297-Pano5.jpg'" alt="Alt Text" loading=lazy>
+        <img class="card__img" :src="'/images/viewbook/sections/Pano6.jpg'" alt="Alt Text" loading=lazy>
       </template>
       <template v-slot:modal-content>
-        <img :src="'/images/viewbook/sections/drone-image.jpg'" alt="Alt Text" loading=lazy>
+        <img :src="'/images/viewbook/sections/2018_09_12-Drone-Campus-Images-0106-HDR.JPG'" alt="Alt Text" loading=lazy>
       </template>
     </Modal>
   </div>

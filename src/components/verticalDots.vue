@@ -1,8 +1,8 @@
 <template>
   <nav id="vertical-dots" role="navigation" aria-label="Navigation">
     <ul>
-      <template v-for="(section, index) in sections">
-        <li :key="index">
+      <template v-for="(section, index) in sections" :key="index">
+        <li>
           <a class="v-dot-link" :href="'#'+section.section_id" :aria-labelledby="'v-dot-nav-section-'+index" :data-section="section.section_id">
             <span :id="'v-dot-nav-section-'+index">{{section.section_title}}</span>
             <i v-if="index===0" class="fas fa-arrow-up"></i>
