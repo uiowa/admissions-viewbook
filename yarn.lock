@@ -283,9 +283,9 @@
     "@types/express-serve-static-core" "*"
     "@types/mime" "*"
 
-"@uiowa/uids@uiowa/uids#fff838b":
+"@uiowa/uids@uiowa/uids#fb57699":
   version "3.1.6"
-  resolved "https://codeload.github.com/uiowa/uids/tar.gz/fff838be7af726e1cddd2f5e5106c2d3381398c8"
+  resolved "https://codeload.github.com/uiowa/uids/tar.gz/fb57699cd7e6a8fcca4e81e2e838dca2a968c1e0"
   dependencies:
     autoprefixer "^9.8.0"
     cssnano "^4.1.10"
