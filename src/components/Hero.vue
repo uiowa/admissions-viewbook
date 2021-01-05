@@ -124,5 +124,5 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/hero/hero.scss';
+    @import '../../node_modules/@uiowa/uids/src/components/banner/banner.scss';
 </style>

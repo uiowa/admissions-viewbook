@@ -118,5 +118,5 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
+    @import '../../node_modules/@uiowa/uids/src/components/viewbook/grid-panel/grid-panel.scss';
 </style>

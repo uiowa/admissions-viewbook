@@ -679,7 +679,7 @@ export default {
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
-  @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
+  @import '../node_modules/@uiowa/uids/src/components/viewbook/grid-panel/grid-panel.scss';
   @import '../node_modules/@uiowa/uids/src/components/card/card.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
 
