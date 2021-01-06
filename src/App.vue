@@ -612,7 +612,7 @@ export default {
       v_dots_sections: [
         {
           section_title: 'Back to Top',
-          section_id: 'banner-banner'
+          section_id: 'hero-banner'
         },
         {
           section_title: 'Areas of Study',
