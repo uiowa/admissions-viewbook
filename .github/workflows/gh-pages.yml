@@ -40,12 +40,8 @@ jobs:
       - run: rm -rf $GITHUB_WORKSPACE/gh-pages/.git
 #      - run: ls -lah $GITHUB_WORKSPACE/gh-pages
 
-      - name: Get the version
-        id: get_version
-        run: echo ::set-env name=BRANCH::${GITHUB_REF#refs/*/}
-
       - name: Setup node
-        uses: actions/setup-node@v2.1.0
+        uses: actions/setup-node@v2.1.2
         with:
           node-version: "12.x"
 
