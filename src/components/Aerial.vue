@@ -21,9 +21,9 @@
       />
 
       <Headline v-if="typeof aerial_title !== 'undefined'"
-        heading_level="h2"
-        heading_class="bold-headline--caps bold-headline"
-        :heading="aerial_title"
+        headline_level="h2"
+        headline_class="headline headline--uppercase"
+        :headline="aerial_title"
       />
 
       <Highlight

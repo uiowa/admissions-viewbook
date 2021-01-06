@@ -1,18 +1,18 @@
 <template>
-    <div :class="getHeroClasses(is_last)">
-        <div class="hero__image">
+    <div :class="getBannerClasses(is_last)">
+        <div class="banner__image">
             <img :src="image" alt="" loading="lazy">
         </div>
-        <div class="hero__container">
-            <div class="hero__content">
+        <div class="banner__container">
+            <div class="banner__content">
                 <Headline
-                    v-if="hero_title"
-                    heading_level="h2"
-                    :class="hero_title_classes"
-                    :heading="hero_title"
-                    :heading_url="link_url"
+                    v-if="banner_title"
+                    headline_level="h2"
+                    :class="banner_title_classes"
+                    :headline="banner_title"
+                    :headline_url="link_url"
                 />
-                 <div v-html="hero_text"></div>
+                 <div v-html="banner_text"></div>
                  <linkButton
                     v-if="button_text"
                     :button_link="button_link"
@@ -30,7 +30,7 @@ import Headline from './Headline.vue';
 import linkButton from './linkButton.vue';
 
 export default {
-    name: 'Hero',
+    name: 'Banner',
 
     props: {
         image: {
@@ -42,28 +42,28 @@ export default {
         is_last: {
             type: Boolean
         },
-        hero_overlay: {
+        banner_overlay: {
             type: String
         },
-        hero_size: {
+        banner_size: {
             type: String
         },
-        hero_classes: {
+        banner_classes: {
             type: String
         },
-        hero_vertical_alignment: {
+        banner_vertical_alignment: {
             type: String
         },
-        hero_horizontal_alignment: {
+        banner_horizontal_alignment: {
             type: String
         },
-        hero_text: {
+        banner_text: {
             type: String
         },
-        hero_title: {
+        banner_title: {
             type: String
         },
-        hero_title_classes: {
+        banner_title_classes: {
             type: String
         },
         button_link: {
@@ -83,7 +83,7 @@ export default {
     created() {
         this.$nextTick(() => {
             const element = this.$el;
-            const link_elements = ['.bold-headline a', 'a.bttn'];
+            const link_elements = ['.headline a', 'a.bttn'];
             let up, down, link, i;
             // Check if it has one of the classes defined in 'link_elements'.
             for (i = 0; i < link_elements.length; i++) {
@@ -112,8 +112,8 @@ export default {
             This method takes a boolean 'is_last' (defaulted to false).
             It composes a string out of the classes passed to the component, and then if 'is_last' is true it will add some for that case.
         */
-        getHeroClasses(is_last=false) {
-            let classes = 'hero hero--'+this.$props.hero_overlay+' hero--'+this.$props.hero_size+' '+this.$props.hero_classes+' hero--'+this.$props.hero_vertical_alignment+' hero--'+this.$props.hero_horizontal_alignment;
+        getBannerClasses(is_last=false) {
+            let classes = 'banner banner--'+this.$props.banner_overlay+' banner--'+this.$props.banner_size+' '+this.$props.banner_classes+' banner--'+this.$props.banner_vertical_alignment+' banner--'+this.$props.banner_horizontal_alignment;
             if (is_last) {
                 classes += ' bg-pattern--brain-black';
             }
