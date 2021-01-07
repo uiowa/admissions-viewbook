@@ -31,9 +31,12 @@ The command will output the server URL to visit in your browser, ex. http://loca
 
 
 ### Creating a PR
-Once your feature branch has been created, you will need to run the following command::
-```
-git push origin feature_branch
-```
-This will generate 
+1. Once your feature branch has been created, you will need to run the following command: `git push origin feature_branch`.
+2. This will generate a url to use, ex. https://github.com/uiowa/admissions-viewbook/pull/new/feature_branch. 
+3. Once you open the url, make sure that you switch the base to `develop` instead of `main` and create the pull request. 
+4. When the pull request is approved, merge into `develop`.
+5. Once the pull request is merged into `develop`, you can preview the site at https://viewbook.admissions.uiowa.edu/latest/. 
+6. If https://viewbook.admissions.uiowa.edu/latest/ is working with the changes from the pull request, merge `develop` into `main`.
 
+### Common errors
+If the commands listed above for local development are not working, delete your `node_modules` folder and run `yarn install`. 
