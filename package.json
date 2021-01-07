@@ -7,10 +7,11 @@
   },
   "dependencies": {
     "@uiowa/uids": "uiowa/uids#4e1d527",
-    "vue": "^3.0.0-rc.1"
+    "vue": "^3.0.5"
   },
   "devDependencies": {
     "sass": "^1.26.10",
+    "@vue/compiler-sfc": "^3.0.5",
     "vite": "^1.0.0-rc.4"
   }
 }
