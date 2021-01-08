@@ -6,7 +6,7 @@
     "build": "vite build --assetsDir=assets --minify=esbuild"
   },
   "dependencies": {
-    "@uiowa/uids": "uiowa/uids#4e1d527",
+    "@uiowa/uids": "uiowa/uids#b8cee42",
     "vue": "^3.0.5"
   },
   "devDependencies": {
