@@ -1,6 +1,6 @@
 <template>
     <div :class="getBannerClasses(is_last)">
-        <div class="banner__image">
+        <div v-if="image !== null" class="banner__image">
             <img :src="image" alt="" loading="lazy">
         </div>
         <div class="banner__container">
@@ -34,7 +34,8 @@ export default {
 
     props: {
         image: {
-            type: String
+            type: String,
+            default: null
         },
         link_url: {
             type: String
