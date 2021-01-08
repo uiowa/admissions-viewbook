@@ -3,11 +3,11 @@
     <div>
       <Headline
         v-if="headline"
-        heading_level="h2"
+        headline_level="h2"
         class="stat__title"
-        :heading="headline"
-        :heading_prefix="heading_prefix"
-        :heading_suffix="heading_suffix"
+        :headline="headline"
+        :headline_prefix="headline_prefix"
+        :headline_suffix="headline_suffix"
       />
     </div>
     <p v-html="stat_description" class="stat__description"></p>
@@ -25,10 +25,10 @@ export default {
       headline: {
         type: String
       },
-      heading_prefix: {
+      headline_prefix: {
         type: String
       },
-      heading_suffix: {
+      headline_suffix: {
         type: String
       },
       image: {

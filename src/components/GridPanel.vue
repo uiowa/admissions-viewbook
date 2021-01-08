@@ -5,9 +5,9 @@
       <div v-if="grid_content_position=='first'">
         <Headline 
           v-if="headline"
-          heading_level="h2"
-          class="bold-headline--caps bold-headline"
-          :heading="headline"
+          headline_level="h2"
+          class="headline headline--uppercase"
+          :headline="headline"
         />
 
         <div v-html="grid_panel_content"></div>
@@ -23,21 +23,23 @@
         <img :src="image" class="grid-panel__img" alt="" loading="lazy">
       </template>
       <template v-else-if="grid_content_position=='second' && card_grid!==false">
-        <div class="card__wrapper">
+        <div class="grid--threecol--33-34-33">
+          <div class="list-container">
           <template v-for="(area, index) in areas_of_study" :key="index">
-            <hero
-              :hero_title="area.headline"
+            <banner
+              :banner_title="area.headline"
               :image="area.image"
               :link_url="area.link_url"
               :is_last="index+1 === areas_of_study.length"
-              hero_overlay = "solid-opacity"
-              hero_size="large"
-              hero_classes="hero--row"
-              hero_vertical_alignment="vertical-bottom"
-              hero_horizontal_alignment="horizontal-left"
-              hero_title_classes="bold-headline--caps bold-headline bold-headline--highlight"
+              banner_overlay = "solid-opacity"
+              banner_size="large"
+              banner_classes="hero--row"
+              banner_vertical_alignment="vertical-bottom"
+              banner_horizontal_alignment="horizontal-left"
+              banner_title_classes="headline headline--uppercase headline--highlight"
             />
           </template>
+          </div>
         </div>
       </template>
     </div>
@@ -45,9 +47,9 @@
       <div v-if="grid_content_position=='second'">
         <Headline
           v-if="headline"
-          heading_level="h2"
-          class="bold-headline--caps bold-headline"
-          :heading="headline"
+          headline_level="h2"
+          class="headline headline--uppercase"
+          :headline="headline"
         />
         <div v-html="grid_panel_content"></div>
         <div v-html="grid_panel_content_2"></div>
@@ -62,24 +64,26 @@
         <img :src="image" class="grid-panel__img" alt="" loading="lazy">
       </template>
       <template v-else-if="grid_content_position=='first' && card_grid!==false">
-        <div class="card__wrapper">
+        <div class="grid--threecol--33-34-33">
+          <div class="list-container">
           <template v-for="(area, index) in areas_of_study" :key="index">
-            <hero
-              :hero_title="area.headline"
+            <banner
+              :banner_title="area.headline"
               :image="area.image"
               :link_url="area.link_url"
-              :hero_text="area.text"
+              :banner_text="area.text"
               :button_text="area.button_text"
               :button_link="area.button_link"
               :is_last="index+1 === areas_of_study.length"
-              hero_overlay = "solid-opacity"
-              hero_size="large"
-              hero_classes="hero--row"
-              hero_vertical_alignment="vertical-bottom"
-              hero_horizontal_alignment="horizontal-left"
-              hero_title_classes="bold-headline--caps bold-headline bold-headline--highlight"
+              banner_overlay = "solid-opacity"
+              banner_size="small"
+              banner_classes="banner--row"
+              banner_vertical_alignment="vertical-bottom"
+              banner_horizontal_alignment="horizontal-left"
+              banner_title_classes="headline headline--uppercase headline--highlight"
             />
           </template>
+        </div>
         </div>
       </template>
     </div>
@@ -89,7 +93,7 @@
 <script>
 import Headline from './Headline.vue';
 import linkButton from './linkButton.vue';
-import Hero from './Hero.vue';
+import Banner from './Banner.vue';
 export default {
     name: 'GridPanel',
 
@@ -112,11 +116,11 @@ export default {
     components: {
         Headline,
         linkButton,
-        Hero
+        Banner
     },
 }
 </script>
 
 <style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
+    @import '../../node_modules/@uiowa/uids/src/components/viewbook/grid-panel/grid-panel.scss';
 </style>
