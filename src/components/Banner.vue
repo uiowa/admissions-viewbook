@@ -1,6 +1,6 @@
 <template>
     <div :class="getBannerClasses(is_last)">
-        <div class="banner__image">
+        <div v-if="image" class="banner__image">
             <img :src="image" alt="" loading="lazy">
         </div>
         <div class="banner__container">
