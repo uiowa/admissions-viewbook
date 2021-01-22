@@ -1,9 +1,9 @@
 <template>
 <div class="highlight__wrapper">
   <Headline v-if="typeof highlight_title !== 'undefined'"
-    heading_level= "h3"
-    heading_class= "highlight__title"
-    :heading="highlight_title"
+    headline_level= "h3"
+    headline_class= "highlight__title"
+    :headline="highlight_title"
   />
   <div v-if="typeof highlight_sub !== 'undefined'" class="highlight__sub">
     <span>{{ highlight_sub }}</span>

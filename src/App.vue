@@ -6,17 +6,17 @@
 <div class="v-dots-scroll-spacer">
   <div class="v-dots-scroll-target" id="hero-banner"></div>
 </div>
-<hero
+<banner
   image="/images/widescreen__2592_x_1458/pano.jpg"
-  hero_size="large"
-  hero_vertical_alignment="vertical-center"
-  hero_horizontal_alignment="horizontal-center"
-  hero_classes="bg--black"
-  hero_type="image"
-  hero_overlay= "gradient-center"
-  hero_text=''
-  hero_title='<span>Welcome</span> to Iowa'
-  hero_title_classes='bold-headline--caps bold-headline bold-headline--negative'
+  banner_size="large"
+  banner_vertical_alignment="vertical-center"
+  banner_horizontal_alignment="horizontal-center"
+  banner_classes=""
+  banner_type="image"
+  banner_overlay= "gradient-center"
+  banner_text=''
+  banner_title='<span>Welcome</span> to Iowa'
+  banner_title_classes='headline headline--uppercase'
 />
 
 <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
@@ -72,8 +72,8 @@
   <template v-for="(stat, index) in stats_1" :key="index">
     <stat
       :headline="stat.headline"
-      :heading_prefix="stat.heading_prefix"
-      :heading_suffix="stat.heading_suffix"
+      :headline_prefix="stat.headline_prefix"
+      :headline_suffix="stat.headline_suffix"
       :stat_description="stat.stat_description"
       :stat_content="stat.stat_content"
     />
@@ -106,8 +106,8 @@
   <template v-for="(stat, index) in stats_2" :key="index">
     <stat
       :headline="stat.headline"
-      :heading_prefix="stat.heading_prefix"
-      :heading_suffix="stat.heading_suffix"
+      :headline_prefix="stat.headline_prefix"
+      :headline_suffix="stat.headline_suffix"
       :stat_description="stat.stat_description"
       :stat_content="stat.stat_content"
     />
@@ -135,8 +135,8 @@
   <template v-for="(stat, index) in stats_3" :key="index">
     <stat
       :headline="stat.headline"
-      :heading_prefix="stat.heading_prefix"
-      :heading_suffix="stat.heading_suffix"
+      :headline_prefix="stat.headline_prefix"
+      :headline_suffix="stat.headline_suffix"
       :stat_description="stat.stat_description"
       :stat_content="stat.stat_content"
     />
@@ -150,15 +150,15 @@
 <div class="grid-panel grid-panel--split">
   <div class="grid-panel__column grid-panel__content">
     <headline
-      heading_level= "h2"
-      heading_class= "bold-headline--caps bold-headline"
-      heading= "How to Apply"
+      headline_level= "h2"
+      headline_class= "bold-headline--caps bold-headline"
+      headline= "How to Apply"
     />
     <hr class="element--spacer-separator" />
     <ol class="element--circle-list">
       <li>
         <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-          <span class="heading__heading">Complete the required high school courses.</span>
+          <span class="headline__heading">Complete the required high school courses.</span>
         </h3>
 
         <p>
@@ -172,7 +172,7 @@
       <li>
 
         <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-          <span class="heading__heading">Your Regent Admission Index Score.</span>
+          <span class="headline__heading">Your Regent Admission Index Score.</span>
         </h3>
 
         <p>Score 245 or higher (residents), 255 or higher (nonresidents) on the Regent Admission Index. The Regent Admission Index (RAI) is a formula used by all Iowa public universities to make admission a simpler, more streamlined process. To calculate your RAI score, use the applicable formula below.
@@ -212,7 +212,7 @@
 
       <li>
         <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-          <span class="heading__heading">Meet the admission requirements for your college of choice.</span>
+          <span class="headline__heading">Meet the admission requirements for your college of choice.</span>
         </h3>
 
         <p>Admission requirements vary for each college that accepts first-year students.</p>
@@ -267,9 +267,9 @@
     <ol class="element--circle-list counter-increment">
       <li>
         <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-          <span class="heading__heading">Submit your FAFSA and explore financial aid.</span>
+          <span class="headline__heading">Submit your FAFSA and explore financial aid.</span>
         </h3>
-        <hr class="element--spacer-separator"/>
+
         <table class="table is-striped">
           <caption class="element-invisible">Finances</caption>
           <thead>
@@ -300,7 +300,7 @@
           </tbody>
         </table>
 
-        <p>
+        <p><br />
           <small>* Tuition and fees vary by academic program. Tuition and fees listed include a one-time University Records and Documents Fee of $225 for new students.<br/>** Based on a weighted room average and unlimited (Gold) meal plan</small>
         </p>
 
@@ -325,7 +325,7 @@
       <li>
 
         <h3 class="bold-headline bold-headline--serif bold-headline--underline">
-          <span class="heading__heading">Apply for housing and dining.</span>
+          <span class="headline__heading">Apply for housing and dining.</span>
         </h3>
 
         <p>Access the housing application through your admissions profile on
@@ -380,9 +380,9 @@
 
   <div class="image-grid__section grid__content bg-pattern--brain-reversed">
     <headline
-      heading_level= "h2"
-      heading_class= "bold-headline--caps bold-headline"
-      heading= "It's <span>Great</span> to<br /> be a Hawkeye"
+      headline_level= "h2"
+      headline_class= "headline headline--uppercase"
+      headline= "It's <span>Great</span> to<br /> be a Hawkeye"
     />
   </div>
 
@@ -403,7 +403,7 @@
 </template>
 
 <script>
-import Hero from './components/Hero.vue';
+import Banner from './components/Banner.vue';
 import Stat from './components/Stat.vue';
 import IowaBar from './components/IowaBar.vue';
 import GridPanel from './components/GridPanel.vue';
@@ -419,7 +419,7 @@ export default {
   name: 'App',
 
   components: {
-    Hero,
+    Banner,
     Stat,
     IowaBar,
     Headline,
@@ -492,7 +492,6 @@ export default {
         },
         {
           headline: '',
-          image: '',
           button_text: 'Browse by Major',
           button_link: 'https://admissions.uiowa.edu/academics/undergraduate-areas-of-study',
         }
@@ -500,29 +499,29 @@ export default {
       stats_1: [
         {
           headline: '34',
-          heading_prefix: '#',
-          heading_suffix: '',
+          headline_prefix: '#',
+          headline_suffix: '',
           stat_description: 'BEST PUBLIC UNIVERSITY BY U.S. NEWS & WORLD REPORT',
           stat_content: 'Among the top 2% of universities worldwide.',
         },
         {
           headline: '15:1',
-          heading_prefix: '',
-          heading_suffix: '',
+          headline_prefix: '',
+          headline_suffix: '',
           stat_description: 'STUDENT-TO-FACULTY RATIO',
           stat_content: 'Get to know your professors.',
         },
         {
           headline: '23',
-          heading_prefix: '',
-          heading_suffix: '',
+          headline_prefix: '',
+          headline_suffix: '',
           stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020',
           stat_content: 'That’s the same as some Ivy League schools.',
         },
         {
           headline: '1 in 3',
-          heading_prefix: '',
-          heading_suffix: '',
+          headline_prefix: '',
+          headline_suffix: '',
           stat_description: 'UNDERGRADS PARTICIPATE IN RESEARCH',
           stat_content: 'Gain experience now.',
         }
@@ -530,29 +529,29 @@ export default {
       stats_2: [
         {
           headline: '500',
-          heading_prefix: '',
-          heading_suffix: '+',
+          headline_prefix: '',
+          headline_suffix: '+',
           stat_description: 'STUDENT<br />  ORGANIZATIONS',
           stat_content: 'Or, start your own.',
         },
          {
           headline: '100',
-          heading_prefix: '',
-          heading_suffix: '+',
+          headline_prefix: '',
+          headline_suffix: '+',
           stat_description: 'RESTAURANTS AND<br />  CAFÉS',
           stat_content: 'From vegan brunch to pie shakes.',
         },
          {
           headline: '400',
-          heading_prefix: '',
-          heading_suffix: '+',
+          headline_prefix: '',
+          headline_suffix: '+',
           stat_description: 'ARTS PERFORMANCES Available EACH YEAR',
           stat_content: 'For $5 or less.',
         },
         {
           headline: '24',
-          heading_prefix: '',
-          heading_suffix: '',
+          headline_prefix: '',
+          headline_suffix: '',
           stat_description: 'NCAA DIVISION I<br />  TEAMS',
           stat_content: 'There’s nothing like a Hawkeye game.',
         }
@@ -560,29 +559,29 @@ export default {
       stats_3: [
         {
           headline: '95',
-          heading_prefix: '',
-          heading_suffix: '%',
+          headline_prefix: '',
+          headline_suffix: '%',
           stat_description: 'OVERALL JOB/GRADUATE SCHOOL PLACEMENT RATE',
           stat_content: 'Business <strong>97%</strong><br />Education <strong>91%</strong><br />Engineering  <strong>96%</strong><br /> Liberal Arts and Sciences <strong>94%</strong><br /> Nursing <strong>99%</strong><br />Pharmacy <strong>97%</strong>',
         },
          {
           headline: '4,000',
-          heading_prefix: '',
-          heading_suffix: '+',
+          headline_prefix: '',
+          headline_suffix: '+',
           stat_description: 'STUDENT<br />  INTERNSHIPS',
           stat_content: 'Everywhere from NASA to the Minnesota Vikings.',
         },
          {
           headline: '4,100',
-          heading_prefix: '',
-          heading_suffix: '+',
+          headline_prefix: '',
+          headline_suffix: '+',
           stat_description: 'Employers have hired Iowa Graduates the past three years',
           stat_content: 'Gain real-world skills that make résumés stand out.',
         },
         {
           headline: '1,316',
-          heading_prefix: '',
-          heading_suffix: '+',
+          headline_prefix: '',
+          headline_suffix: '+',
           stat_description: 'STUDENTS STUDIED ABROAD LAST YEAR',
           stat_content: 'Spanning the globe in 69 countries.',
         }
@@ -679,7 +678,8 @@ export default {
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
   @import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
-  @import '../node_modules/@uiowa/uids/src/components/grid-panel/grid-panel.scss';
+  @import '../node_modules/@uiowa/uids/src/components/grid/grid.scss';
+  @import '../node_modules/@uiowa/uids/src/components/viewbook/grid-panel/grid-panel.scss';
   @import '../node_modules/@uiowa/uids/src/components/card/card.scss';
   @import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
 
