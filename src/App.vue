@@ -195,10 +195,8 @@
           </a>
         </p>
 
-        <p>
-          <strong>ACT and SAT Test Scores:</strong>
-        </p>The Iowa Board of Regents has waived the requirement for students needing to submit either an ACT or SAT in order to be admitted for the Fall 2022 term. Students who wish to be considered for admission without a test score may leave the test score section blank on the application. An individual review process will be used to make an admission decision for students who do not self-report a test score as part of their application. Students admitted to the University of Iowa without test scores may also be considered for direct admission to University of Iowa academic programs and some merit scholarships awarded by the Office of Admissions.<p>
-</p>
+        <p><strong>ACT and SAT Test Scores:</strong></p>
+        <p>The Iowa Board of Regents has waived the requirement for students needing to submit either an ACT or SAT in order to be admitted for the Fall 2022 term. Students who wish to be considered for admission without a test score may leave the test score section blank on the application. An individual review process will be used to make an admission decision for students who do not self-report a test score as part of their application. Students admitted to the University of Iowa without test scores may also be considered for direct admission to University of Iowa academic programs and some merit scholarships awarded by the Office of Admissions.</p>
 
         <p>
           <a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
