@@ -495,7 +495,7 @@ export default {
       ],
       stats_1: [
         {
-          headline: '34',
+          headline: '33',
           headline_prefix: '#',
           headline_suffix: '',
           stat_description: 'BEST PUBLIC UNIVERSITY BY U.S. NEWS & WORLD REPORT',
@@ -555,11 +555,11 @@ export default {
       ],
       stats_3: [
         {
-          headline: '95',
+          headline: '93',
           headline_prefix: '',
           headline_suffix: '%',
           stat_description: 'OVERALL JOB/GRADUATE SCHOOL PLACEMENT RATE',
-          stat_content: 'Business <strong>97%</strong><br />Education <strong>91%</strong><br />Engineering  <strong>96%</strong><br /> Liberal Arts and Sciences <strong>94%</strong><br /> Nursing <strong>99%</strong><br />Pharmacy <strong>97%</strong>',
+          stat_content: 'Business <strong>94%</strong><br />Education <strong>94%</strong><br />Engineering  <strong>92%</strong><br /> Liberal Arts and Sciences <strong>93%</strong><br /> Nursing <strong>98%</strong><br />Pharmacy <strong>98%</strong>',
         },
          {
           headline: '4,000',
