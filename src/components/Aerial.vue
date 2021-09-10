@@ -58,7 +58,7 @@ export default {
       grid_title_3: 'Easy to get around',
       grid_sub_3: ' Whether you like to walk, bike, or take the free bus system, residence halls are closely located to the center of campus and downtown Iowa City.',
       grid_title_4: 'Big ten athletics',
-      grid_sub_4: 'Seating nearly 70,000, Kinnick Stadium is home to Hawkeye Football, just one of the 24 NCAA teams at Iowa.'
+      grid_sub_4: 'Seating nearly 70,000, Kinnick Stadium is home to Hawkeye Football, just one of the 21 NCAA teams at Iowa.'
     }
   }
 }
