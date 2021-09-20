@@ -195,11 +195,8 @@
           </a>
         </p>
 
-        <p>
-          <strong>ACT and SAT Test Scores:</strong>
-        </p>
-        <p>We understand that COVID-19 has caused limited access to ACT and SAT tests. Any academic disruptions you have experienced will not keep you from being considered for admission at the University of Iowa. We encourage you to apply for admission even if you do not have a test score. An individual review process will be used to make an initial admission decision for students who do not self-report a test score as part of their application. This temporary exemption by the Iowa Board of Regents removes the testing requirement for Fall 2021 applicants.
-</p>
+        <p><strong>ACT and SAT Test Scores:</strong></p>
+        <p>The Iowa Board of Regents has waived the requirement for students needing to submit either an ACT or SAT in order to be admitted for the Fall 2022 term. Students who wish to be considered for admission without a test score may leave the test score section blank on the application. An individual review process will be used to make an admission decision for students who do not self-report a test score as part of their application. Students admitted to the University of Iowa without test scores may also be considered for direct admission to University of Iowa academic programs and some merit scholarships awarded by the Office of Admissions.</p>
 
         <p>
           <a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
@@ -282,19 +279,19 @@
             <tr>
               <td><strong>Iowa residents</strong></td>
               <td>
-                <strong>$9,830*</strong>
+                <strong>$9,942*</strong>
               </td>
             </tr>
             <tr>
               <td><strong>Nonresidents</strong></td>
               <td>
-                <strong>$31,793*</strong>
+                <strong>$31,905*</strong>
               </td>
             </tr>
             <tr>
               <td><strong>Standard housing and meal plans</strong></td>
               <td>
-                <strong>$11,590 **</strong>
+                <strong>$11,780**</strong>
               </td>
             </tr>
           </tbody>
@@ -333,7 +330,7 @@
           and pay the nonrefundable $75 housing application fee.
           <br>
         </p>
-        <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 3, 2021 for the opportunity to request a roommate and select your room.</p>
+        <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 2, 2022 for the opportunity to request a roommate and select your room.</p>
 
         <p>
           <a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
@@ -498,7 +495,7 @@ export default {
       ],
       stats_1: [
         {
-          headline: '34',
+          headline: '33',
           headline_prefix: '#',
           headline_suffix: '',
           stat_description: 'BEST PUBLIC UNIVERSITY BY U.S. NEWS & WORLD REPORT',
@@ -512,10 +509,10 @@ export default {
           stat_content: 'Get to know your professors.',
         },
         {
-          headline: '23',
+          headline: '24',
           headline_prefix: '',
           headline_suffix: '',
-          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020',
+          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020-21',
           stat_content: 'That’s the same as some Ivy League schools.',
         },
         {
@@ -549,7 +546,7 @@ export default {
           stat_content: 'For $5 or less.',
         },
         {
-          headline: '24',
+          headline: '21',
           headline_prefix: '',
           headline_suffix: '',
           stat_description: 'NCAA DIVISION I<br />  TEAMS',
@@ -558,11 +555,11 @@ export default {
       ],
       stats_3: [
         {
-          headline: '95',
+          headline: '93',
           headline_prefix: '',
           headline_suffix: '%',
           stat_description: 'OVERALL JOB/GRADUATE SCHOOL PLACEMENT RATE',
-          stat_content: 'Business <strong>97%</strong><br />Education <strong>91%</strong><br />Engineering  <strong>96%</strong><br /> Liberal Arts and Sciences <strong>94%</strong><br /> Nursing <strong>99%</strong><br />Pharmacy <strong>97%</strong>',
+          stat_content: 'Business <strong>94%</strong><br />Education <strong>94%</strong><br />Engineering  <strong>92%</strong><br /> Liberal Arts and Sciences <strong>93%</strong><br /> Nursing <strong>98%</strong><br />Pharmacy <strong>98%</strong>',
         },
          {
           headline: '4,000',
@@ -582,7 +579,7 @@ export default {
           headline: '1,316',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENTS STUDIED ABROAD LAST YEAR',
+          stat_description: 'STUDENTS STUDIED ABROAD',
           stat_content: 'Spanning the globe in 69 countries.',
         }
       ],
