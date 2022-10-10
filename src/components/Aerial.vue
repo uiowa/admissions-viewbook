@@ -50,7 +50,7 @@ export default {
   data() {
     return {
       aerial_title: 'Welcome Home',
-      aerial_image: '/images/viewbook/sections/12.jpg',
+      aerial_image: './images/viewbook/sections/12.jpg',
       grid_title_1: 'World-class hospital',
       grid_sub_1: ' A nationally ranked, comprehensive medical center is just a short walk away.',
       grid_title_2: 'Top college town',
