@@ -7,7 +7,7 @@
   <div class="v-dots-scroll-target" id="hero-banner"></div>
 </div>
 <banner
-  image="/images/widescreen__2592_x_1458/pano.jpg"
+  image="./images/widescreen__2592_x_1458/pano.jpg"
   banner_size="large"
   banner_vertical_alignment="vertical-center"
   banner_horizontal_alignment="horizontal-center"
@@ -56,7 +56,7 @@
 </div>
 <grid-panel
   link_url= 'https://admissions.uiowa.edu/academics/academics'
-  image= '/images/viewbook/sections/0315.jpg'
+  image= './images/viewbook/sections/0315.jpg'
   headline= 'We Work <span>Together</span>'
   button_text= 'View Academic Opportunities'
   button_link= 'https://admissions.uiowa.edu/academics/academics'
@@ -90,7 +90,7 @@
 </div>
 <grid-panel
   link_url= 'https://admissions.uiowa.edu/student-life/student-life'
-  image= '/images/viewbook/sections/1304.jpg'
+  image= './images/viewbook/sections/1304.jpg'
   headline= 'MAKE <span>30,000</span> NEW FRIENDS'
   button_text= 'View Student Life'
   button_link= 'https://admissions.uiowa.edu/student-life/student-life'
@@ -119,7 +119,7 @@
 </div>
 <grid-panel
   link_url= 'https://stories.uiowa.edu/student-outcomes'
-  image= '/images/viewbook/sections/1961.jpg'
+  image= './images/viewbook/sections/1961.jpg'
   headline= 'Make an <span>Impact</span>'
   button_text= 'View Student Outcomes'
   button_link= 'https://stories.uiowa.edu/student-outcomes'
@@ -357,20 +357,20 @@
 </div>
 <div class="image-grid">
   <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'./images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'./images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
   </div>
 
   <div class="image-grid__section">
     <Modal>
       <template v-slot:modal-trigger>
-        <img class="card__img" :src="'/images/viewbook/sections/Pano6.jpg'" alt="Alt Text" loading=lazy>
+        <img class="card__img" :src="'./images/viewbook/sections/Pano6.jpg'" alt="Alt Text" loading=lazy>
       </template>
       <template v-slot:modal-content>
-        <img :src="'/images/viewbook/sections/campus-drone-image.jpg'" alt="Alt Text" loading=lazy>
+        <img :src="'./images/viewbook/sections/campus-drone-image.jpg'" alt="Alt Text" loading=lazy>
       </template>
     </Modal>
   </div>
@@ -384,11 +384,11 @@
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
+    <img class="card__img" :src="'./images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
   </div>
 
   <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'./images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
   </div>
 </div>
 
@@ -434,57 +434,57 @@ export default {
       areas_of_study: [
         {
           headline: 'Business, Economics, and Management',
-          image: '/images/viewbook/areas/1.jpg',
+          image: './images/viewbook/areas/1.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/biz-econ-mgmt',
         },
         {
           headline: 'Education',
-          image: '/images/viewbook/areas/2.jpg',
+          image: './images/viewbook/areas/2.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/edu',
         },
         {
           headline: 'Engineering and Computing',
-          image: '/images/viewbook/areas/3.jpg',
+          image: './images/viewbook/areas/3.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/engr-comp',
         },
         {
           headline: 'Health Sciences',
-          image: '/images/viewbook/areas/4.jpg',
+          image: './images/viewbook/areas/4.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/health-sci',
         },
         {
           headline: 'Languages, culture, and society',
-          image: '/images/viewbook/areas/5.jpg',
+          image: './images/viewbook/areas/5.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/lang-cult-soc',
         },
         {
           headline: 'Life and natural sciences',
-          image: '/images/viewbook/areas/6.jpg',
+          image: './images/viewbook/areas/6.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/life-nat-sci',
         },
         {
           headline: 'Math and quantitative sciences',
-          image: '/images/viewbook/areas/7.jpg',
+          image: './images/viewbook/areas/7.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/math-quant-sci',
         },
         {
           headline: 'Preprofessional programs',
-          image: '/images/viewbook/areas/8.jpg',
+          image: './images/viewbook/areas/8.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/preprofessional',
         },
         {
           headline: 'Social sciences and policy',
-          image: '/images/viewbook/areas/9.jpg',
+          image: './images/viewbook/areas/9.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/soc-sci-pol',
         },
         {
           headline: 'Visual and performing arts',
-          image: '/images/viewbook/areas/10.jpg',
+          image: './images/viewbook/areas/10.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/vis-perf-arts',
         },
         {
           headline: 'Writing, communications, literature, and media',
-          image: '/images/viewbook/areas/11.jpg',
+          image: './images/viewbook/areas/11.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/write-comm-media',
         },
         {
@@ -669,7 +669,7 @@ export default {
 </script>
 
 <style lang="scss">
-  $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
+  $imgpath: '../node_modules/@uiowa/uids/src/assets./images';
   @import '../node_modules/@uiowa/uids/src/assets/scss/reset.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/lists/lists.scss';
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
