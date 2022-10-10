@@ -669,7 +669,7 @@ export default {
 </script>
 
 <style lang="scss">
-  $imgpath: '../node_modules/@uiowa/uids/src/assets./images';
+  $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
   @import '../node_modules/@uiowa/uids/src/assets/scss/reset.scss';
   @import '../node_modules/@uiowa/uids/src/components/typography/lists/lists.scss';
   @import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
