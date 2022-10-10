@@ -196,7 +196,7 @@
         </p>
 
         <p><strong>ACT and SAT Test Scores:</strong></p>
-        <p>The Iowa Board of Regents has waived the requirement for students needing to submit either an ACT or SAT in order to be admitted for the Fall 2022 term. Students who wish to be considered for admission without a test score may leave the test score section blank on the application. An individual review process will be used to make an admission decision for students who do not self-report a test score as part of their application. Students admitted to the University of Iowa without test scores may also be considered for direct admission to University of Iowa academic programs and some merit scholarships awarded by the Office of Admissions.</p>
+        <p>The Iowa Board of Regents has permanently extended a provision that gives students the option to include or not include their test scores when applying to Iowa’s public universities. Students who wish to be considered for admission without a test score may leave the test score section blank on the application. An individual review process will be used to make an admission decision for students who do not self-report a test score as part of their application. Students admitted to the University of Iowa without test scores may also be considered for direct admission to University of Iowa academic programs and some merit scholarships awarded by the Office of Admissions.</p>
 
         <p>
           <a href="https://admissions.uiowa.edu/testing" class="bttn bttn--secondary bttn--caps">
@@ -279,13 +279,13 @@
             <tr>
               <td><strong>Iowa residents</strong></td>
               <td>
-                <strong>$9,942*</strong>
+                <strong>$10,353*</strong>
               </td>
             </tr>
             <tr>
               <td><strong>Nonresidents</strong></td>
               <td>
-                <strong>$31,905*</strong>
+                <strong>$32,316*</strong>
               </td>
             </tr>
             <tr>
@@ -326,11 +326,11 @@
         </h3>
 
         <p>Access the housing application through your admissions profile on
-          <a data-cke-saved-href="https://myui.uiowa.edu" href="https://myui.uiowa.edu">myui.uiowa.edu</a>
+          <a data-cke-saved-href="https://myui.uiowa.edu" href="https://myui.uiowa.edu">MyUI</a>
           and pay the nonrefundable $75 housing application fee.
           <br>
         </p>
-        <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Assignments are made on a first-come, first-served basis. Apply by May 2, 2022 for the opportunity to request a roommate and select your room.</p>
+        <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Apply by May 1, 2023 for the opportunity to request a roommate and select your room.</p>
 
         <p>
           <a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
@@ -495,7 +495,7 @@ export default {
       ],
       stats_1: [
         {
-          headline: '33',
+          headline: '35',
           headline_prefix: '#',
           headline_suffix: '',
           stat_description: 'BEST PUBLIC UNIVERSITY BY U.S. NEWS & WORLD REPORT',
@@ -546,7 +546,7 @@ export default {
           stat_content: 'For $5 or less.',
         },
         {
-          headline: '21',
+          headline: '20',
           headline_prefix: '',
           headline_suffix: '',
           stat_description: 'NCAA DIVISION I<br />  TEAMS',
@@ -555,7 +555,7 @@ export default {
       ],
       stats_3: [
         {
-          headline: '93',
+          headline: '95',
           headline_prefix: '',
           headline_suffix: '%',
           stat_description: 'OVERALL JOB/GRADUATE SCHOOL PLACEMENT RATE',
