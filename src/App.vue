@@ -692,21 +692,25 @@ $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
 .cta-row__wrapper {
   transition: padding 0.5s ease;
   padding: 0.3rem 0;
+
   .cta-row__container .menu a {
     transition: margin 0.5s ease;
     margin: 0px .5rem;
     padding-bottom: 0.5rem;
   }
+
   .bttn--outline {
     border: none;
   }
 }
+
 @media (min-height: 1000px) {
   .cta-row__wrapper {
     padding: 1.875rem 0;
     .cta-row__container .menu a {
       margin: 0px 1.05rem;
     }
+
     .bttn--outline {
       border: 1px solid rgb(21, 21, 21);
     }
@@ -718,6 +722,7 @@ $imgpath: '../node_modules/@uiowa/uids/src/assets/images';
   .stat--horizontal:not(.element--flex-center) .stat__description {
     flex-basis: 80%;
   }
+
   .stat--horizontal:not(.element--flex-center) .stat__content {
     flex-basis: 80%;
   }
