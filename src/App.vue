@@ -96,7 +96,7 @@
     grid_panel_first_column="grid-panel__column-content-left grid-panel__content"
     grid_panel_second_column="grid-panel__column-image-right"
     grid_content_position="first"
-    grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
+    grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 600+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
     grid_panel_content_2= ""
   />
 
@@ -289,7 +289,7 @@
             <tr>
               <td><strong>Standard housing and meal plans</strong></td>
               <td>
-                <strong>$11,780**</strong>
+                <strong>$11,476**</strong>
               </td>
             </tr>
             </tbody>
@@ -507,10 +507,10 @@ export default {
           stat_content: 'Get to know your professors.',
         },
         {
-          headline: '24',
+          headline: '17',
           headline_prefix: '',
           headline_suffix: '',
-          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020-21',
+          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2022-23',
           stat_content: 'That’s the same as some Ivy League schools.',
         },
         {
@@ -523,7 +523,7 @@ export default {
       ],
       stats_2: [
         {
-          headline: '500',
+          headline: '600',
           headline_prefix: '',
           headline_suffix: '+',
           stat_description: 'STUDENT<br />  ORGANIZATIONS',
@@ -560,25 +560,25 @@ export default {
           stat_content: 'Business <strong>94%</strong><br />Education <strong>94%</strong><br />Engineering  <strong>92%</strong><br /> Liberal Arts and Sciences <strong>93%</strong><br /> Nursing <strong>98%</strong><br />Pharmacy <strong>98%</strong>',
         },
         {
-          headline: '4,000',
+          headline: '71,000',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENT<br />  INTERNSHIPS',
+          stat_description: 'JOB, INTERNSHIP, AND VOLUNTEER OPPORTUNITIES AVAILABLE FOR STUDENTS EACH YEAR',
           stat_content: 'Everywhere from NASA to the Minnesota Vikings.',
         },
         {
-          headline: '4,100',
+          headline: '7,500',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'Employers have hired Iowa Graduates the past three years',
+          stat_description: 'STUDENTS WORK ON CAMPUS ON AN ANNUAL BASIS',
           stat_content: 'Gain real-world skills that make résumés stand out.',
         },
         {
-          headline: '1,316',
+          headline: '70',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENTS STUDIED ABROAD',
-          stat_content: 'Spanning the globe in 69 countries.',
+          stat_description: 'COUNTRIES WHERE IOWA STUDENTS STUDIED ABROAD',
+          stat_content: 'Students who study abroad are 26% more likely to graduate in 4 years.',
         }
       ],
       cta_menu_items: [
