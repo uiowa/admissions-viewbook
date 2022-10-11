@@ -525,7 +525,7 @@ export default {
       ],
       stats_2: [
         {
-          headline: '500',
+          headline: '600',
           headline_prefix: '',
           headline_suffix: '+',
           stat_description: 'STUDENT<br />  ORGANIZATIONS',
