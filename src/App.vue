@@ -291,7 +291,7 @@
             <tr>
               <td><strong>Standard housing and meal plans</strong></td>
               <td>
-                <strong>$11,780**</strong>
+                <strong>$11,476**</strong>
               </td>
             </tr>
           </tbody>
