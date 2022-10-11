@@ -509,10 +509,10 @@ export default {
           stat_content: 'Get to know your professors.',
         },
         {
-          headline: '24',
+          headline: '17',
           headline_prefix: '',
           headline_suffix: '',
-          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020-21',
+          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2022-23',
           stat_content: 'That’s the same as some Ivy League schools.',
         },
         {
