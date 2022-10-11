@@ -562,25 +562,25 @@ export default {
           stat_content: 'Business <strong>94%</strong><br />Education <strong>94%</strong><br />Engineering  <strong>92%</strong><br /> Liberal Arts and Sciences <strong>93%</strong><br /> Nursing <strong>98%</strong><br />Pharmacy <strong>98%</strong>',
         },
          {
-          headline: '4,000',
+          headline: '71,000',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENT<br />  INTERNSHIPS',
+          stat_description: 'JOB, INTERNSHIP, AND VOLUNTEER OPPORTUNITIES AVAILABLE FOR STUDENTS EACH YEAR',
           stat_content: 'Everywhere from NASA to the Minnesota Vikings.',
         },
          {
-          headline: '4,100',
+          headline: '7,500',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'Employers have hired Iowa Graduates the past three years',
+          stat_description: 'STUDENTS WORK ON CAMPUS ON AN ANNUAL BASIS',
           stat_content: 'Gain real-world skills that make résumés stand out.',
         },
         {
-          headline: '1,316',
+          headline: '70',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENTS STUDIED ABROAD',
-          stat_content: 'Spanning the globe in 69 countries.',
+          stat_description: 'COUNTRIES WHERE IOWA STUDENTS STUDIED ABROAD',
+          stat_content: 'Students who study abroad are 26% more likely to graduate in 4 years.',
         }
       ],
       cta_menu_items: [
