@@ -87,17 +87,17 @@
     <div class="v-dots-scroll-target" id="student-life"></div>
   </div>
   <grid-panel
-    link_url= 'https://admissions.uiowa.edu/student-life/student-life'
-    image= '/images/viewbook/sections/1304.jpg'
-    headline= 'MAKE <span>30,000</span> NEW FRIENDS'
-    button_text= 'View Student Life'
-    button_link= 'https://admissions.uiowa.edu/student-life/student-life'
-    grid_panel_type= 'grid-panel grid-panel--asymmetrical'
-    grid_panel_first_column= 'grid-panel__column-content-left grid-panel__content'
-    grid_panel_second_column= 'grid-panel__column-image-right'
-    grid_content_position= 'first'
-    grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 600+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
-    grid_panel_content_2= ''
+    link_url= "https://admissions.uiowa.edu/student-life/student-life"
+    image= "/images/viewbook/sections/1304.jpg"
+    headline= "MAKE <span>30,000</span> NEW FRIENDS"
+    button_text= "View Student Life"
+    button_link= "https://admissions.uiowa.edu/student-life/student-life"
+    grid_panel_type= "grid-panel grid-panel--asymmetrical"
+    grid_panel_first_column= "grid-panel__column-content-left grid-panel__content"
+    grid_panel_second_column= "grid-panel__column-image-right"
+    grid_content_position= "first"
+    grid_panel_content= "<p>Big Ten athletics, theaters, music venues, 600+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>"
+    grid_panel_content_2= ""
   />
 
   <div class="stat__wrapper bg--black">
