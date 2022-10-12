@@ -35,35 +35,35 @@
 
   <grid-panel
     link_url= "https://admissions.uiowa.edu/academics/undergraduate-areas-of-study"
-    image=""
-    headline="200+ Areas<br /> of Study"
-    button_text="View Areas of Study"
-    button_link="https://admissions.uiowa.edu/academics/undergraduate-areas-of-study"
-    grid_panel_type="grid-panel grid-panel--asymmetrical"
-    grid_panel_first_column="grid-panel__column-content-left grid-panel__content"
-    grid_panel_second_column="grid-panel__column-image-right"
+    image= ""
+    headline= "200+ Areas<br /> of Study"
+    button_text= "View Areas of Study"
+    button_link= "https://admissions.uiowa.edu/academics/undergraduate-areas-of-study"
+    grid_panel_type= "grid-panel grid-panel--asymmetrical"
+    grid_panel_first_column= "grid-panel__column-content-left grid-panel__content"
+    grid_panel_second_column= "grid-panel__column-image-right"
     grid_content_position= "first"
-    grid_panel_content='<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
-    grid_panel_content_2=""
-    :card_grid="true"
-    :areas_of_study="areas_of_study"
+    grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
+    grid_panel_content_2= ""
+    :card_grid = "true"
+    :areas_of_study = "areas_of_study"
   />
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="academic-opportunities"></div>
   </div>
   <grid-panel
-    link_url="https://admissions.uiowa.edu/academics/academics"
-    image="./images/viewbook/sections/0315.jpg"
-    headline="We Work <span>Together</span>"
-    button_text="View Academic Opportunities"
-    button_link="https://admissions.uiowa.edu/academics/academics"
-    grid_panel_type="grid-panel grid-panel--asymmetrical"
-    grid_panel_first_column="grid-panel__column-image-left"
-    grid_panel_second_column="grid-panel__column-content-right grid-panel__content"
-    grid_content_position="second"
-    grid_panel_content='<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>'
-    grid_panel_content_2='<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>'
+    link_url= "https://admissions.uiowa.edu/academics/academics"
+    image= "/images/viewbook/sections/0315.jpg"
+    headline= "We Work <span>Together</span>"
+    button_text= "View Academic Opportunities"
+    button_link= "https://admissions.uiowa.edu/academics/academics"
+    grid_panel_type= "grid-panel grid-panel--asymmetrical"
+    grid_panel_first_column= "grid-panel__column-image-left"
+    grid_panel_second_column= "grid-panel__column-content-right grid-panel__content"
+    grid_content_position= "second"
+    grid_panel_content= "<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>"
+    grid_panel_content_2= "<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>"
   />
 
   <div class="stat__wrapper bg--black">
@@ -81,22 +81,22 @@
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="iowa-city"></div>
   </div>
-  <Aerial/>
+  <Aerial />
 
   <div class="v-dots-scroll-spacer">
     <div class="v-dots-scroll-target" id="student-life"></div>
   </div>
   <grid-panel
-    link_url="https://admissions.uiowa.edu/student-life/student-life"
-    image="./images/viewbook/sections/1304.jpg"
-    headline="MAKE <span>30,000</span> NEW FRIENDS"
-    button_text="View Student Life"
-    button_link="https://admissions.uiowa.edu/student-life/student-life"
-    grid_panel_type="grid-panel grid-panel--asymmetrical"
-    grid_panel_first_column="grid-panel__column-content-left grid-panel__content"
-    grid_panel_second_column="grid-panel__column-image-right"
-    grid_content_position="first"
-    grid_panel_content= '<p>Big Ten athletics, theaters, music venues, 500+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>'
+    link_url= "https://admissions.uiowa.edu/student-life/student-life"
+    image= "/images/viewbook/sections/1304.jpg"
+    headline= "MAKE <span>30,000</span> NEW FRIENDS"
+    button_text= "View Student Life"
+    button_link= "https://admissions.uiowa.edu/student-life/student-life"
+    grid_panel_type= "grid-panel grid-panel--asymmetrical"
+    grid_panel_first_column= "grid-panel__column-content-left grid-panel__content"
+    grid_panel_second_column= "grid-panel__column-image-right"
+    grid_content_position= "first"
+    grid_panel_content= "<p>Big Ten athletics, theaters, music venues, 600+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>"
     grid_panel_content_2= ""
   />
 
@@ -117,7 +117,7 @@
   </div>
   <grid-panel
     link_url="https://stories.uiowa.edu/student-outcomes"
-    image="./images/viewbook/sections/1961.jpg"
+    image="/images/viewbook/sections/1961.jpg"
     headline="Make an <span>Impact</span>"
     button_text="View Student Outcomes"
     button_link="https://stories.uiowa.edu/student-outcomes"
@@ -289,7 +289,7 @@
             <tr>
               <td><strong>Standard housing and meal plans</strong></td>
               <td>
-                <strong>$11,780**</strong>
+                <strong>$11,476**</strong>
               </td>
             </tr>
             </tbody>
@@ -348,27 +348,22 @@
     </div>
   </div>
 
-  <main></main>
-
-  <div class="v-dots-scroll-spacer">
-    <div class="v-dots-scroll-target" id="to-be-a-hawkeye"></div>
-  </div>
   <div class="image-grid">
     <div class="image-grid__section">
-      <img class="card__img" :src="'./images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
     </div>
 
     <div class="image-grid__section">
-      <img class="card__img" :src="'./images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
     </div>
 
     <div class="image-grid__section">
       <Modal>
         <template v-slot:modal-trigger>
-          <img class="card__img" :src="'./images/viewbook/sections/Pano6.jpg'" alt="Alt Text" loading=lazy>
+        <img class="card__img" :src="'/images/viewbook/sections/Pano6.jpg'" alt="Alt Text" loading=lazy>
         </template>
         <template v-slot:modal-content>
-          <img :src="'./images/viewbook/sections/campus-drone-image.jpg'" alt="Alt Text" loading=lazy>
+        <img :src="'/images/viewbook/sections/campus-drone-image.jpg'" alt="Alt Text" loading=lazy>
         </template>
       </Modal>
     </div>
@@ -382,11 +377,11 @@
     </div>
 
     <div class="image-grid__section">
-      <img class="card__img" :src="'./images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
+    <img class="card__img" :src="'/images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
     </div>
 
     <div class="image-grid__section">
-      <img class="card__img" :src="'./images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
     </div>
   </div>
 
@@ -432,57 +427,57 @@ export default {
       areas_of_study: [
         {
           headline: 'Business, Economics, and Management',
-          image: './images/viewbook/areas/1.jpg',
+          image: '/images/viewbook/areas/1.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/biz-econ-mgmt',
         },
         {
           headline: 'Education',
-          image: './images/viewbook/areas/2.jpg',
+          image: '/images/viewbook/areas/2.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/edu',
         },
         {
           headline: 'Engineering and Computing',
-          image: './images/viewbook/areas/3.jpg',
+          image: '/images/viewbook/areas/3.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/engr-comp',
         },
         {
           headline: 'Health Sciences',
-          image: './images/viewbook/areas/4.jpg',
+          image: '/images/viewbook/areas/4.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/health-sci',
         },
         {
           headline: 'Languages, culture, and society',
-          image: './images/viewbook/areas/5.jpg',
+          image: '/images/viewbook/areas/5.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/lang-cult-soc',
         },
         {
           headline: 'Life and natural sciences',
-          image: './images/viewbook/areas/6.jpg',
+          image: '/images/viewbook/areas/6.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/life-nat-sci',
         },
         {
           headline: 'Math and quantitative sciences',
-          image: './images/viewbook/areas/7.jpg',
+          image: '/images/viewbook/areas/7.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/math-quant-sci',
         },
         {
           headline: 'Preprofessional programs',
-          image: './images/viewbook/areas/8.jpg',
+          image: '/images/viewbook/areas/8.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/preprofessional',
         },
         {
           headline: 'Social sciences and policy',
-          image: './images/viewbook/areas/9.jpg',
+          image: '/images/viewbook/areas/9.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/soc-sci-pol',
         },
         {
           headline: 'Visual and performing arts',
-          image: './images/viewbook/areas/10.jpg',
+          image: '/images/viewbook/areas/10.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/vis-perf-arts',
         },
         {
           headline: 'Writing, communications, literature, and media',
-          image: './images/viewbook/areas/11.jpg',
+          image: '/images/viewbook/areas/11.jpg',
           link_url: 'https://admissions.uiowa.edu/academics/write-comm-media',
         },
         {
@@ -507,10 +502,10 @@ export default {
           stat_content: 'Get to know your professors.',
         },
         {
-          headline: '24',
+          headline: '17',
           headline_prefix: '',
           headline_suffix: '',
-          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2020-21',
+          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2022-23',
           stat_content: 'That’s the same as some Ivy League schools.',
         },
         {
@@ -523,7 +518,7 @@ export default {
       ],
       stats_2: [
         {
-          headline: '500',
+          headline: '600',
           headline_prefix: '',
           headline_suffix: '+',
           stat_description: 'STUDENT<br />  ORGANIZATIONS',
@@ -560,25 +555,25 @@ export default {
           stat_content: 'Business <strong>94%</strong><br />Education <strong>94%</strong><br />Engineering  <strong>92%</strong><br /> Liberal Arts and Sciences <strong>93%</strong><br /> Nursing <strong>98%</strong><br />Pharmacy <strong>98%</strong>',
         },
         {
-          headline: '4,000',
+          headline: '71,000',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENT<br />  INTERNSHIPS',
+          stat_description: 'JOB, INTERNSHIP, AND VOLUNTEER OPPORTUNITIES AVAILABLE FOR STUDENTS EACH YEAR',
           stat_content: 'Everywhere from NASA to the Minnesota Vikings.',
         },
         {
-          headline: '4,100',
+          headline: '7,500',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'Employers have hired Iowa Graduates the past three years',
+          stat_description: 'STUDENTS WORK ON CAMPUS ON AN ANNUAL BASIS',
           stat_content: 'Gain real-world skills that make résumés stand out.',
         },
         {
-          headline: '1,316',
+          headline: '70',
           headline_prefix: '',
           headline_suffix: '+',
-          stat_description: 'STUDENTS STUDIED ABROAD',
-          stat_content: 'Spanning the globe in 69 countries.',
+          stat_description: 'COUNTRIES WHERE IOWA STUDENTS STUDIED ABROAD',
+          stat_content: 'Students who study abroad are 26% more likely to graduate in 4 years.',
         }
       ],
       cta_menu_items: [
