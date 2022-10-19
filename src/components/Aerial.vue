@@ -68,6 +68,10 @@ export default {
 @import '../../node_modules/@uiowa/uids/src/components/viewbook/aerial/aerial.scss';
 
 .aerial {
+  &__img {
+    min-height: 1px;
+  }
+
   .headline__text,
   .highlight__sub span {
     &:empty {
