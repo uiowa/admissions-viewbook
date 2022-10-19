@@ -1,6 +1,14 @@
 # Admissions Viewbook
 Vue 3.0
 
+### Setup node version
+Currently, node version 14.17.0 works best with our viewbooks.
+The .nvmrc file defines this as the version we are using.
+To use this, run:
+```
+nvm use
+```
+
 ### Install dependencies
 First, install Yarn dependencies:
 ```
@@ -32,11 +40,11 @@ The command will output the server URL to visit in your browser, ex. http://loca
 
 ### Creating a PR
 1. Once your feature branch has been created, you will need to run the following command: `git push origin feature_branch`.
-2. This will generate a url to use, ex. https://github.com/uiowa/admissions-viewbook/pull/new/feature_branch. 
+2. This will generate a url to use, ex. https://github.com/uiowa/admissions-viewbook/pull/new/feature_branch.
 3. Set the upstream branch with `git push --set-upstream origin feature_branch`.
-4. Once you open the url, make sure that you switch the base to `develop` instead of `main` and create the pull request. 
+4. Once you open the url, make sure that you switch the base to `develop` instead of `main` and create the pull request.
 5. When the pull request is approved, merge into `develop`.
-6. Once the pull request is merged into `develop`, you can preview the site at https://viewbook.admissions.uiowa.edu/latest/. 
+6. Once the pull request is merged into `develop`, you can preview the site at https://viewbook.admissions.uiowa.edu/latest/.
 7. If https://viewbook.admissions.uiowa.edu/latest/ is working with the changes from the pull request, merge `develop` into `main`.
 
 ### Common errors
