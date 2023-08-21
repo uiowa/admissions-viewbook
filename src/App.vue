@@ -117,7 +117,7 @@
   </div>
   <grid-panel
     link_url="https://stories.uiowa.edu/student-outcomes"
-    image="/images/viewbook/sections/1961.jpg"
+    image="/images/viewbook/sections/2023_05_03-Cap and Gown Pentacrest Commercial Shoot jatorner -0350.JPG"
     headline="Make an <span>Impact</span>"
     button_text="View Student Outcomes"
     button_link="https://stories.uiowa.edu/student-outcomes"
@@ -277,19 +277,19 @@
             <tr>
               <td><strong>Iowa residents</strong></td>
               <td>
-                <strong>$10,353*</strong>
+                <strong>$10,964*</strong>
               </td>
             </tr>
             <tr>
               <td><strong>Nonresidents</strong></td>
               <td>
-                <strong>$32,316*</strong>
+                <strong>$32,927*</strong>
               </td>
             </tr>
             <tr>
               <td><strong>Standard housing and meal plans</strong></td>
               <td>
-                <strong>$11,476**</strong>
+                <strong>$12,616**</strong>
               </td>
             </tr>
             </tbody>
@@ -328,7 +328,7 @@
             and pay the nonrefundable $75 housing application fee.
             <br>
           </p>
-          <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Apply by May 1, 2023 for the opportunity to request a roommate and select your room.</p>
+          <p>We have a number of housing options available to suit your ideal student experience. We strongly recommend applying for housing early. Apply by May 1, 2024 for the opportunity to request a roommate and select your room.</p>
 
           <p>
             <a href="http://housing.uiowa.edu" class="bttn bttn--secondary bttn--caps">
@@ -360,10 +360,10 @@
     <div class="image-grid__section">
       <Modal>
         <template v-slot:modal-trigger>
-        <img class="card__img" :src="'/images/viewbook/sections/Pano6.jpg'" alt="Alt Text" loading=lazy>
+        <img class="card__img" :src="'/images/viewbook/sections/Pano7.png'" alt="Alt Text" loading=lazy>
         </template>
         <template v-slot:modal-content>
-        <img :src="'/images/viewbook/sections/campus-drone-image.jpg'" alt="Alt Text" loading=lazy>
+        <img :src="'/images/viewbook/sections/2022_09_26-Pentacrest Drone Images at Sunrise-ksmurray-05.jpg'" alt="Alt Text" loading=lazy>
         </template>
       </Modal>
     </div>
@@ -377,11 +377,11 @@
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/1152.jpg'" alt="Alt Text" loading=lazy>>
+    <img class="card__img" :src="'/images/viewbook/sections/2023_07_06-Summer Lifestyle, July 2023 jatorner -2424 Cropped.png'" alt="Alt Text" loading=lazy>>
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/0027.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/2018_02_06-Snow Lifestyle Shoot-jatorner-0430 Cropped.png'" alt="Alt Text" loading=lazy>
     </div>
   </div>
 
@@ -502,10 +502,10 @@ export default {
           stat_content: 'Get to know your professors.',
         },
         {
-          headline: '17',
+          headline: '14',
           headline_prefix: '',
           headline_suffix: '',
-          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2022-23',
+          stat_description: 'INTERNATIONAL FULBRIGHT SCHOLARS IN 2023-24',
           stat_content: 'That’s the same as some Ivy League schools.',
         },
         {
@@ -548,11 +548,11 @@ export default {
       ],
       stats_3: [
         {
-          headline: '95',
+          headline: '97',
           headline_prefix: '',
           headline_suffix: '%',
           stat_description: 'OVERALL JOB/GRADUATE SCHOOL PLACEMENT RATE',
-          stat_content: 'Business <strong>94%</strong><br />Education <strong>94%</strong><br />Engineering  <strong>92%</strong><br /> Liberal Arts and Sciences <strong>93%</strong><br /> Nursing <strong>98%</strong><br />Pharmacy <strong>98%</strong>',
+          stat_content: 'Business <strong>97%</strong><br />Education <strong>100%</strong><br />Engineering  <strong>97%</strong><br /> Liberal Arts and Sciences <strong>97%</strong><br /> Nursing <strong>99%</strong><br />Public Health <strong>100%</strong>',
         },
         {
           headline: '71,000',
