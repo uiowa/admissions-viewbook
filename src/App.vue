@@ -43,7 +43,7 @@
     grid_panel_first_column= "grid-panel__column-content-left grid-panel__content"
     grid_panel_second_column= "grid-panel__column-image-right"
     grid_content_position= "first"
-    grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. Students are encouraged to work across disciplines to find their passion. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
+    grid_panel_content= '<p>Iowa offers over 200 majors, minors and certificates. You’re free to mix and match majors, work across different fields, and add areas of focus as you go. If you are unsure of what you’d like to study at Iowa, look at an&nbsp;<a href="https://admissions.uiowa.edu/academics/open-major">open major</a>, or take our&nbsp;<a data-cke-saved-href="http://uiowa.mymajors.com/" href="http://uiowa.mymajors.com/">MyMajors assessment</a>&nbsp;to explore possible majors based on your interests and strengths.</p>'
     grid_panel_content_2= ""
     :card_grid = "true"
     :areas_of_study = "areas_of_study"
@@ -55,15 +55,15 @@
   <grid-panel
     link_url= "https://admissions.uiowa.edu/academics/academics"
     image= "/images/viewbook/sections/0315.jpg"
-    headline= "We Work <span>Together</span>"
+    headline= "A Campus <span>Without Limits</span>"
     button_text= "View Academic Opportunities"
     button_link= "https://admissions.uiowa.edu/academics/academics"
     grid_panel_type= "grid-panel grid-panel--asymmetrical"
     grid_panel_first_column= "grid-panel__column-image-left"
     grid_panel_second_column= "grid-panel__column-content-right grid-panel__content"
     grid_content_position= "second"
-    grid_panel_content= "<p>The University of Iowa blends big-school opportunities with close, personal support to help you excel. We remove the barriers between arts and science, between students and faculty—but most of all, between you and anything you’d like to explore.</p>"
-    grid_panel_content_2= "<p>How many universities have both a state-of-the-art children’s hospital and a 3,883-pipe Klais organ? Or helped build the Voyager I satellite and the very first creative writing degree program? Just one: Iowa.</p>"
+    grid_panel_content= "<p>We believe in breaking barriers and providing a limitless environment. That’s why Hawkeyes excel in everything they do.</p>"
+    grid_panel_content_2= "<p>From the most prestigious creative writing program in the country to a nationally recognized teaching hospital, the University of Iowa is where you’ll find exciting, real-world experiences. With small class sizes and access to one-on-one mentoring opportunities, you’ll receive the academic support you deserve.</p>"
   />
 
   <div class="stat__wrapper bg--black">
@@ -88,15 +88,15 @@
   </div>
   <grid-panel
     link_url= "https://admissions.uiowa.edu/student-life/student-life"
-    image= "/images/viewbook/sections/1304.jpg"
-    headline= "MAKE <span>30,000</span> NEW FRIENDS"
+    image= "/images/viewbook/sections/HerkySurfing.jpg"
+    headline= "It’s Great to Be a <span>Hawkey</span>"
     button_text= "View Student Life"
     button_link= "https://admissions.uiowa.edu/student-life/student-life"
     grid_panel_type= "grid-panel grid-panel--asymmetrical"
     grid_panel_first_column= "grid-panel__column-content-left grid-panel__content"
     grid_panel_second_column= "grid-panel__column-image-right"
     grid_content_position= "first"
-    grid_panel_content= "<p>Big Ten athletics, theaters, music venues, 600+ student groups, community organizations, student philanthropy, hiking trails, bike paths, workout facilities, hundreds of restaurants and coffee shops and food carts and—you get the idea. There’s a lot to do in Iowa City. Every club, event, and activity is an opportunity to make new connections and find your own close-knit community on campus.</p>"
+    grid_panel_content= "<p>Iowa is friendly and inclusive—a place where you can be yourself, try new things, and have fun in one of America’s top college towns. You’ll find that every club, event, and activity is an opportunity to meet new people and build your own close-knit community. We welcome students from all backgrounds through our on-campus multicultural centers and events held year-round that celebrate diversity.</p>"
     grid_panel_content_2= ""
   />
 
@@ -118,14 +118,14 @@
   <grid-panel
     link_url="https://stories.uiowa.edu/student-outcomes"
     image="/images/viewbook/sections/2023_05_03-Cap and Gown Pentacrest Commercial Shoot jatorner -0350.JPG"
-    headline="Make an <span>Impact</span>"
+    headline="Hawkeyes Get <span>Hired</span>"
     button_text="View Student Outcomes"
     button_link="https://stories.uiowa.edu/student-outcomes"
     grid_panel_type="grid-panel grid-panel--asymmetrical"
     grid_panel_first_column="grid-panel__column-image-left"
     grid_panel_second_column="grid-panel__column-content-right grid-panel__content"
     grid_content_position="second"
-    grid_panel_content='<p>Having big ideas isn’t enough—to excel in any career, you need to know how to share them and make them real. Iowa’s leadership in the study and craft of writing helps every Hawkeye learn communication skills that give them an edge. Dedicated career advising, thousands of on-campus job interviews, and countless opportunities for hands-on learning make Iowa grads stand out.</p>'
+    grid_panel_content='<p>With platforms to share your ideas, hands-on learning opportunities, dedicated career advising, and valued internships in your field, Iowa provides the experiences you need to stand out in a competitive workforce. You’ll make connections and get support from a network of nearly 300,000 alumni. That’s why, as a Hawkeye, you’ll get hired.</p>'
     grid_panel_content_2= ""
   />
 
@@ -354,7 +354,7 @@
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/dorm.jpg'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/dormCropped.png'" alt="Alt Text" loading=lazy>
     </div>
 
     <div class="image-grid__section">
