@@ -89,7 +89,7 @@
   <grid-panel
     link_url= "https://admissions.uiowa.edu/student-life/student-life"
     image= "/images/viewbook/sections/HerkySurfing.jpg"
-    headline= "It’s Great to Be a <span>Hawkey</span>"
+    headline= "It’s Great to Be a <span>Hawkeye</span>"
     button_text= "View Student Life"
     button_link= "https://admissions.uiowa.edu/student-life/student-life"
     grid_panel_type= "grid-panel grid-panel--asymmetrical"
