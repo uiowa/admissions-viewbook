@@ -55,7 +55,7 @@
   <grid-panel
     link_url= "https://admissions.uiowa.edu/academics/academics"
     image= "/images/viewbook/sections/0315.jpg"
-    headline= "A Campus <span>Without Limits</span>"
+    headline= "A Campus <span>Without</span><span>Limits</span>"
     button_text= "View Academic Opportunities"
     button_link= "https://admissions.uiowa.edu/academics/academics"
     grid_panel_type= "grid-panel grid-panel--asymmetrical"
