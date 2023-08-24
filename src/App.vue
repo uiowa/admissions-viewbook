@@ -354,13 +354,13 @@
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/dormCropped.png'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/dormCropped.jpg'" alt="Alt Text" loading=lazy>
     </div>
 
     <div class="image-grid__section">
       <Modal>
         <template v-slot:modal-trigger>
-        <img class="card__img" :src="'/images/viewbook/sections/Pano7.png'" alt="Alt Text" loading=lazy>
+        <img class="card__img" :src="'/images/viewbook/sections/Pano7.jpg'" alt="Alt Text" loading=lazy>
         </template>
         <template v-slot:modal-content>
         <img :src="'/images/viewbook/sections/2022_09_26-Pentacrest Drone Images at Sunrise-ksmurray-05.jpg'" alt="Alt Text" loading=lazy>
@@ -377,11 +377,11 @@
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/2023_07_06-Summer Lifestyle, July 2023 jatorner -2424 Cropped.png'" alt="Alt Text" loading=lazy>>
+    <img class="card__img" :src="'/images/viewbook/sections/2023_07_06-Summer Lifestyle, July 2023 jatorner -2424 Cropped.jpg'" alt="Alt Text" loading=lazy>>
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/2018_02_06-Snow Lifestyle Shoot-jatorner-0430 Cropped.png'" alt="Alt Text" loading=lazy>
+    <img class="card__img" :src="'/images/viewbook/sections/2018_02_06-Snow Lifestyle Shoot-jatorner-0430 Cropped.jpg'" alt="Alt Text" loading=lazy>
     </div>
   </div>
 
