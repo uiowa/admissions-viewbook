@@ -23,14 +23,14 @@ jobs:
       # https://github.com/actions/checkout#readme
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
 #      - run: echo $GITHUB_WORKSPACE
 #      - run: ls -lah $GITHUB_WORKSPACE
 
       # https://github.com/actions/checkout#readme
       - name: Checkout docs
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           ref: gh-pages
           path: gh-pages
@@ -41,18 +41,12 @@ jobs:
 #      - run: ls -lah $GITHUB_WORKSPACE/gh-pages
 
       - name: Setup node
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v4
         with:
-          node-version: "12.x"
+          node-version-file: ".nvmrc"
+          cache: "yarn"
 
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: npm-packages-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: npm-packages-
-
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
       # Check to make sure that docs built into www.
 #      - run: ls -lah $GITHUB_WORKSPACE/www
 
