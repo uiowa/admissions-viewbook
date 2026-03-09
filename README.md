@@ -2,7 +2,7 @@
 Vue 3.0
 
 ### Setup node version
-Currently, node version 14.17.0 works best with our viewbooks.
+Currently, node version 22.22.0 works best with our viewbooks.
 The .nvmrc file defines this as the version we are using.
 To use this, run:
 ```
@@ -12,8 +12,9 @@ nvm use
 ### Install dependencies
 First, install Yarn dependencies:
 ```
-yarn
+yarn install --ignore-scripts
 ```
+This is necessary until we have a viewbook-compatible UIDS version that no longer imports the legacy `node-sass` dependency chain.
 
 ### Start the local server
 The following command creates and runs a temporary server to view the site locally.
@@ -48,4 +49,4 @@ The command will output the server URL to visit in your browser, ex. http://loca
 7. If https://viewbook.admissions.uiowa.edu/latest/ is working with the changes from the pull request, merge `develop` into `main`.
 
 ### Common errors
-If the commands listed above for local development are not working, delete your `node_modules` folder and run `yarn install`. 
+If the commands listed above for local development are not working, delete your `node_modules` folder and run `yarn install --ignore-scripts`.

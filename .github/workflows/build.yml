@@ -23,21 +23,15 @@ jobs:
       # https://github.com/actions/checkout#readme
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup node
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v4
         with:
-          node-version: "12.x"
+          node-version-file: ".nvmrc"
+          cache: "yarn"
 
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: npm-packages-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: npm-packages-
-
-      - run: yarn
+      - run: yarn install --frozen-lockfile --ignore-scripts
 
       - name: Build
         run: yarn build
