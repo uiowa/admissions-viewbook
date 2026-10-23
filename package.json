@@ -12,12 +12,11 @@
   },
   "dependencies": {
     "@uiowa/uids": "uiowa/uids#3.1.7",
-    "vue": "^3.5.13"
+    "vue": "^3.5.44"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^5.2.4",
-    "@vue/compiler-sfc": "^3.5.13",
-    "sass": "^1.85.1",
-    "vite": "^5.4.14"
+    "@vitejs/plugin-vue": "^6.0.10",
+    "sass": "^1.106.1",
+    "vite": "^8.3.5"
   }
 }
