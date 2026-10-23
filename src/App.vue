@@ -14,7 +14,7 @@
     banner_type="image"
     banner_overlay= "gradient-center"
     banner_title="<span>Welcome</span> to Iowa"
-    banner_title_classes="headline headline--uppercase"
+    banner_title_classes="headline headline--uppercase headline--large"
   />
 
   <div data-uids-cta="data-uids-cta" role="region" class="cta-row__wrapper">
@@ -149,13 +149,13 @@
     <div class="grid-panel__column grid-panel__content">
       <headline
         headline_level="h2"
-        headline_class="bold-headline--caps bold-headline"
+        headline_class="headline headline--uppercase"
         headline="How to Apply"
       />
       <hr class="element--spacer-separator" />
       <ol class="element--circle-list">
         <li>
-          <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <h3 class="headline headline--serif headline--underline">
             <span class="headline__heading">Complete the required high school courses.</span>
           </h3>
 
@@ -169,7 +169,7 @@
         </li>
         <li>
 
-          <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <h3 class="headline headline--serif headline--underline">
             <span class="headline__heading">Your Regent Admission Index Score.</span>
           </h3>
 
@@ -206,7 +206,7 @@
         </li>
 
         <li>
-          <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <h3 class="headline headline--serif headline--underline">
             <span class="headline__heading">Meet the admission requirements for your college of choice.</span>
           </h3>
 
@@ -261,7 +261,7 @@
     <div class="grid-panel__column grid-panel__content">
       <ol class="element--circle-list counter-increment">
         <li>
-          <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <h3 class="headline headline--serif headline--underline">
             <span class="headline__heading">Submit your FAFSA and explore financial aid.</span>
           </h3>
 
@@ -319,7 +319,7 @@
 
         <li>
 
-          <h3 class="bold-headline bold-headline--serif bold-headline--underline">
+          <h3 class="headline headline--serif headline--underline">
             <span class="headline__heading">Apply for housing and dining.</span>
           </h3>
 
@@ -350,17 +350,17 @@
 
   <div class="image-grid">
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
+    <img :src="'/images/viewbook/sections/0849.jpg'" alt="Alt Text" loading=lazy>
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/dormCropped.jpg'" alt="Alt Text" loading=lazy>
+    <img :src="'/images/viewbook/sections/dormCropped.jpg'" alt="Alt Text" loading=lazy>
     </div>
 
     <div class="image-grid__section">
       <Modal>
         <template v-slot:modal-trigger>
-        <img class="card__img" :src="'/images/viewbook/sections/Pano7.jpg'" alt="Alt Text" loading=lazy>
+        <img :src="'/images/viewbook/sections/Pano7.jpg'" alt="Alt Text" loading=lazy>
         </template>
         <template v-slot:modal-content>
         <img :src="'/images/viewbook/sections/2022_09_26-Pentacrest Drone Images at Sunrise-ksmurray-05.jpg'" alt="Alt Text" loading=lazy>
@@ -368,7 +368,7 @@
       </Modal>
     </div>
 
-    <div class="image-grid__section grid__content bg-pattern--brain-reversed">
+    <div class="image-grid__section grid__content bg--gold--pattern--brain">
       <headline
         headline_level="h2"
         headline_class="headline headline--uppercase"
@@ -377,11 +377,11 @@
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/2023_07_06-Summer Lifestyle, July 2023 jatorner -2424 Cropped.jpg'" alt="Alt Text" loading=lazy>>
+    <img :src="'/images/viewbook/sections/2023_07_06-Summer Lifestyle, July 2023 jatorner -2424 Cropped.jpg'" alt="Alt Text" loading=lazy>>
     </div>
 
     <div class="image-grid__section">
-    <img class="card__img" :src="'/images/viewbook/sections/2018_02_06-Snow Lifestyle Shoot-jatorner-0430 Cropped.jpg'" alt="Alt Text" loading=lazy>
+    <img :src="'/images/viewbook/sections/2018_02_06-Snow Lifestyle Shoot-jatorner-0430 Cropped.jpg'" alt="Alt Text" loading=lazy>
     </div>
   </div>
 
@@ -662,16 +662,6 @@ export default {
 </script>
 
 <style lang="scss">
-$imgpath: '../node_modules/@uiowa/uids/src/assets/images';
-@import '../node_modules/@uiowa/uids/src/assets/scss/reset.scss';
-@import '../node_modules/@uiowa/uids/src/components/typography/lists/lists.scss';
-@import '../node_modules/@uiowa/uids/src/components/tables/tables.scss';
-@import '../node_modules/@uiowa/uids/src/components/typography/paragraph/paragraph.scss';
-@import '../node_modules/@uiowa/uids/src/components/colors/colors.scss';
-@import '../node_modules/@uiowa/uids/src/components/grid/grid.scss';
-@import '../node_modules/@uiowa/uids/src/components/viewbook/grid-panel/grid-panel.scss';
-@import '../node_modules/@uiowa/uids/src/components/card/card.scss';
-@import '../node_modules/@uiowa/uids/src/components/layouts/viewbook/viewbook.scss';
 
 .image-grid__section {
   line-height: 0;

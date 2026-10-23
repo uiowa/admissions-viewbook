@@ -24,7 +24,7 @@
       </template>
       <template v-else-if="grid_content_position=='second' && card_grid!==false">
         <div class="grid--threecol--33-34-33">
-          <div class="list-container">
+          <div class="list-container__inner">
           <template v-for="(area, index) in areas_of_study" :key="index">
             <banner
               :banner_title="area.headline"
@@ -65,7 +65,7 @@
       </template>
       <template v-else-if="grid_content_position=='first' && card_grid!==false">
         <div class="grid--threecol--33-34-33">
-          <div class="list-container">
+          <div class="list-container__inner">
           <template v-for="(area, index) in areas_of_study" :key="index">
             <banner
               :banner_title="area.headline"
@@ -120,7 +120,3 @@ export default {
     },
 }
 </script>
-
-<style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/viewbook/grid-panel/grid-panel.scss';
-</style>

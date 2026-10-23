@@ -45,7 +45,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss">
-@import '../../node_modules/@uiowa/uids/src/components/branding/iowa-bar/iowa-bar.scss';
-</style>

@@ -78,7 +78,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-@import '../../node_modules/@uiowa/uids/src/components/menus/vertical-dots/vertical-dots.scss';
-</style>

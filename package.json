@@ -11,7 +11,7 @@
     "build": "vite build"
   },
   "dependencies": {
-    "@uiowa/uids": "uiowa/uids#3.1.7",
+    "@uiowa/uids": "https://github.com/uiowa/uids/releases/download/v5.0.0-alpha.1/uids-5.0.0-alpha.1.tgz",
     "vue": "^3.5.44"
   },
   "devDependencies": {

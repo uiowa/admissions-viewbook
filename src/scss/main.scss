@@ -1,0 +1,30 @@
+@use '@uiowa/uids/scss/abstracts/variables' with (
+  $imgpath: '../../node_modules/@uiowa/uids/src/assets/images'
+);
+@use '@uiowa/uids/scss/uids-core';
+@use '@uiowa/uids/scss/components/background';
+@use '@uiowa/uids/scss/components/banner';
+@use '@uiowa/uids/scss/components/border';
+@use '@uiowa/uids/scss/components/brand-bar';
+@use '@uiowa/uids/scss/components/brand-footer';
+@use '@uiowa/uids/scss/components/button';
+@use '@uiowa/uids/scss/components/headline';
+@use '@uiowa/uids/scss/components/inline';
+@use '@uiowa/uids/scss/components/logo';
+@use '@uiowa/uids/scss/components/media';
+@use '@uiowa/uids/scss/components/menu';
+@use '@uiowa/uids/scss/components/stat';
+@use '@uiowa/uids/scss/components/tables';
+
+@use 'viewbook';
+@use 'grid-panel';
+@use 'aerial';
+@use 'highlight';
+@use 'vertical-dots';
+
+@font-face {
+  font-family: 'amnestyscript';
+  src: url('../../node_modules/@uiowa/uids/src/assets/fonts/amnesty-script-webfont.woff2') format('woff2'),
+    url('../../node_modules/@uiowa/uids/src/assets/fonts/amnesty-script-webfont.woff') format('woff');
+  font-display: swap;
+}

@@ -65,7 +65,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../node_modules/@uiowa/uids/src/components/viewbook/aerial/aerial.scss';
 
 .aerial {
   &__img {

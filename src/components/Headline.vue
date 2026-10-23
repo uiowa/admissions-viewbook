@@ -45,8 +45,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../node_modules/@uiowa/uids/src/components/headline/headline.scss';
-@import '../../node_modules/@uiowa/uids/src/components/typography/headings/headings.scss';
 .headline__suffix {
   padding-left: .5rem;
 }

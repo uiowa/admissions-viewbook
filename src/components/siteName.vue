@@ -22,7 +22,3 @@ export default {
     },
 }
 </script>
-
-<style lang="scss">
-@import '../../node_modules/@uiowa/uids/src/components/branding/site-name/site-name.scss';
-</style>

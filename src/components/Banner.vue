@@ -1,26 +1,24 @@
 <template>
     <div :class="getBannerClasses(is_last)">
-        <div v-if="image" class="banner__image">
+        <div v-if="image" class="media media--image">
             <img :src="image" alt="" loading="lazy">
         </div>
-        <div class="banner__container">
-            <div class="banner__content">
-                <Headline
-                    v-if="banner_title"
-                    headline_level="h2"
-                    :class="banner_title_classes"
-                    :headline="banner_title"
-                    :headline_url="link_url"
-                />
-                 <div v-html="banner_text"></div>
-                 <linkButton
-                    v-if="button_text"
-                    :button_link="button_link"
-                    button_type="bttn bttn--secondary bttn--caps"
-                    :button_text="button_text"
-                    :button_icon="true"
-                />
-            </div>
+        <div class="banner__content">
+            <Headline
+                v-if="banner_title"
+                headline_level="h2"
+                :class="banner_title_classes"
+                :headline="banner_title"
+                :headline_url="link_url"
+            />
+             <div v-html="banner_text"></div>
+             <linkButton
+                v-if="button_text"
+                :button_link="button_link"
+                button_type="bttn bttn--secondary bttn--caps"
+                :button_text="button_text"
+                :button_icon="true"
+            />
         </div>
     </div>
 </template>
@@ -115,7 +113,7 @@ export default {
         getBannerClasses(is_last=false) {
             let classes = 'banner banner--'+this.$props.banner_overlay+' banner--'+this.$props.banner_size+' '+this.$props.banner_classes+' banner--'+this.$props.banner_vertical_alignment+' banner--'+this.$props.banner_horizontal_alignment;
             if (is_last) {
-                classes += ' bg-pattern--brain-black';
+                classes += ' bg--black--pattern--brain';
             }
             return classes;
         }
@@ -124,7 +122,8 @@ export default {
 </script>
 
 <style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/banner/banner.scss';
+    @use '@uiowa/uids/scss/abstracts/utilities' as *;
+
     .banner--large {
       min-height: auto;
       &::before {
@@ -137,7 +136,7 @@ export default {
         content: '';
         clear: both;
       }
-      @include breakpoint(container) {
+      @include breakpoint(page-container) {
         min-height: 100vh;
       }
     }

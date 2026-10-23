@@ -10,18 +10,16 @@ nvm use
 ```
 
 ### Install dependencies
-First, install Yarn dependencies:
 ```
-yarn install --ignore-scripts
+yarn install
 ```
-This is necessary until we have a viewbook-compatible UIDS version that no longer imports the legacy `node-sass` dependency chain.
 
 ### Start the local server
 The following command creates and runs a temporary server to view the site locally.
 ```
 yarn dev
 ```
-The command will output the server URL to visit in your browser, ex. http://localhost:3000.
+The command will output the server URL to visit in your browser, ex. http://localhost:5173.
 
 ### Test the build locally
 The following command creates the build.
@@ -49,4 +47,4 @@ The command will output the server URL to visit in your browser, ex. http://loca
 7. If https://viewbook.admissions.uiowa.edu/latest/ is working with the changes from the pull request, merge `develop` into `main`.
 
 ### Common errors
-If the commands listed above for local development are not working, delete your `node_modules` folder and run `yarn install --ignore-scripts`.
+If the commands listed above for local development are not working, delete your `node_modules` folder and run `yarn install`.

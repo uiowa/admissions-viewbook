@@ -26,6 +26,3 @@ export default {
     }
 }
 </script>
-<style lang="scss">
-    @import '../../node_modules/@uiowa/uids/src/components/button/button.scss';
-</style>
